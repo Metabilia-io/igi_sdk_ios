@@ -1,0 +1,6 @@
+framework module igi_sdk {
+  umbrella header "igi_sdk.h"
+  export *
+
+  module * { export * }
+}
