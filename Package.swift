@@ -14,6 +14,10 @@ let package = Package(
             name: "igi_sdk",
             targets: ["igi_sdk"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/stripe/stripe-ios-spm", exact: "23.3.2"),
+        .package(url: "https://github.com/pusher/pusher-websocket-swift.git", exact: "8.0.0"),
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
