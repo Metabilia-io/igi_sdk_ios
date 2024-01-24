@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "IGIPackage",
+    name: "igi_sdk",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "IGIPackage",
+            name: "igi_sdk",
             targets: ["igi_sdk"]),
     ],
     targets: [
