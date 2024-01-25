@@ -21,14 +21,14 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "igi_framework", path: "./Sources/Frameworks/igi_sdk.xcframework"),
         .target(
             name: "igi_sdk",
             dependencies: [
-                "igi_framework",
+                .target(name: "igi_framework", condition: .when(platforms: [.iOS])),
                 .product(name: "PusherSwift", package: "pusher-websocket-swift"),
                 .product(name: "Stripe", package: "stripe-ios-spm")
             ]
-        )
+        ),
+        .binaryTarget(name: "igi_framework", path: "./Sources/Frameworks/igi_sdk.xcframework")
     ]
 )

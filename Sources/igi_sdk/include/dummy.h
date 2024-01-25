@@ -8,6 +8,6 @@
 #ifndef dummy_h
 #define dummy_h
 
-#include <stdio.h>
+//#include <igi_sdk.h>
 
 #endif /* dummy_h */

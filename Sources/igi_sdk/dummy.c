@@ -6,3 +6,5 @@
 //
 
 #include "dummy.h"
+
+void __dummy() {}
