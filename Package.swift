@@ -25,9 +25,9 @@ let package = Package(
         .target(
             name: "igi_sdk",
             dependencies: [
-                .target(name: "igi_framework"),
-                .product(name: "stripe-ios-spm", package: "stripe-ios-spm"),
-                .product(name: "pusher-websocket-swift", package: "pusher-websocket-swift")
+                "igi_framework",
+                .product(name: "PusherSwift", package: "pusher-websocket-swift"),
+                .product(name: "Stripe", package: "stripe-ios-spm")
             ]
         )
     ]

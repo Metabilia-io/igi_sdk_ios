@@ -6,3 +6,4 @@
 //
 
 import Foundation
+import igi_sdk
