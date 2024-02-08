@@ -9,7 +9,7 @@
 #ifndef IGIConstants_h
 #define IGIConstants_h
 
-#define IGI_SDK_VERSION @"3.0.15+24012501"; //build number format YYMMDD[SERIAL Number e.g 01]
+#define IGI_SDK_VERSION @"3.0.16+24020901"; //build number format YYMMDD[SERIAL Number e.g 01]
 
 #define IGI_BLUE_COLOR [UIColor colorWithRed:40/255.0f green:143/255.0f blue:211/255.0f alpha:1.0]
 #define IGI_GREY_COLOR [UIColor colorWithRed:170/255.0f green:172/255.0f blue:171/255.0f alpha:1.0]
