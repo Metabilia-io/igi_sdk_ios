@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/IGIConstants.h</key>
 		<data>
-		RYziVMPshC7ScZZ1NevMUHTFX0g=
+		zY/QUOfLQY3BGC6+qdl3FAZw3tA=
 		</data>
 		<key>Headers/IGIEvent.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Headers/IGIItem.h</key>
 		<data>
-		N/Wfrinpknkfp2HBeagFjnz4OnY=
+		3i9Dpu1kY1mTwO0jbhMM6C/Z6j0=
 		</data>
 		<key>Headers/IGIManager.h</key>
 		<data>
-		sge6t12X5eAe45YfuBaNi+BT3Qw=
+		j6oiZKwUEvt3vxul/lSAZQ0KDwQ=
 		</data>
 		<key>Headers/IGIPhoto.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/IGISponsor.h</key>
 		<data>
-		6OcMkSFhqR7GQrACA8k47+z+1iA=
+		RWzbA6HoDjCZoFwPupjTKZ6DOh0=
 		</data>
 		<key>Headers/IGISportObject.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>IGI.storyboardc/BRR-Pz-20d-view-b4S-nJ-X12.nib</key>
 		<data>
-		eW2kApS3QQeG0ehnhynv2CNgPM8=
+		bhYecoldDEAKdX89RT3J/QWuQ18=
 		</data>
 		<key>IGI.storyboardc/Info.plist</key>
 		<data>
@@ -114,15 +114,15 @@
 		</data>
 		<key>IGI.storyboardc/UITabBarController-8iv-AW-lpw.nib</key>
 		<data>
-		b8L/U3ZC9h4Y4Ri9lSuttRwCu/s=
+		OHdNmrOqcapCKfo0Q+mO1jxw5eg=
 		</data>
 		<key>IGI.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		O7mRmxzGnoHQZAdYDK+5H/RtBpo=
+		JBSzJ6bQbhLwzJ2aq087Owg/zIk=
 		</data>
 		<key>IGI.storyboardc/rci-9H-2Ci-view-4gn-cD-CII.nib</key>
 		<data>
-		v7hV2hrqjnm48EZUWNQ1r4JgDJc=
+		3wsydfvAY5KEyhVALz1yk0qq4R0=
 		</data>
 		<key>IGIActionsVC.nib</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>IGIDatePickerCell.nib/runtime.nib</key>
 		<data>
-		E83hipuOmyZhh6IVt76zjImSOZ0=
+		olsyHFck+JDN32CZz4zDmf4l/Vw=
 		</data>
 		<key>IGIDigitalPortfolioCell.nib</key>
 		<data>
@@ -196,9 +196,13 @@
 		<data>
 		MwuuNHjzq8Nzac81z8+qDmPaWXI=
 		</data>
+		<key>IGIGiveawayListVC.nib</key>
+		<data>
+		XWzZgnfM+D8hMl3NNkTSzS3zYfw=
+		</data>
 		<key>IGIItemCard.nib</key>
 		<data>
-		dHN/l45Jn8NWz1+8fcJa4XMxbls=
+		FK1848IXSB8I/6+XvXnJoiO1YlQ=
 		</data>
 		<key>IGIItemDescriptionCell.nib</key>
 		<data>
@@ -227,6 +231,14 @@
 		<key>IGIItemsExploreVC.nib</key>
 		<data>
 		BOioCqiqqW6gEWxJm9XxuQ4BXrM=
+		</data>
+		<key>IGILeaderboardCell.nib</key>
+		<data>
+		mQZDmq7uK3D27Yxrm0OuYP5bYkw=
+		</data>
+		<key>IGILeaderboardVC.nib</key>
+		<data>
+		onp7aa3jcafngCA1n2KIvjsdBC4=
 		</data>
 		<key>IGIMarketplaceVC.nib</key>
 		<data>
@@ -272,6 +284,10 @@
 		<data>
 		99bPEsWsWYSNhITmzond7fbxIL8=
 		</data>
+		<key>IGIRedeemPointsVC.nib</key>
+		<data>
+		6Y7085bbBKXtG8iItJPDgukftvs=
+		</data>
 		<key>IGIRequestItemCell.nib</key>
 		<data>
 		ILDRiXxNeGDHBJHbY08z0IKg3CY=
@@ -314,7 +330,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Gw6VRQjycAAPotPewWgeQbj31Pc=
+		s4zFxMMJbjMiNxxWkmWi+jbdPwk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -592,6 +608,10 @@
 		<data>
 		bvLldPdeT+a/H7QtVgu4dBvNYQs=
 		</data>
+		<key>igi_points_only_label.png</key>
+		<data>
+		oKdrV3aHlfypJmTAx9F4MzPgmN4=
+		</data>
 		<key>igi_purchase.png</key>
 		<data>
 		XoeeaNS8wAVaMZIr9fHXUw2UbgI=
@@ -712,7 +732,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DcmdrH0G1Z7w2hKESBB47iE1n7DemHYvgT3M0Pdky8c=
+			svDc8GszsJnWYIdRm/DP13QNO2KzgjOk0YrffP5rUuQ=
 			</data>
 		</dict>
 		<key>Headers/IGIEvent.h</key>
@@ -726,14 +746,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			69ZI0uNgiGG8FW4ksmNfoAkuCi/5EG8wsjuj0taU8kQ=
+			RfyRNlYOMPc8WlPE+LvqmvX0y5EMKVVBYWwv7nasQCs=
 			</data>
 		</dict>
 		<key>Headers/IGIManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+smCWwuX4SK3pY5MsLKSqvX/DIF5c7Rmvqb4PtWB4rA=
+			1VWYOS8gn2n7rwO+O6hkmhxpPyvikyUGawOkxdELN8M=
 			</data>
 		</dict>
 		<key>Headers/IGIPhoto.h</key>
@@ -775,7 +795,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UtTdR85iljNpWhaSJRNqaEdwJoDd8Iczy4+skTZ31OQ=
+			fdBkRwq8ugBETZ2oge0tclDB3FXJvqiLUNAXFk9sF3U=
 			</data>
 		</dict>
 		<key>Headers/IGISportObject.h</key>
@@ -831,7 +851,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ska4vQerBVufKr0h4CJMxUR6PhHW1okYHF3JqWtNPYU=
+			cpoxu6+4yzQhhNh5RlwTetVvenTXicUvOhD4TCig/AM=
 			</data>
 		</dict>
 		<key>IGI.storyboardc/Info.plist</key>
@@ -852,21 +872,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n9u3JbZOXFsetnegyAFg5yIgyr74WgyZeBuZdcw5/H0=
+			cWf1skDodi3dACMEup9+nE8Knezjl/LBqARZ8hblH8g=
 			</data>
 		</dict>
 		<key>IGI.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tP72yinBUYz4EFzn4wijEQOfGYOuRKTITXIjE1S2TKg=
+			9DWDXT6/62vL4yBWJYHivm1Nkpko61LNSSIYYmouvRk=
 			</data>
 		</dict>
 		<key>IGI.storyboardc/rci-9H-2Ci-view-4gn-cD-CII.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sbopGpH7m1pTHWxtLkHvd0ZcGlPutAz+Lf/kfMiJ1uQ=
+			M1gEax3llFWOfj77h/AJkIFFY83QTt2X4hX75bKFqrc=
 			</data>
 		</dict>
 		<key>IGIActionsVC.nib</key>
@@ -943,7 +963,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w/9xjwbINxP8bcarUTIB56cZEK76na/hmBjDaanvIS4=
+			pVaOvsMkkF3OHHr3PlDPSnFvhvCi2WGxcpU8ISnXGOo=
 			</data>
 		</dict>
 		<key>IGIDigitalPortfolioCell.nib</key>
@@ -995,11 +1015,18 @@
 			/q3PUl067ztFb+3KI4HZWLSgzxo5gBOUuWQuW2gxTc8=
 			</data>
 		</dict>
+		<key>IGIGiveawayListVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IJGUOMLwePhQPKx1EF2yA98wdPXgC+wmBq5jyBIHCX4=
+			</data>
+		</dict>
 		<key>IGIItemCard.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o1Cqc/zco9/B8cDGpQVTQqyWXGTACGvdTzh96rlPxBk=
+			jzytaXsN02aXYjPP1wq5hwLSnocOOsobgjg3nIbrM2g=
 			</data>
 		</dict>
 		<key>IGIItemDescriptionCell.nib</key>
@@ -1049,6 +1076,20 @@
 			<key>hash2</key>
 			<data>
 			Qmrv/cWlZEK4yNpYacrE42t/glHjlOIrnTf/Z5TDeq8=
+			</data>
+		</dict>
+		<key>IGILeaderboardCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Enty/ydszzX/6LoYxJwUigRKjiKtasyXDZzdiys4rNs=
+			</data>
+		</dict>
+		<key>IGILeaderboardVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QH+4WQIzZvhASe9p4AvMxrCTpvY0hip6HJjJOtQpBKU=
 			</data>
 		</dict>
 		<key>IGIMarketplaceVC.nib</key>
@@ -1126,6 +1167,13 @@
 			<key>hash2</key>
 			<data>
 			KRr3AGJN9z8cfz2QQn3wtX7YlBRjID+LUOrI5dJZr1g=
+			</data>
+		</dict>
+		<key>IGIRedeemPointsVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0FJs9Vu07PLqFGPTzD1sA4NFC4oFFFN0TZMiZfRLSM0=
 			</data>
 		</dict>
 		<key>IGIRequestItemCell.nib</key>
@@ -1679,6 +1727,13 @@
 			<key>hash2</key>
 			<data>
 			xvExYp22QiAeKraskVQNXC1DakSF4KNf3p4cSpfMWsc=
+			</data>
+		</dict>
+		<key>igi_points_only_label.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wCbL74lVVWaJBFtCpi6mAWDtTDAqlXlYZJC2JKdb+ZM=
 			</data>
 		</dict>
 		<key>igi_purchase.png</key>

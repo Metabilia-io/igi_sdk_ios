@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IGIPhoto.h"
+#import <igi_sdk/IGIPhoto.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

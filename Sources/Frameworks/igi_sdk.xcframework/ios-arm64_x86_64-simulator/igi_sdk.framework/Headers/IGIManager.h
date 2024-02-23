@@ -226,6 +226,10 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (void)getUserCreditBalanceWithCallback:(IGIManagerCallback )callback;
 
+- (void)getUserLoyaltyPointsWithCallback:(IGIManagerCallback )callback;
+
+- (void)getLeaderboardWithCallback:(IGIManagerCallback )callback;
+
 - (BOOL)shouldHandleRemodeMessage:(NSDictionary *)userInfo;
 
 /**
@@ -268,6 +272,12 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (void)getEventFiltersForEventId:(NSString *)eventId
                          callback:(IGIManagerCallback )callback;
+
+- (void)getPointsBasedItemsWithCallback:(IGIManagerCallback )callback;
+
+- (void)getLiveGiveawaysWithCallback:(IGIManagerCallback )callback;
+
+- (void)getWonGiveawaysWithCallback:(IGIManagerCallback )callback;
 
 /**
  *  Events listing screen

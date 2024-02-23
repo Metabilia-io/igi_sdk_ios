@@ -19,6 +19,8 @@
 @property (nonatomic, strong) NSNumber *isPackage;
 @property (nonatomic, assign) BOOL isFreeShipping;
 @property (nonatomic, assign) BOOL isCharityAuction;
+@property (nonatomic, assign) BOOL isPointsPurchaseItem;
+@property (nonatomic, strong) NSNumber *pointsValue;
 @property (nonatomic, strong) NSNumber *contingetnRequirements;
 @property (nonatomic, strong) NSString *status;
 @property (nonatomic, strong) NSMutableArray * photos;
