@@ -12,6 +12,7 @@
 
 @interface IGIUser : NSObject
 
+
 @property (nonatomic, strong) NSString *ID;
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, strong) NSString *accessToken;
@@ -20,6 +21,7 @@
 @property (nonatomic, strong) NSString *email;
 @property (nonatomic, assign) BOOL pushNotificationEnabled;
 @property (nonatomic, assign) BOOL emailNotificationEnabled;
+@property (nonatomic, assign) BOOL stripeConnectOnboarded;
 @property (nonatomic, strong) IGIAddress *shippingAddress;
 @property (nonatomic, strong) NSString *phoneNumber;
 @property (nonatomic, strong) NSString *stripeCustomerId;

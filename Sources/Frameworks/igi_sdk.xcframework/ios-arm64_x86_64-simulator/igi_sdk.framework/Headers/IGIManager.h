@@ -266,6 +266,20 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
  *  @param callback callback which will return array of event objects or an error on failure
  */
 
+- (void)stripeSellerOnboardingWithFirstName:(NSString *)firstName
+                                  lastName:(NSString *)lastName
+                             streetAddress:(NSString *)streetAddress
+                                      city:(NSString *)city
+                                     state:(NSString *)state
+                                postalCode:(NSString *)postalCode
+                                   country:(NSString *)country
+                               dateOfBirth:(NSString *)dateOfBirth
+                               phoneNumber:(NSString *)phoneNumber
+                                       ssn:(NSString *)ssn
+                             routingNumber:(NSString *)routingNumber
+                             accountNumber:(NSString *)accountNumber
+                                   callback:(IGIManagerCallback )callback;
+
 - (void)getAllEventsWithCallback:(IGIManagerCallback)callback;
 
 - (UIViewController *)signUpScreenWithoutNavigation;
