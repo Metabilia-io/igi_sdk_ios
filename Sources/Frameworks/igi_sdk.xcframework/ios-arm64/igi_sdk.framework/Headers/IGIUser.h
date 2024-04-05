@@ -39,6 +39,7 @@
 - (NSString *)getDobString;
 - (NSInteger)totalLoyaltyPoints;
 - (NSString *)partialEmail;
+- (NSString *)partialPhoneNumber;
 
 - (BOOL)isIGIUser;
 

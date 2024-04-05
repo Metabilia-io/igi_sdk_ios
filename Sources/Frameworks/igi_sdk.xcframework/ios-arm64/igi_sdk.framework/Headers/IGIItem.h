@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <igi_sdk/IGIConstants.h>
 #import <igi_sdk/IGISponsor.h>
 
 @interface IGIItem : NSObject

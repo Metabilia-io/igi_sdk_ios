@@ -280,9 +280,44 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
                              accountNumber:(NSString *)accountNumber
                                    callback:(IGIManagerCallback )callback;
 
+- (void)bidOnOnSiteItemForEventItemId:(NSNumber *)itemId
+                             fullName:(NSString *)fullName
+                                email:(NSString *)email
+                          phoneNumber:(NSString *)phoneNumber
+                            bidAmount:(NSString *)bidAmount
+                             callback:(IGIManagerCallback)callback;
+
+- (void)buyOnSiteItemForEventItemID:(NSNumber *)itemId
+                           fullName:(NSString *)fullName
+                              email:(NSString *)email
+                        phoneNumber:(NSString *)phoneNumber
+                           stripeId:(NSString *)stripeId
+                           callback:(IGIManagerCallback )callback;
+
+- (void)getOnSiteShipmentStatusForEventItemId:(NSNumber *)itemId
+                                     callback:(IGIManagerCallback )callback;
+
+- (void)markOnSiteItemDeliveredForRequestId:(NSNumber *)requestId
+                                   callback:(IGIManagerCallback)callback;
+
+- (void)markOnSiteItemPaidForRequestId:(NSNumber *)itemId
+                                stripeId:(NSString *)stripeId
+                                callback:(IGIManagerCallback)callback;
+
 - (void)getAllEventsWithCallback:(IGIManagerCallback)callback;
 
-- (UIViewController *)signUpScreenWithoutNavigation;
+- (void)getOnSiteItemsForEvent:(IGIEvent *)event
+                      callback:(IGIManagerCallback)callback;
+
+- (void)getRequestsForEventId:(NSString *)eventId
+                       filter:(NSString *)filter
+                     callback:(IGIManagerCallback )callback;
+
+- (void)getOnSiteEventsWithCallback:(IGIManagerCallback)callback;
+
+- (void)getBidsForEventItemId:(NSNumber *)itemId
+                        limit:(NSString *)limit
+                     callback:(IGIManagerCallback)callback;
 
 - (void)getEventFiltersForEventId:(NSString *)eventId
                          callback:(IGIManagerCallback )callback;
@@ -292,6 +327,8 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 - (void)getLiveGiveawaysWithCallback:(IGIManagerCallback )callback;
 
 - (void)getWonGiveawaysWithCallback:(IGIManagerCallback )callback;
+
+- (UIViewController *)signUpScreenWithoutNavigation;
 
 /**
  *  Events listing screen

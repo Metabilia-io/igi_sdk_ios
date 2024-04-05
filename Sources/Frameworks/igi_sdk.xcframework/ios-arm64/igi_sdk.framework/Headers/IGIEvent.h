@@ -26,7 +26,10 @@
 @property (nonatomic, strong) NSString *dateString;
 @property (nonatomic, assign) BOOL isPromotion;
 @property (nonatomic, strong) NSString *deepLinkURL;
-
+@property (nonatomic, assign) BOOL isPasswordProtected;
+@property (nonatomic, strong) NSString *onSitePassword;
+@property (nonatomic, strong) NSString *remotePassowrd;
+@property (nonatomic, strong) NSString *stripeLocationId;
 
 
 + (id)eventWithDictionary:(NSDictionary *)dictionary;
