@@ -1,6 +1,6 @@
 //
 //  IGIEvent.h
-//  Pods
+// 
 //
 //  Created by Hammad Mehmood on 01/06/2016.
 //

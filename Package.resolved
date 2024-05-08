@@ -1,30 +1,21 @@
 {
   "pins" : [
     {
+      "identity" : "nwwebsocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pusher/NWWebSocket.git",
+      "state" : {
+        "revision" : "1e545fcb53966272fc042aa17ae932f11239e00f",
+        "version" : "0.5.4"
+      }
+    },
+    {
       "identity" : "pusher-websocket-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pusher/pusher-websocket-swift.git",
       "state" : {
-        "revision" : "c1214f865cb7f7cd6db3cbdcfe849ca4c34f8e71",
-        "version" : "8.0.0"
-      }
-    },
-    {
-      "identity" : "reachability.swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ashleymills/Reachability.swift.git",
-      "state" : {
-        "revision" : "c01bbdf2d633cf049ae1ed1a68a2020a8bda32e2",
-        "version" : "5.1.0"
-      }
-    },
-    {
-      "identity" : "starscream",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/daltoniam/Starscream.git",
-      "state" : {
-        "revision" : "a063fda2b8145a231953c20e7a646be254365396",
-        "version" : "3.1.2"
+        "revision" : "886341f9dad453c9822f2525136ee2006a6c3c9e",
+        "version" : "10.1.5"
       }
     },
     {
@@ -32,8 +23,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/stripe/stripe-ios-spm",
       "state" : {
-        "revision" : "aca52737f093794fdf1b23491daa77339f7eaa53",
-        "version" : "23.3.2"
+        "revision" : "3631ddcfa4c5dcccc4609b1682bbdec3d586bba8",
+        "version" : "23.26.0"
+      }
+    },
+    {
+      "identity" : "tweetnacl-swiftwrap",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bitmark-inc/tweetnacl-swiftwrap",
+      "state" : {
+        "revision" : "f8fd111642bf2336b11ef9ea828510693106e954",
+        "version" : "1.1.0"
       }
     }
   ],

@@ -467,4 +467,19 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (void)getUserOffersWithCallback:(IGIManagerCallback)callback;
 
+- (void)reportIssueWithSource:(NSString *)source
+                     sourceId:(NSNumber *)sourceId
+                    issueType:(NSString *)issueType
+                  description:(NSString *)description
+                     callback:(IGIManagerCallback)callback;
+
+- (void)shipMysteryBoxWithRequestId:(NSNumber *)requestId
+                           callback:(IGIManagerCallback )callback;
+
+- (void)revealMysteryBoxWithRequestId:(NSNumber *)requestId
+                             callback:(IGIManagerCallback )callback;
+
+- (void)buyBackMysteryBoxWithRequestId:(NSNumber *)requestId
+                              callback:(IGIManagerCallback )callback;
+
 @end
