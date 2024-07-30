@@ -67,6 +67,7 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 @property (nonatomic, assign) BOOL showMarketPlace;
 @property (nonatomic, assign) BOOL showMyPortfolio;
 @property (nonatomic, assign) BOOL showNotificationsSwitch;
+@property (nonatomic, assign) BOOL showAds;
 
 + (instancetype) sharedManager;
 
@@ -82,7 +83,7 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (UIFont *)textFont;
 
-+ (UINavigationController *)navigationControllerForRootVC:(IGIBaseVC *)vc;
++ (UINavigationController *)navigationControllerForRootVC:(UIViewController *)vc;
 
 /**
  *  Check if SDK is intialized
@@ -230,7 +231,7 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (void)getLeaderboardWithCallback:(IGIManagerCallback )callback;
 
-- (BOOL)shouldHandleRemodeMessage:(NSDictionary *)userInfo;
++ (BOOL)shouldHandleRemodeMessage:(NSDictionary *)userInfo;
 
 /**
  *  Convenience method for handling push notifications received by client application. Return true if handled.
@@ -241,7 +242,7 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 - (BOOL)handleRemoteMessage:(NSDictionary *)userInfo;
 
 
-- (BOOL)handleFirebaseDeeplinkURL:(NSURL *)deeplink;
+- (BOOL)handleDeeplinkURL:(NSString *)deeplink;
 
 /**
  *  Update attributes of user profile
@@ -481,5 +482,10 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (void)buyBackMysteryBoxWithRequestId:(NSNumber *)requestId
                               callback:(IGIManagerCallback )callback;
+
+- (void)getAdsWithCallback:(IGIManagerCallback)callback;
+
+- (void)verifyAuthenticity:(NSString *)code
+                  callback:(IGIManagerCallback)callback;
 
 @end

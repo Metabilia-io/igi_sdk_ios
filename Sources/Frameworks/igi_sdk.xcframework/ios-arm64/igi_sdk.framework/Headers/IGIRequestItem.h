@@ -37,6 +37,7 @@
 - (BOOL)isPending;
 - (BOOL)isPaymentFailed;
 - (BOOL)isMysteryPending;
+- (BOOL)isRedeemedForCredit;
 
 - (double)totalAmountPaid;
 - (double)itemPrice;
