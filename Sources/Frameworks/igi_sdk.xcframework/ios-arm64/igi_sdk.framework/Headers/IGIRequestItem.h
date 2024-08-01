@@ -18,6 +18,7 @@
 @property (nonatomic, strong) IGIItem *eventItem;
 @property (nonatomic, strong) IGIUser *user;
 @property (nonatomic, assign) BOOL pickupFromVenue;
+@property (nonatomic, strong) NSDictionary *pickupLocation;
 @property (nonatomic, strong) NSString *status;
 @property (nonatomic, strong) NSString *trackingNumber;
 @property (nonatomic, strong) NSString *trackingUrl;
