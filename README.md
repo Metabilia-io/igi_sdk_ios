@@ -1,1 +1,1 @@
-# igi_sdk_ios v3.1.5
+# igi_sdk_ios
