@@ -55,6 +55,7 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 @property (readonly, strong) NSString *sdkMode;
 @property (readonly, strong) NSString *subDomain;
 @property (readonly, strong) NSString *companyName;
+@property (readonly, strong) NSString *hereAPIKey;
 @property (readonly, strong) STPCustomerContext *customerContext;
 @property (nonatomic, strong) NSDictionary *themeDictionary;
 @property (nonatomic, weak) id <IGIAnalyticsListener> analyticsDelegate;
@@ -302,8 +303,9 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
                                    callback:(IGIManagerCallback)callback;
 
 - (void)markOnSiteItemPaidForRequestId:(NSNumber *)itemId
-                                stripeId:(NSString *)stripeId
-                                callback:(IGIManagerCallback)callback;
+                                isCash:(BOOL)isCash
+                              stripeId:(NSString *)stripeId
+                              callback:(IGIManagerCallback)callback;
 
 - (void)getAllEventsWithCallback:(IGIManagerCallback)callback;
 
@@ -486,6 +488,23 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 - (void)getAdsWithCallback:(IGIManagerCallback)callback;
 
 - (void)verifyAuthenticity:(NSString *)code
+                  callback:(IGIManagerCallback)callback;
+
+- (void)calculateTaxForEventItemsWithData:(NSString *)data
+                                  orderId:(NSString *)orderId
+                                 callback:(IGIManagerCallback)callback;
+
+- (void)markOrderPaidWithOrderId:(NSString *)orderId
+                          isCash:(BOOL)isCash
+                   markDelivered:(BOOL)markDelivered
+                 paymentIntentId:(NSString *)paymentIntentId
+                        callback:(IGIManagerCallback)callback;
+
+- (void)markOrderDeliveredWithOrderId:(NSString *)orderId
+                               callback:(IGIManagerCallback)callback;
+
+- (void)sendInvoiceToEmail:(NSString *)email
+                   orderId:(NSString *)orderId
                   callback:(IGIManagerCallback)callback;
 
 @end
