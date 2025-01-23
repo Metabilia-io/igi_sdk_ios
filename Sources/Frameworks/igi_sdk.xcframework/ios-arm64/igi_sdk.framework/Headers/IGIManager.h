@@ -212,6 +212,12 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
                           searchString:(NSString *)searchString
                               callback:(IGIManagerCallback)callback;
 
+- (void)getItemsForCompaniesWithAPIKey:(NSString *)apiKey
+                           searchString:(NSString *)searchString
+                          withoutPhotos:(NSString *)withoutPhotos
+                                 status:(NSString *)status
+                              callback:(IGIManagerCallback)callback;
+
 - (void)getCompanySettingsWithCallback:(IGIManagerCallback)callback;
 
 - (void)addPhotoToItem:(NSString *)itemId

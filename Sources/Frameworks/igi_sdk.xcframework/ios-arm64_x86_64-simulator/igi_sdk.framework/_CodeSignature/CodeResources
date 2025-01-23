@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/IGIAsyncImageView.h</key>
 		<data>
-		IRdNIcv7RoOzmBkxsCHKyiNAc5Y=
+		NjCEdpkKZ3nK4zpRT67QKhsl0iI=
 		</data>
 		<key>Headers/IGIBaseVC.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/IGIManager.h</key>
 		<data>
-		tZZFjL96D5RrwRNC/89CTXKRhVg=
+		48M1CBTRMV7cxFsWv/rXsd7MjXo=
 		</data>
 		<key>Headers/IGIPhoto.h</key>
 		<data>
@@ -222,7 +222,7 @@
 		</data>
 		<key>IGI.storyboardc/hHn-qP-ZAF-view-awJ-qt-b5K.nib/objects-14.0+.nib</key>
 		<data>
-		0JPt+bmd+wKfVobeJUw+IC6ZIEE=
+		mZubZxBdNStSQX8aUBO0bUX1fWI=
 		</data>
 		<key>IGI.storyboardc/hHn-qP-ZAF-view-awJ-qt-b5K.nib/runtime.nib</key>
 		<data>
@@ -238,11 +238,11 @@
 		</data>
 		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib/objects-14.0+.nib</key>
 		<data>
-		FULSRccoi2mDAJchifUi6Zep4Fs=
+		iN+UqXEEqxQc05Rc0/kDJ0ia8V8=
 		</data>
 		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib/runtime.nib</key>
 		<data>
-		suJLvbzByTB3n4J/e1Aa/NvFPxo=
+		r1PSBjKb3GWRfibMduEniZ0lEdY=
 		</data>
 		<key>IGI.storyboardc/l7u-94-3Lh-view-Yl9-nt-WkQ.nib/objects-14.0+.nib</key>
 		<data>
@@ -262,11 +262,11 @@
 		</data>
 		<key>IGI.storyboardc/rci-9H-2Ci-view-4gn-cD-CII.nib/objects-14.0+.nib</key>
 		<data>
-		ahcIJOdrZ5aHc8hGEdlWoFU3dzA=
+		GcSgYDE6CP6ki3zQsdvxTI2gMz4=
 		</data>
 		<key>IGI.storyboardc/rci-9H-2Ci-view-4gn-cD-CII.nib/runtime.nib</key>
 		<data>
-		ahcIJOdrZ5aHc8hGEdlWoFU3dzA=
+		GcSgYDE6CP6ki3zQsdvxTI2gMz4=
 		</data>
 		<key>IGIActionsVC.nib</key>
 		<data>
@@ -310,7 +310,7 @@
 		</data>
 		<key>IGIDatePickerCell.nib/runtime.nib</key>
 		<data>
-		tK8PSiRPi72gC3hsqr0bTOUcxTU=
+		fmRToxm7tdmOjapM15gwv5fyjus=
 		</data>
 		<key>IGIDigitalPortfolioCell.nib</key>
 		<data>
@@ -342,11 +342,11 @@
 		</data>
 		<key>IGIGiveawayListVC.nib</key>
 		<data>
-		XWzZgnfM+D8hMl3NNkTSzS3zYfw=
+		LqNUkAY9MsnD0zNc+Kc6H1zilBA=
 		</data>
 		<key>IGIItemCard.nib</key>
 		<data>
-		eNXTMhoh54YyY1BuytZc0chmfF4=
+		q6glTd0nRGJjGE4J39EoT/WIeR8=
 		</data>
 		<key>IGIItemDescriptionCell.nib</key>
 		<data>
@@ -374,7 +374,7 @@
 		</data>
 		<key>IGIItemsExploreVC.nib</key>
 		<data>
-		dnWT03l7WmKW/pmq4hZGxRd9n7E=
+		bUjIc77y6YL8227c5XN3up3y2EU=
 		</data>
 		<key>IGILeaderboardCell.nib</key>
 		<data>
@@ -386,15 +386,15 @@
 		</data>
 		<key>IGIMarketplaceVC.nib</key>
 		<data>
-		6q32EwV/1quHb288fEq2UxX+XAk=
+		dPGvlmPa95ly5BMiEiwczoXuCUw=
 		</data>
 		<key>IGIMissionsVC.nib</key>
 		<data>
-		Jl9UMBl+KAli594hYZj2ZAkZ7I0=
+		dOIoV6jb+S6w30+QP0ElQYksMlA=
 		</data>
 		<key>IGIOffersVC.nib</key>
 		<data>
-		67i+TfLM583uiqK9ZRTkjYTnUVA=
+		9S5RRnHCEbd9HTZAmVdIOM3yiVE=
 		</data>
 		<key>IGIPhotoViewerVC.nib</key>
 		<data>
@@ -406,11 +406,11 @@
 		</data>
 		<key>IGIRafflePackageCell.nib</key>
 		<data>
-		MZ4Vqnq+VWI+NaJoMSHUyLta1uA=
+		kNJnbFYzOPFdua2fs0KQUvn5C/Q=
 		</data>
 		<key>IGIRaffleQuantityCell.nib</key>
 		<data>
-		9VQXNPS6kGZfEeHuGuKjq1RA0F8=
+		hzAM7vlHnGal9eQ3O0V55t647dg=
 		</data>
 		<key>IGIRecentTransactionCell.nib</key>
 		<data>
@@ -426,7 +426,7 @@
 		</data>
 		<key>IGIRedeemPointsVC.nib</key>
 		<data>
-		6Y7085bbBKXtG8iItJPDgukftvs=
+		Xwd+SxHUlFuCDgqLEAkgMc+0F7o=
 		</data>
 		<key>IGIRequestItemCell.nib</key>
 		<data>
@@ -470,7 +470,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q8FJQkwIeDiYR0qsM+7p4sxxj54=
+		4/3euWx7eRsM/aaV9jezI4Q9HBE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -853,7 +853,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ST9HomfIrzpwhm1wrcl1ApGyT+Rlnn+Tvo+CLNuyMDc=
+			j/Q80eEItlV6WyyWCbjxyPpZOOqmvkH6bbANoOg91JM=
 			</data>
 		</dict>
 		<key>Headers/IGIBaseVC.h</key>
@@ -909,7 +909,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l/VDxWUmpCY1AhZEpqHYOFV4K3a4qJ/g6UMeKxREUvM=
+			hMOUkQOPIl2FTs1Nat7JwsmEORBmbX9x53ScVymKN7k=
 			</data>
 		</dict>
 		<key>Headers/IGIPhoto.h</key>
@@ -1217,7 +1217,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OmlB4jdhK5RMaKd2/XqOqtTV46PPKFToMBRsj6RPpGw=
+			BJIm0+sEyqHPe94QqcDxzstFvmqF+m1Zez9J+Y7YGTQ=
 			</data>
 		</dict>
 		<key>IGI.storyboardc/hHn-qP-ZAF-view-awJ-qt-b5K.nib/runtime.nib</key>
@@ -1245,14 +1245,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wTvIanXi9pPTslpb9qry5+IjArDAutEN6DIchEMN3uY=
+			8viMGmuXhDXMhqKLr+YcvDecqbCx8p5QCIzTetNttGw=
 			</data>
 		</dict>
 		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HJ7qtVe/JEqPOyHRfGG64VFteMOqkuEbrv3iaafn6c4=
+			t+1Hb0RWJt3uH7uQP+lMT/BKcauQAzDo44KtLh441Zg=
 			</data>
 		</dict>
 		<key>IGI.storyboardc/l7u-94-3Lh-view-Yl9-nt-WkQ.nib/objects-14.0+.nib</key>
@@ -1287,14 +1287,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J7mbqjGppKo3sno9R47hRWih8QZFu2/XvHp+9jJEuvI=
+			eBvVmelMfKw9kihegH3b9oSw+ZSn3rqfaRpLPjBSUoQ=
 			</data>
 		</dict>
 		<key>IGI.storyboardc/rci-9H-2Ci-view-4gn-cD-CII.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J7mbqjGppKo3sno9R47hRWih8QZFu2/XvHp+9jJEuvI=
+			eBvVmelMfKw9kihegH3b9oSw+ZSn3rqfaRpLPjBSUoQ=
 			</data>
 		</dict>
 		<key>IGIActionsVC.nib</key>
@@ -1371,7 +1371,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			th+jW1Y1GLdSUmGLDpdJGgXHt0xSJG6jZLADG3Qs0GI=
+			8u2E5gHUbnMo1clWpwpO+T+xDORC5Ehr9xNx2Iqbnko=
 			</data>
 		</dict>
 		<key>IGIDigitalPortfolioCell.nib</key>
@@ -1427,14 +1427,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IJGUOMLwePhQPKx1EF2yA98wdPXgC+wmBq5jyBIHCX4=
+			FC0QqIOwiV5AGjv1bncEKPz/r6PKlNT53Ntoub3hwyk=
 			</data>
 		</dict>
 		<key>IGIItemCard.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VBBhpcGuWsbxvo8+c/55XwLH7okE6jTuW22xtLlehOA=
+			wYXtoTryihJx0FnE8zOVGjBFl3fJMHp/02XjSN7Zub0=
 			</data>
 		</dict>
 		<key>IGIItemDescriptionCell.nib</key>
@@ -1483,7 +1483,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AvwDhBG1eqC2GeRq0X4WqV9gsvuWl4cjWjr+Zk6/ee4=
+			WZoV/ktyyk0XsEua9tbvwPWr4X0ZoQrF3V+hMp+NcHo=
 			</data>
 		</dict>
 		<key>IGILeaderboardCell.nib</key>
@@ -1504,21 +1504,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AVMsB2Pm1d6N1dCdjutUgfxfhFXpZxxtaz1i1YN5Rnw=
+			gm4m1uDmXTiz80H6pfoDEsa/SmfD4i+0gDt9KYOlUCg=
 			</data>
 		</dict>
 		<key>IGIMissionsVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OzJtVGw7oesk4Lz6IBuCa9NDg7Yp6W0//395JUoZlhk=
+			zZuxHdtmIbRMOnsK0GoQGfUGZKgf3QDsDDi2bK3I9NI=
 			</data>
 		</dict>
 		<key>IGIOffersVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q9/38NaJ5KcQ85QVH3QIqwWFrOo1jS+4IyQSiYNbPAE=
+			LgvWK/3Qx+njhxze3cVM21UX8A30qwb6OXQJwyAy0A4=
 			</data>
 		</dict>
 		<key>IGIPhotoViewerVC.nib</key>
@@ -1539,14 +1539,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C3Tj8K8pu/bD19itGOKWzAgDbBpD2x0fBYEFXc7rgf8=
+			VkydoN8xlFRxDP6UIaXwHsCEd9u7wBuA41tPiYm5MaI=
 			</data>
 		</dict>
 		<key>IGIRaffleQuantityCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FRg92BWQif1Ski182ElqdeHigiwXVw00olil+Ez44Tc=
+			LDc5gFN15pGwrNsAbg8kZYJPi+Vy38a7fxFvFqHpAz8=
 			</data>
 		</dict>
 		<key>IGIRecentTransactionCell.nib</key>
@@ -1574,7 +1574,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0FJs9Vu07PLqFGPTzD1sA4NFC4oFFFN0TZMiZfRLSM0=
+			Wox6lupVJuoUCJv7Zl5kB5cxU/oGJEbXAbJQNV1lXRk=
 			</data>
 		</dict>
 		<key>IGIRequestItemCell.nib</key>
