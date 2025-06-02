@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *apiKey;
-@property (nonatomic, strong) IGIPhoto *logo;
 
 + (id)companyWithDictionary:(NSDictionary *)dictionary;
 

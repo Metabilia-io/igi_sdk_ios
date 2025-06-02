@@ -1,0 +1,18 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -module-name igi_sdk
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import igi_sdk
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIStripeCustomerSheet : ObjectiveC.NSObject {
+  @objc public func loadSelectedPaymentMethod() async throws -> Swift.String
+  @objc public func getSelectedPaymentMethodId() async throws -> Swift.String?
+  @objc public func presentCustomerSheet(hostViewController: UIKit.UIViewController, completion: @escaping (Swift.String, Swift.String?, Foundation.NSError?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}

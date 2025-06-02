@@ -15,7 +15,7 @@ let package = Package(
             targets: ["igi_sdk"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/stripe/stripe-ios-spm", exact: "23.26.0"),
+        .package(url: "https://github.com/stripe/stripe-ios-spm", exact: "24.12.0"),
         .package(url: "https://github.com/pusher/pusher-websocket-swift.git", exact: "10.1.5"),
     ],
     targets: [

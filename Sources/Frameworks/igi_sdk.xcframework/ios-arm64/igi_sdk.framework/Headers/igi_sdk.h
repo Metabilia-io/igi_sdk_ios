@@ -39,4 +39,5 @@ FOUNDATION_EXPORT const unsigned char igi_sdkVersionString[];
 #import <igi_sdk/IGICompany.h>
 #import <igi_sdk/IGISponsor.h>
 #import <igi_sdk/IGIPhotoViewerVC.h>
+#import <igi_sdk/IGIAnalyticsEvents.h>
 

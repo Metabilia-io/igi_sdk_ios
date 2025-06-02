@@ -8,12 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+//#import <igi_sdk/igi_sdk-Swift.h>
+
 
 @class IGIBaseVC;
 @class IGIEvent;
 @class IGIUser;
 @class IGIAddress;
-@class STPCustomerContext;
+@class IGIItem;
+@class IGIBuyItem;
+@class IGIRaffleItem;
+@class IGIStripeCustomerSheet;
+@class IGIAdvertisement;
 @protocol IGIAnalyticsListener;
 
 /**
@@ -56,9 +62,9 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 @property (readonly, strong) NSString *subDomain;
 @property (readonly, strong) NSString *companyName;
 @property (readonly, strong) NSString *hereAPIKey;
-@property (readonly, strong) STPCustomerContext *customerContext;
 @property (nonatomic, strong) NSDictionary *themeDictionary;
-@property (nonatomic, weak) id <IGIAnalyticsListener> analyticsDelegate;
+@property (nonatomic, strong) NSArray *ads;
+@property (nonatomic, strong) IGIStripeCustomerSheet *stripeCustomerSheet;
 
 
 @property (nonatomic, assign) BOOL isWhiteLabel;
@@ -102,6 +108,8 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (BOOL)canLogin;
 
+- (void)setAnalyticsDelegate:(id<IGIAnalyticsListener>)delegate;
+
 /**
  *  set user device token for Push Notifications.
  *
@@ -109,6 +117,8 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
  */
 
 - (void)setDeviceToken:(NSString *)deviceToken;
+
+- (IGIStripeCustomerSheet *)stripeCustomerSheet;
 
 /**
  *  Sign up
@@ -331,11 +341,17 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 - (void)getEventFiltersForEventId:(NSString *)eventId
                          callback:(IGIManagerCallback )callback;
 
-- (void)getPointsBasedItemsWithCallback:(IGIManagerCallback )callback;
+- (void)getPointsBasedItemsWithPageNumber:(NSInteger)pageNo
+                                  perPage:(NSInteger)perPage
+                                 callback:(IGIManagerCallback )callback;
 
-- (void)getLiveGiveawaysWithCallback:(IGIManagerCallback )callback;
+- (void)getLiveGiveawaysWithWithPageNumber:(NSInteger)pageNo
+                                   perPage:(NSInteger)perPage
+                                  callback:(IGIManagerCallback )callback;
 
-- (void)getWonGiveawaysWithCallback:(IGIManagerCallback )callback;
+- (void)getWonGiveawaysWithWithPageNumber:(NSInteger)pageNo
+                                  perPage:(NSInteger)perPage
+                                 callback:(IGIManagerCallback )callback;
 
 - (UIViewController *)signUpScreenWithoutNavigation;
 
@@ -349,9 +365,6 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 - (UINavigationController *)eventsScreen;
 
 - (UINavigationController *)mainStoryboard;
-
-- (UINavigationController *)eventsScreenForLeftMenuWithSelector:(SEL)menuSelector
-                                                         target:(id)menuButtonTarget;
 
 /**
  *  Item listing screen with items of provided IGIEvent
@@ -383,10 +396,6 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (UIViewController *)myItemsScreenWithoutNavigation;
 
-- (UINavigationController *)settingsScreen;
-
-- (UIViewController *)settingsScreenWithoutNavigation;
-
 - (UIViewController *)marketplaceScreenWithoutNavigation;
 
 - (UIViewController *)myDigitalPortfolioScreenWithoutNavigation;
@@ -401,29 +410,6 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (void)requestPasswordResetForEmail:(NSString *)email
                             callback:(IGIManagerCallback)callback;
-
-- (void)getCurrentUserFavoriteSportsWithCallback:(IGIManagerCallback)callback;
-
-- (void)getCurrentUserFavoriteTeamsWithCallback:(IGIManagerCallback)callback;
-
-- (void)getAllSportsWithCallback:(IGIManagerCallback)callback;
-
-- (void)getAllTeamsForSport:(NSString *)sportId
-                   callback:(IGIManagerCallback)callback;
-
-- (void)getAllTeamsWithCallback:(IGIManagerCallback)callback;
-
-- (void)markSportAsFavoriteWithSportId:(NSString *)sportId
-                                  callback:(IGIManagerCallback)callback;
-
-- (void)unmarkSportAsFavoriteWithSportId:(NSString *)sportId
-                                    callback:(IGIManagerCallback)callback;
-
-- (void)markTeamAsFavoriteWithTeamId:(NSString *)teamId
-                                 callback:(IGIManagerCallback)callback;
-
-- (void)unmarkTeamAsFavoriteWithTeamId:(NSString *)teamId
-                                   callback:(IGIManagerCallback)callback;
 
 - (NSString *)getDevicePhysicalAddress;
 
@@ -493,6 +479,10 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (void)getAdsWithCallback:(IGIManagerCallback)callback;
 
+- (IGIAdvertisement *)getInterstitialAdvertisement;
+- (NSArray *)getNonInterstitialAdvertisements;
+- (IGIAdvertisement *)getAdvertisement;
+
 - (void)verifyAuthenticity:(NSString *)code
                   callback:(IGIManagerCallback)callback;
 
@@ -513,4 +503,51 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
                    orderId:(NSString *)orderId
                   callback:(IGIManagerCallback)callback;
 
+- (void)createEphemeralKeyWithCallback:(IGIManagerCallback)callback;
+
+- (void)createStripeSetupIntentWithCallback:(IGIManagerCallback)callback;
+
+#pragma mark - IGIAnalyticsManager
+
+- (void)trackPurchaseWithTransactionId:(NSString *)transactionId
+                               buyItem:(IGIBuyItem *)buyItem;
+
+- (void)trackBidWithTransactionId:(NSString *)transactionId
+                             item:(IGIItem *)item;
+
+- (void)trackPromotionWithTransactionId:(NSString *)transactionId
+                             raffleItem:(IGIRaffleItem *)raffleItem;
+
+- (void)trackAddPayment;
+
+- (void)trackAddShipping;
+
+- (void)trackItemListSelectionWithEvent:(IGIEvent *)event;
+
+- (void)trackItemSelectionWithItem:(IGIItem *)item;
+
+- (void)trackOfferForSaleWithItem:(IGIItem *)item
+                       offerPrice:(double)price;
+
+- (void)trackTradableClaimed:(IGIItem *)item;
+
+- (void)trackIssueReported:(NSString *)requestId;
+
+- (void)trackShipMysteryBoxWithRequestId:(NSString *)requestId
+                                  itemId:(NSString *)itemId;
+
+- (void)trackRevealMysteryBoxWithRequestId:(NSString *)requestId
+                                    itemId:(NSString *)itemId;
+
+- (void)trackRedeemMysteryBoxForCreditWithRequestId:(NSString *)requestId
+                                             itemId:(NSString *)itemId;
+
+- (void)trackViewMysteryBoxComponentsForItemId:(NSString *)itemId;
+
+- (void)trackAdEvent:(NSString *)eventName
+                  ad:(IGIAdvertisement *)ad;
+
+- (void)trackEvent:(NSString *)eventName;
+
+#pragma mark -
 @end

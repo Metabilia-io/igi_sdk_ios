@@ -10,7 +10,7 @@
 
 @interface IGIBaseVC : UIViewController
 
-@property (nonatomic, strong)  NSString * _Nullable eventName;
+//@property (nonatomic, strong)  NSString * _Nullable eventName;
 
 @property (nonatomic, strong) NSMutableArray * _Nullable _notificationsHandlers;
 @property (nonatomic, assign) BOOL isModel;

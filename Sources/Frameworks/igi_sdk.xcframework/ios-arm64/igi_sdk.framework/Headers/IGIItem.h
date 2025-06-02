@@ -49,6 +49,7 @@
 @property (nonatomic, strong) NSString *player;
 @property (nonatomic, assign) BOOL hasBonus;
 @property (nonatomic, assign) NSInteger bounsPoints;
+@property (nonatomic, assign) BOOL isMysteryBox;
 @property (nonatomic, assign) BOOL isInstantMysteryBox;
 @property (nonatomic, strong) NSNumber *creditValue;
 
