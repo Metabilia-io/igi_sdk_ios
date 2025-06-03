@@ -26,7 +26,8 @@ let package = Package(
             dependencies: [
                 .target(name: "igi_framework", condition: .when(platforms: [.iOS])),
                 .product(name: "PusherSwift", package: "pusher-websocket-swift"),
-                .product(name: "Stripe", package: "stripe-ios-spm")
+                .product(name: "Stripe", package: "stripe-ios-spm"),
+                .product(name: "StripePaymentSheet", package: "stripe-ios-spm")
             ]
         ),
         .binaryTarget(name: "igi_framework", path: "./Sources/Frameworks/igi_sdk.xcframework")
