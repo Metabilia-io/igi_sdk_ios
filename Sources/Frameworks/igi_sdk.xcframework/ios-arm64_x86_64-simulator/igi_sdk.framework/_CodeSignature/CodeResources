@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/libswift_Concurrency.dylib</key>
-		<data>
-		RiHusyrNbUBpFP9/mJiEiOSMSsA=
-		</data>
 		<key>Headers/IGIAddress.h</key>
 		<data>
 		kzehW38DFVnKqcSPFB3/8d2RY1Y=
@@ -274,11 +270,11 @@
 		</data>
 		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib/objects-14.0+.nib</key>
 		<data>
-		eCdnJqUDF0JaRSNyezyey0dqZpg=
+		DbswFabdWF9yLxRIcgXff+ZRPL0=
 		</data>
 		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib/runtime.nib</key>
 		<data>
-		m/8c54nG7y6X1F/UVrAD0Vvk9d8=
+		P76IukR8LMeZFaupAXjv/OwMbUo=
 		</data>
 		<key>IGI.storyboardc/l7u-94-3Lh-view-Yl9-nt-WkQ.nib/objects-14.0+.nib</key>
 		<data>
@@ -354,7 +350,7 @@
 		</data>
 		<key>IGIDatePickerCell.nib/runtime.nib</key>
 		<data>
-		2SlVLoUxtQlV34ExfnHiGGIJLjo=
+		yIwcIriy6RurPMW0stE4lI3yZ4g=
 		</data>
 		<key>IGIDigitalPortfolioCell.nib</key>
 		<data>
@@ -378,7 +374,7 @@
 		</data>
 		<key>IGIEventExploreVCCell.nib</key>
 		<data>
-		G22DVESILV5A96B9QzLzVi9wBV4=
+		qOB6kOgheTzggqvq0sGAQ3GXysY=
 		</data>
 		<key>IGIGiveawayListVC.nib</key>
 		<data>
@@ -514,11 +510,11 @@
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ydv2gIAGS5wi3+TFTsgydhEffd8=
+		8ITcU53AtDH1GoRnBD4lGlHQS6A=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		KjNkqj2gDSYhwVCG8AdOhcvolOo=
+		yLNKoB5FPm+ycMjiZ8KffFXJfTk=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -526,19 +522,19 @@
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KjNkqj2gDSYhwVCG8AdOhcvolOo=
+		yLNKoB5FPm+ycMjiZ8KffFXJfTk=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uM6aLlS9kcgXbJe/kW3exK+dpB0=
+		YNATZz9MYt7iSltprRxrXpe/wkE=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ydv2gIAGS5wi3+TFTsgydhEffd8=
+		8ITcU53AtDH1GoRnBD4lGlHQS6A=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cI2kvM6nq4Ip2mx4V/AGNpNOZXo=
+		/D7mqf5+upbF/gOR1SrwJn4KCj0=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -546,11 +542,11 @@
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cI2kvM6nq4Ip2mx4V/AGNpNOZXo=
+		/D7mqf5+upbF/gOR1SrwJn4KCj0=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xOkbyxgYnNUrqgxFkBrJEuXJXCA=
+		fNwqpOlR21+mBwj6YbXveRThZ2w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -919,13 +915,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/libswift_Concurrency.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			00/tLxqdsUmOtcmWZ9nef6MNOxQ4tx7XvNYs2jINIUw=
-			</data>
-		</dict>
 		<key>Headers/IGIAddress.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1392,14 +1381,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0jmwRaKryx7x9deNE+Es2v6xCDQ2r+H+GTSy3RXrHAw=
+			kCa7ie7vv5P1mkaVWLrmtK6WTSb6VwoFdGP5y0x0Mz0=
 			</data>
 		</dict>
 		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PzhxIMT9iXFR3kQ1SXGn1krH24iGPR7yraFg/uQnlCw=
+			298+Nf4pP+8a1u8ARZmsNs3nJIqjnEgzU03AyVfOmsU=
 			</data>
 		</dict>
 		<key>IGI.storyboardc/l7u-94-3Lh-view-Yl9-nt-WkQ.nib/objects-14.0+.nib</key>
@@ -1532,7 +1521,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			82BU1dSbX05h+biY1yNy6/SUAzF10EoGt8NWDwlQ3YU=
+			NVKJOIwiNc51fu3/wlPhyGgzPP44t9Q0Xx7ygLCtMh0=
 			</data>
 		</dict>
 		<key>IGIDigitalPortfolioCell.nib</key>
@@ -1574,7 +1563,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z0rxkxtWt6gmiWqBY8pHAa8tkvMaOUDcZfDPcn60gyU=
+			h66P+QFZ2necLFT0BMrrMyILgpQXncDCdCtx4qaEmTo=
 			</data>
 		</dict>
 		<key>IGIGiveawayListVC.nib</key>
@@ -1805,14 +1794,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NGCT8VNEPRuW/yAe0HS4pr7w58D7khU7uOTpElSqVoo=
+			2Rw3B+mnW8Gg5kTJam0JU5xMxTqmgc92iF3ONBuaigc=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vSHbAM/9YXKuaduAM9Z3Ub0FRbJO6/m0AI1fa7N7qXk=
+			LafgURJVxc1QBAw1DmJafI+mJ70IQ8qi50m39CKLP4Y=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1826,28 +1815,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vSHbAM/9YXKuaduAM9Z3Ub0FRbJO6/m0AI1fa7N7qXk=
+			LafgURJVxc1QBAw1DmJafI+mJ70IQ8qi50m39CKLP4Y=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2tMsqaaa1WQMgdw/QaGZVqF20HirNuf8jBcabHQa0l8=
+			sxshqFCs1n/XHtBlsxv5g5VWob8k2aeg5Ha4FoNSmmA=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NGCT8VNEPRuW/yAe0HS4pr7w58D7khU7uOTpElSqVoo=
+			2Rw3B+mnW8Gg5kTJam0JU5xMxTqmgc92iF3ONBuaigc=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6yoPrNvaT0isB2Rz/Rrz1UaP4VvCzoPoiUzgu6D+iL8=
+			ELiNTDk4iTgP9NcDtdoqpwv94ncgCm+n0SJtQwhuidg=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1861,14 +1850,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6yoPrNvaT0isB2Rz/Rrz1UaP4VvCzoPoiUzgu6D+iL8=
+			ELiNTDk4iTgP9NcDtdoqpwv94ncgCm+n0SJtQwhuidg=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iEG1WH+QLNRn1SLJnViKoscVwUDgK45bLWI/WgARa64=
+			mTd3noA0Kdri/fEewmFpW2RtZWWw85I5fvXWh6p7AK8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

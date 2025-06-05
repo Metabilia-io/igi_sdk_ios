@@ -52,6 +52,7 @@
             "usr": "c:@M@igi_sdk@objc(cs)IGIStripeCustomerSheet(im)loadSelectedPaymentMethodWithCompletionHandler:",
             "mangledName": "$s7igi_sdk22IGIStripeCustomerSheetC25loadSelectedPaymentMethodSSyYaKF",
             "moduleName": "igi_sdk",
+            "isOpen": true,
             "objc_name": "loadSelectedPaymentMethodWithCompletionHandler:",
             "declAttributes": [
               "AccessControl",
@@ -84,6 +85,7 @@
             "usr": "c:@M@igi_sdk@objc(cs)IGIStripeCustomerSheet(im)getSelectedPaymentMethodIdWithCompletionHandler:",
             "mangledName": "$s7igi_sdk22IGIStripeCustomerSheetC26getSelectedPaymentMethodIdSSSgyYaKF",
             "moduleName": "igi_sdk",
+            "isOpen": true,
             "objc_name": "getSelectedPaymentMethodIdWithCompletionHandler:",
             "declAttributes": [
               "AccessControl",
@@ -166,6 +168,7 @@
             "usr": "c:@M@igi_sdk@objc(cs)IGIStripeCustomerSheet(im)presentCustomerSheetWithHostViewController:completion:",
             "mangledName": "$s7igi_sdk22IGIStripeCustomerSheetC07presentdE018hostViewController10completionySo06UIViewI0C_ySS_SSSgSo7NSErrorCSgtctF",
             "moduleName": "igi_sdk",
+            "isOpen": true,
             "objc_name": "presentCustomerSheetWithHostViewController:completion:",
             "declAttributes": [
               "AccessControl",
@@ -204,6 +207,7 @@
         "usr": "c:@M@igi_sdk@objc(cs)IGIStripeCustomerSheet",
         "mangledName": "$s7igi_sdk22IGIStripeCustomerSheetC",
         "moduleName": "igi_sdk",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl",
           "ObjCMembers",
