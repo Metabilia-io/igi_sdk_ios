@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface IGICompany : NSObject
 
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) IGIPhoto *logo;
+@property (nonatomic, strong) NSString *subDomain;
 @property (nonatomic, strong) NSString *apiKey;
 
 + (id)companyWithDictionary:(NSDictionary *)dictionary;

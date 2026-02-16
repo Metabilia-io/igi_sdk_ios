@@ -41,10 +41,6 @@
 @property (nonatomic, assign) BOOL isTradablePhysicalItem;
 @property (nonatomic, assign) BOOL hasPhotoMatching;
 @property (nonatomic, strong) IGIPhoto *photoMatchingImage;
-@property (nonatomic, assign) BOOL isCertified;
-@property (nonatomic, strong) NSString *certifier;
-@property (nonatomic, strong) NSString *certificateNumber;
-@property (nonatomic, strong) IGIPhoto *authenticityCertificate;
 @property (nonatomic, strong) NSString *category;
 @property (nonatomic, strong) NSString *player;
 @property (nonatomic, assign) BOOL hasBonus;
@@ -55,6 +51,7 @@
 
 //digital item fields
 @property (nonatomic, strong) NSString *digitalItemId;
+@property (nonatomic, strong) NSString *digitalItemTitle;
 @property (nonatomic, assign) double digitalCurrentPrice;
 @property (nonatomic, assign) NSInteger masterDigitalQuantity;
 @property (nonatomic, assign) NSInteger digitalAssetIndex;
@@ -62,6 +59,15 @@
 @property (nonatomic, strong) NSString *previewAssetUrl;
 @property (nonatomic, strong) NSString *thumbnailUrl;
 @property (nonatomic, strong) NSString *nftUrl;
+
+//certification fields
+@property (nonatomic, assign) BOOL isCertified;
+@property (nonatomic, strong) NSString *certifier;
+@property (nonatomic, strong) NSString *certificateNumber;
+@property (nonatomic, strong) IGIPhoto *authenticityCertificate;
+@property (nonatomic, assign) BOOL certifyLater;
+@property (nonatomic, strong) NSNumber *certifyLaterQuantity;
+@property (nonatomic, strong) NSString *certificateRanges;
 
 
 + (id)itemWithDictionary:(NSDictionary *)dictionary;

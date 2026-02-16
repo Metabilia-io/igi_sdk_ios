@@ -30,6 +30,7 @@
 @property (nonatomic, assign) BOOL resold;
 @property (nonatomic, assign) BOOL transferred;
 @property (nonatomic, assign) BOOL gifted;
+@property (nonatomic, assign) BOOL offered;
 @property (nonatomic, assign) BOOL mysteryRevealed;
 
 + (id)requestItemWithDictionary:(NSDictionary *)dict;

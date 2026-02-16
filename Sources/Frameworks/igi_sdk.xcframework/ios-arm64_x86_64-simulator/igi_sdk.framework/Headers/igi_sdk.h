@@ -20,6 +20,7 @@ FOUNDATION_EXPORT const unsigned char igi_sdkVersionString[];
 #import <igi_sdk/IGIAddress.h>
 #import <igi_sdk/IGIItem.h>
 #import <igi_sdk/IGIBuyItem.h>
+#import <igi_sdk/IGIBuyItemDiscount.h>
 #import <igi_sdk/IGIBidItem.h>
 #import <igi_sdk/IGIBid.h>
 #import <igi_sdk/IGIRaffleItem.h>

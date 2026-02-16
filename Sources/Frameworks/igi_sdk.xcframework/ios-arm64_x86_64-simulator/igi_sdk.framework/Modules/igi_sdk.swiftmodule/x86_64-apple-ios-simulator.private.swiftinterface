@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -Onone -module-name igi_sdk
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.3 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target x86_64-apple-ios17.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -module-name igi_sdk
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Foundation
 import Swift
 import UIKit
@@ -11,8 +11,12 @@ import _SwiftConcurrencyShims
 @_exported import igi_sdk
 @objc @_inheritsConvenienceInitializers @objcMembers public class IGIStripeCustomerSheet : ObjectiveC.NSObject {
   @objc public func loadSelectedPaymentMethod() async throws -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getSelectedPaymentMethodId() async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func presentCustomerSheet(hostViewController: UIKit.UIViewController, completion: @escaping (Swift.String, Swift.String?, Foundation.NSError?) -> Swift.Void)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }

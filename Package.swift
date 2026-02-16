@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "igi_sdk",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v17)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
@@ -15,7 +15,7 @@ let package = Package(
             targets: ["igi_sdk"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/stripe/stripe-ios-spm", exact: "24.12.0"),
+        .package(url: "https://github.com/stripe/stripe-ios-spm", exact: "25.6.2"),
         .package(url: "https://github.com/pusher/pusher-websocket-swift.git", exact: "10.1.5"),
     ],
     targets: [

@@ -24,6 +24,11 @@
                    message:(NSString * _Nullable)message
                   okAction:(void (^ __nullable)(UIAlertAction * _Nullable action))handler;
 
+- (void)showAlertWithTitle:(NSString * _Nullable)title
+                   message:(NSString * _Nullable)message
+                showCancel:(BOOL)showCancel
+                  okAction:(void (^ __nullable)(UIAlertAction * _Nullable action))handler;
+
 - (void)showAlertWithTitle:(NSString *_Nullable)title
                    message:(NSString *_Nullable)message
                  uiControl:(UIControl *_Nullable)uiControl

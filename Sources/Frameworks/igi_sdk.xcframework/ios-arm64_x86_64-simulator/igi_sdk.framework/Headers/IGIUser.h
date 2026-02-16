@@ -24,11 +24,8 @@
 @property (nonatomic, assign) BOOL stripeConnectOnboarded;
 @property (nonatomic, strong) IGIAddress *shippingAddress;
 @property (nonatomic, strong) NSString *phoneNumber;
-@property (nonatomic, strong) NSString *stripeCustomerId;
 @property (nonatomic, strong) NSString *paymentMethodSourceId;
 @property (nonatomic, strong) IGIPhoto *userPhoto;
-@property (nonatomic, strong) NSDate *dob;
-@property (nonatomic, strong) NSString *dobString;
 @property (nonatomic, strong) NSMutableArray *favoriteSports;
 @property (nonatomic, strong) NSMutableArray *favoriteTeams;
 @property (nonatomic, strong) NSDictionary *loyaltyPoints;
@@ -36,11 +33,7 @@
 + (id)userWithDictionary:(NSDictionary *)dictionary;
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
-- (NSString *)getDobString;
 - (NSInteger)totalLoyaltyPoints;
 - (NSString *)partialEmail;
-- (NSString *)partialPhoneNumber;
-
-- (BOOL)isIGIUser;
 
 @end

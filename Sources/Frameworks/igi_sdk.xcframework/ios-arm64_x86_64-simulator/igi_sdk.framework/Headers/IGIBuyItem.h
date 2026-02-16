@@ -16,6 +16,7 @@
 @property (nonatomic, assign) NSInteger quantity;
 @property (nonatomic, assign) double price;
 @property (nonatomic, strong) NSString *channelName;
+@property (nonatomic, strong) NSMutableArray *bulkDiscounts;
 @property (nonatomic, strong) PusherChannel *pusherChannel;
 @property (nonatomic, strong) NSString *itemUpdateBinding;
 
@@ -23,5 +24,6 @@
 
 + (id)buyItemWithDictionary:(NSDictionary *)dict;
 + (id)buyItemWithDictionary:(NSDictionary *)dict isRequestItem:(BOOL)isRequestItem;
+- (id)initWithDictionary:(NSDictionary *)dictionary isRequestItem:(BOOL)isRequestItem;
 
 @end

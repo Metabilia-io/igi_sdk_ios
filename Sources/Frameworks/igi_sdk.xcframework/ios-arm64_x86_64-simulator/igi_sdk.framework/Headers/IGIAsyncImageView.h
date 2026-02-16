@@ -165,7 +165,7 @@ extern NSString *const AsyncImageErrorKey;
  * This is not necessarily the next image that will be assigned if several image
  * URLs have been queued on that target.
  */
-- (NSURL *)URLForTarget:(nullable id)target
+- (nullable NSURL *)URLForTarget:(nullable id)target
                  action:(nullable SEL)action;
 
 /**
@@ -173,7 +173,7 @@ extern NSString *const AsyncImageErrorKey;
  * This is not necessarily the next image that will be assigned if several image
  * URLs have been queued on that target.
  */
-- (NSURL *)URLForTarget:(nullable id)target;
+- (nullable NSURL *)URLForTarget:(nullable id)target;
 
 @end
 

@@ -216,24 +216,7 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (void)setPrivacyStatus:(IGI_PRIVACY_STATUS)privacyStatus;
 
-- (void)getAllCompaniesWithCallback:(IGIManagerCallback)callback;
-
-- (void)getItemsForCompaniesWithAPIKey:(NSString *)apiKey
-                          searchString:(NSString *)searchString
-                              callback:(IGIManagerCallback)callback;
-
-- (void)getItemsForCompaniesWithAPIKey:(NSString *)apiKey
-                           searchString:(NSString *)searchString
-                          withoutPhotos:(NSString *)withoutPhotos
-                                 status:(NSString *)status
-                              callback:(IGIManagerCallback)callback;
-
 - (void)getCompanySettingsWithCallback:(IGIManagerCallback)callback;
-
-- (void)addPhotoToItem:(NSString *)itemId
-                 photo:(NSString *)photoUrl
-                apiKey:(NSString *)apiKey
-              callback:(IGIManagerCallback)callback;
 
 /**
 *  Get current user profile
@@ -278,11 +261,7 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
                           phoneNumber:(NSString *)phoneNumber
                              callback:(IGIManagerCallback )callback;
 
-/**
- *  Get all event objects
- *
- *  @param callback callback which will return array of event objects or an error on failure
- */
+- (void)getStripeSellerStatusWithCallback:(IGIManagerCallback)callback;
 
 - (void)stripeSellerOnboardingWithFirstName:(NSString *)firstName
                                   lastName:(NSString *)lastName
@@ -298,41 +277,7 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
                              accountNumber:(NSString *)accountNumber
                                    callback:(IGIManagerCallback )callback;
 
-- (void)bidOnOnSiteItemForEventItemId:(NSNumber *)itemId
-                             fullName:(NSString *)fullName
-                                email:(NSString *)email
-                          phoneNumber:(NSString *)phoneNumber
-                            bidAmount:(NSString *)bidAmount
-                             callback:(IGIManagerCallback)callback;
-
-- (void)buyOnSiteItemForEventItemID:(NSNumber *)itemId
-                           fullName:(NSString *)fullName
-                              email:(NSString *)email
-                        phoneNumber:(NSString *)phoneNumber
-                           stripeId:(NSString *)stripeId
-                           callback:(IGIManagerCallback )callback;
-
-- (void)getOnSiteShipmentStatusForEventItemId:(NSNumber *)itemId
-                                     callback:(IGIManagerCallback )callback;
-
-- (void)markOnSiteItemDeliveredForRequestId:(NSNumber *)requestId
-                                   callback:(IGIManagerCallback)callback;
-
-- (void)markOnSiteItemPaidForRequestId:(NSNumber *)itemId
-                                isCash:(BOOL)isCash
-                              stripeId:(NSString *)stripeId
-                              callback:(IGIManagerCallback)callback;
-
 - (void)getAllEventsWithCallback:(IGIManagerCallback)callback;
-
-- (void)getOnSiteItemsForEvent:(IGIEvent *)event
-                      callback:(IGIManagerCallback)callback;
-
-- (void)getRequestsForEventId:(NSString *)eventId
-                       filter:(NSString *)filter
-                     callback:(IGIManagerCallback )callback;
-
-- (void)getOnSiteEventsWithCallback:(IGIManagerCallback)callback;
 
 - (void)getBidsForEventItemId:(NSNumber *)itemId
                         limit:(NSString *)limit
@@ -396,13 +341,9 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 - (UIViewController *)myItemsScreenWithoutNavigation;
 
-- (UIViewController *)marketplaceScreenWithoutNavigation;
-
 - (UIViewController *)myDigitalPortfolioScreenWithoutNavigation;
 
 - (UIViewController *)recentTransactionsScreenWithoutNavigation;
-
-- (UIViewController *)missionsScreenWithoutNavigation;
 
 - (UINavigationController *)browserScreenWithTitle:(NSString *)title url:(NSURL *)url;
 
@@ -427,7 +368,13 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 - (void)enableEmailNotificationsWithEnabled:(BOOL)enabled
                                    callback:(IGIManagerCallback)callback;
 
-- (void)getMarketplaceItemsWithCallback:(IGIManagerCallback)callback;
+- (void)getMarketplaceItemsWithPageNumber:(NSInteger)pageNo
+                                   perPage:(NSInteger)perPage
+                                  callback:(IGIManagerCallback)callback;
+
+- (void)getDigitalCollectiblesWithPageNumber:(NSInteger)pageNo
+                                      perPage:(NSInteger)perPage
+                                     callback:(IGIManagerCallback)callback;
 
 - (void)getRecentTransactionsWithCallback:(IGIManagerCallback)callback;
 
@@ -486,26 +433,12 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 - (void)verifyAuthenticity:(NSString *)code
                   callback:(IGIManagerCallback)callback;
 
-- (void)calculateTaxForEventItemsWithData:(NSString *)data
-                                  orderId:(NSString *)orderId
-                                 callback:(IGIManagerCallback)callback;
-
-- (void)markOrderPaidWithOrderId:(NSString *)orderId
-                          isCash:(BOOL)isCash
-                   markDelivered:(BOOL)markDelivered
-                 paymentIntentId:(NSString *)paymentIntentId
-                        callback:(IGIManagerCallback)callback;
-
-- (void)markOrderDeliveredWithOrderId:(NSString *)orderId
-                               callback:(IGIManagerCallback)callback;
-
-- (void)sendInvoiceToEmail:(NSString *)email
-                   orderId:(NSString *)orderId
-                  callback:(IGIManagerCallback)callback;
-
 - (void)createEphemeralKeyWithCallback:(IGIManagerCallback)callback;
 
 - (void)createStripeSetupIntentWithCallback:(IGIManagerCallback)callback;
+
+- (void)stripeEmbeddedSellerOnboardingURLWithReturnUrl:(NSString *)returnUrl
+                                              callback:(IGIManagerCallback)callback;
 
 #pragma mark - IGIAnalyticsManager
 
@@ -551,3 +484,4 @@ typedef void (^IGIManagerCallback)(id obj, NSError *error);
 
 #pragma mark -
 @end
+

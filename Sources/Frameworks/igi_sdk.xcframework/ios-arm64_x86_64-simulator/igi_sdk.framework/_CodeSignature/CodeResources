@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/IGIAsyncImageView.h</key>
 		<data>
-		NjCEdpkKZ3nK4zpRT67QKhsl0iI=
+		CpfZPvLfUi/IPi2xANhvhyD0yho=
 		</data>
 		<key>Headers/IGIBaseVC.h</key>
 		<data>
-		CN/GtoOJjVoGoZEwX8HL4yof6CQ=
+		zPxky3N1G/kXWP16JofBlQCHQVM=
 		</data>
 		<key>Headers/IGIBid.h</key>
 		<data>
@@ -34,11 +34,15 @@
 		</data>
 		<key>Headers/IGIBuyItem.h</key>
 		<data>
-		yiiG6E8pS4wig4WCbkyWPKkUbE0=
+		3Flj2fhyzRyKXuTxZ4sJNUau8PQ=
+		</data>
+		<key>Headers/IGIBuyItemDiscount.h</key>
+		<data>
+		UPpbVKnFnoV2IVFYtHXVd8xmlsI=
 		</data>
 		<key>Headers/IGICompany.h</key>
 		<data>
-		nuVgbya2HAvmZTj8UBosTxDfOsw=
+		JJmCmfvSCbhbtLtSucekxO2Kxl0=
 		</data>
 		<key>Headers/IGIEvent.h</key>
 		<data>
@@ -46,11 +50,11 @@
 		</data>
 		<key>Headers/IGIItem.h</key>
 		<data>
-		j0D6vDy+zWPFlXE7Vrykn3tzLZY=
+		76dboMXTYiJ45ltO177PCxszyTM=
 		</data>
 		<key>Headers/IGIManager.h</key>
 		<data>
-		h7p2tZjZnncc8i2K06kcEZHSF0E=
+		MucAuxbh/nnoZwuXgcgf4k3WIno=
 		</data>
 		<key>Headers/IGIPhoto.h</key>
 		<data>
@@ -70,7 +74,7 @@
 		</data>
 		<key>Headers/IGIRequestItem.h</key>
 		<data>
-		nQrPUCOOsYd46s956/Jh2F1T084=
+		JAmGNsHnBUkMUmesf/6SEGgUhss=
 		</data>
 		<key>Headers/IGISVIndefiniteAnimatedView.h</key>
 		<data>
@@ -102,11 +106,11 @@
 		</data>
 		<key>Headers/IGIUser.h</key>
 		<data>
-		uavEmkMZz0Fiz41SzTVRa+5z3xU=
+		08J37CVhXo9eWXXbwVEpPG6wr74=
 		</data>
 		<key>Headers/IGIUtils.h</key>
 		<data>
-		IB2nDb4DdjzhtpjMwgbReb1i3nQ=
+		/3XHTHjERYhdaY52wwoD5uzlnm8=
 		</data>
 		<key>Headers/IGIVenue.h</key>
 		<data>
@@ -114,105 +118,57 @@
 		</data>
 		<key>Headers/igi_sdk-Swift.h</key>
 		<data>
-		Foh/nCR09DrWPxLgEi2c++tCCzM=
+		G+ErkpE5UNx46h6FGvzBKJN3Y9U=
 		</data>
 		<key>Headers/igi_sdk.h</key>
 		<data>
-		0oN0IsYYAXnjRvvP5xGJAkGCJoU=
+		J0fPw+TiYRIR8ldyG8Wdm+hpvOo=
 		</data>
-		<key>IGI.storyboardc/4Rw-eD-9F7-view-rLC-Ir-v9W.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/4Rw-eD-9F7-view-rLC-Ir-v9W.nib</key>
 		<data>
 		b3SJOc7ns85FSKHQP/26uCrldg0=
 		</data>
-		<key>IGI.storyboardc/4Rw-eD-9F7-view-rLC-Ir-v9W.nib/runtime.nib</key>
+		<key>IGI.storyboardc/55T-Fy-eeV-view-aXQ-dq-Ifu.nib</key>
 		<data>
-		b3SJOc7ns85FSKHQP/26uCrldg0=
+		NzjTavbLHlMbo3m12uw2b+EnvYE=
 		</data>
-		<key>IGI.storyboardc/55T-Fy-eeV-view-aXQ-dq-Ifu.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/BRR-Pz-20d-view-b4S-nJ-X12.nib</key>
 		<data>
-		2l4zkvd9LVknk4nGQntusBsEatc=
+		itAjFaNW2GVy9sbRuUN93+pxB1s=
 		</data>
-		<key>IGI.storyboardc/55T-Fy-eeV-view-aXQ-dq-Ifu.nib/runtime.nib</key>
-		<data>
-		2l4zkvd9LVknk4nGQntusBsEatc=
-		</data>
-		<key>IGI.storyboardc/BRR-Pz-20d-view-b4S-nJ-X12.nib/objects-14.0+.nib</key>
-		<data>
-		976Pvbwk/iGsg3n2a39TVGEYhJ8=
-		</data>
-		<key>IGI.storyboardc/BRR-Pz-20d-view-b4S-nJ-X12.nib/runtime.nib</key>
-		<data>
-		976Pvbwk/iGsg3n2a39TVGEYhJ8=
-		</data>
-		<key>IGI.storyboardc/IGIAlertController.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIAlertController.nib</key>
 		<data>
 		kedRyH2BjUtWvaLkzMCmf34PEt8=
 		</data>
-		<key>IGI.storyboardc/IGIAlertController.nib/runtime.nib</key>
-		<data>
-		kedRyH2BjUtWvaLkzMCmf34PEt8=
-		</data>
-		<key>IGI.storyboardc/IGIAppInterstitialsVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIAppInterstitialsVC.nib</key>
 		<data>
 		Lwwwu020ER5nGXCPX9QF+Yjo2gM=
 		</data>
-		<key>IGI.storyboardc/IGIAppInterstitialsVC.nib/runtime.nib</key>
-		<data>
-		Lwwwu020ER5nGXCPX9QF+Yjo2gM=
-		</data>
-		<key>IGI.storyboardc/IGIAuthenticityResultVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIAuthenticityResultVC.nib</key>
 		<data>
 		DyFQ4HCNEJ8mB7hP0VXMV1umkUA=
 		</data>
-		<key>IGI.storyboardc/IGIAuthenticityResultVC.nib/runtime.nib</key>
-		<data>
-		DyFQ4HCNEJ8mB7hP0VXMV1umkUA=
-		</data>
-		<key>IGI.storyboardc/IGICurrentActivityVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGICurrentActivityVC.nib</key>
 		<data>
 		YFyM9/MX+z8EglDw1NCxAeWJKMg=
 		</data>
-		<key>IGI.storyboardc/IGICurrentActivityVC.nib/runtime.nib</key>
-		<data>
-		YFyM9/MX+z8EglDw1NCxAeWJKMg=
-		</data>
-		<key>IGI.storyboardc/IGIMysteryComponentVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIMysteryComponentVC.nib</key>
 		<data>
 		ANLKrfY+i0YbIyH6XaxmpM+nL8A=
 		</data>
-		<key>IGI.storyboardc/IGIMysteryComponentVC.nib/runtime.nib</key>
-		<data>
-		ANLKrfY+i0YbIyH6XaxmpM+nL8A=
-		</data>
-		<key>IGI.storyboardc/IGIReceiptVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIReceiptVC.nib</key>
 		<data>
 		76FZCNWr7AxgBoz7dR/grC8zHY8=
 		</data>
-		<key>IGI.storyboardc/IGIReceiptVC.nib/runtime.nib</key>
-		<data>
-		76FZCNWr7AxgBoz7dR/grC8zHY8=
-		</data>
-		<key>IGI.storyboardc/IGIReportIssueVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIReportIssueVC.nib</key>
 		<data>
 		5/hwUzNyUGDgUq68747+1MbMh8w=
 		</data>
-		<key>IGI.storyboardc/IGIReportIssueVC.nib/runtime.nib</key>
-		<data>
-		5/hwUzNyUGDgUq68747+1MbMh8w=
-		</data>
-		<key>IGI.storyboardc/IGISellerOnboardingVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGISellerOnboardingVC.nib</key>
 		<data>
 		lVzwW5+K1A3DXizggUQw7cSuTBI=
 		</data>
-		<key>IGI.storyboardc/IGISellerOnboardingVC.nib/runtime.nib</key>
-		<data>
-		lVzwW5+K1A3DXizggUQw7cSuTBI=
-		</data>
-		<key>IGI.storyboardc/IGIVerifyAuthenticityVC.nib/objects-14.0+.nib</key>
-		<data>
-		wltHZlfSVd/qHq7+7tW7IfjEA5A=
-		</data>
-		<key>IGI.storyboardc/IGIVerifyAuthenticityVC.nib/runtime.nib</key>
+		<key>IGI.storyboardc/IGIVerifyAuthenticityVC.nib</key>
 		<data>
 		wltHZlfSVd/qHq7+7tW7IfjEA5A=
 		</data>
@@ -220,97 +176,53 @@
 		<data>
 		bVm9bnRU4htfXwYiB6fZeDVgyrI=
 		</data>
-		<key>IGI.storyboardc/Q10-6p-g0C-view-ALw-dy-rtG.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/Q10-6p-g0C-view-ALw-dy-rtG.nib</key>
 		<data>
 		b3SJOc7ns85FSKHQP/26uCrldg0=
 		</data>
-		<key>IGI.storyboardc/Q10-6p-g0C-view-ALw-dy-rtG.nib/runtime.nib</key>
+		<key>IGI.storyboardc/UITabBarController-8iv-AW-lpw.nib</key>
 		<data>
-		b3SJOc7ns85FSKHQP/26uCrldg0=
+		YMo9DSYHxZWSS6keDUWav5xmOeI=
 		</data>
-		<key>IGI.storyboardc/UITabBarController-8iv-AW-lpw.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		TNlIgnYo5PEZKhi7Tc11o5O4Pgo=
+		VHgu9vPL14lXKpHX1eo2BbcZ780=
 		</data>
-		<key>IGI.storyboardc/UITabBarController-8iv-AW-lpw.nib/runtime.nib</key>
-		<data>
-		TNlIgnYo5PEZKhi7Tc11o5O4Pgo=
-		</data>
-		<key>IGI.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
-		<data>
-		AhC4CpwM24O3TYtIKVlwWiFgwVc=
-		</data>
-		<key>IGI.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
-		<data>
-		AhC4CpwM24O3TYtIKVlwWiFgwVc=
-		</data>
-		<key>IGI.storyboardc/aTa-9z-1Yn-view-8zg-aK-PhI.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/aTa-9z-1Yn-view-8zg-aK-PhI.nib</key>
 		<data>
 		Eca8Ph/f5BK8LddzxzblrNDhk60=
 		</data>
-		<key>IGI.storyboardc/aTa-9z-1Yn-view-8zg-aK-PhI.nib/runtime.nib</key>
-		<data>
-		CPZeImVl1WtUE+Ldv+3Q7zLaP1o=
-		</data>
-		<key>IGI.storyboardc/hHn-qP-ZAF-view-awJ-qt-b5K.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/hHn-qP-ZAF-view-awJ-qt-b5K.nib</key>
 		<data>
 		mZubZxBdNStSQX8aUBO0bUX1fWI=
 		</data>
-		<key>IGI.storyboardc/hHn-qP-ZAF-view-awJ-qt-b5K.nib/runtime.nib</key>
+		<key>IGI.storyboardc/hM4-4i-JyV-view-8qe-Ph-kyq.nib</key>
 		<data>
-		VhVEWgAV+6FuN+u2f5ew3WTaLyg=
+		1OjmSa+oxa9OUugiq9wgjhKkUlQ=
 		</data>
-		<key>IGI.storyboardc/hM4-4i-JyV-view-8qe-Ph-kyq.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib</key>
 		<data>
-		mwr6PIDwOUjwlpRVtdhk4sOV8FY=
+		4IAZBSgDruJ3xH35IL8jHapOWyk=
 		</data>
-		<key>IGI.storyboardc/hM4-4i-JyV-view-8qe-Ph-kyq.nib/runtime.nib</key>
+		<key>IGI.storyboardc/l7u-94-3Lh-view-Yl9-nt-WkQ.nib</key>
 		<data>
-		mwr6PIDwOUjwlpRVtdhk4sOV8FY=
+		OVwbZwkAm+uQ5JvZ3jfADJMJfqw=
 		</data>
-		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/lcb-ai-TXN-view-Jb9-HD-a8t.nib</key>
 		<data>
-		DbswFabdWF9yLxRIcgXff+ZRPL0=
+		0m5CN3Gf7E7R0lGW+UvQorWILB8=
 		</data>
-		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib/runtime.nib</key>
-		<data>
-		P76IukR8LMeZFaupAXjv/OwMbUo=
-		</data>
-		<key>IGI.storyboardc/l7u-94-3Lh-view-Yl9-nt-WkQ.nib/objects-14.0+.nib</key>
-		<data>
-		pk0jUH21kiFbQgGnZNMsZB434u0=
-		</data>
-		<key>IGI.storyboardc/l7u-94-3Lh-view-Yl9-nt-WkQ.nib/runtime.nib</key>
-		<data>
-		pk0jUH21kiFbQgGnZNMsZB434u0=
-		</data>
-		<key>IGI.storyboardc/lcb-ai-TXN-view-Jb9-HD-a8t.nib/objects-14.0+.nib</key>
-		<data>
-		XePTItNCtbefOO+XrnCtVEsfid4=
-		</data>
-		<key>IGI.storyboardc/lcb-ai-TXN-view-Jb9-HD-a8t.nib/runtime.nib</key>
-		<data>
-		XePTItNCtbefOO+XrnCtVEsfid4=
-		</data>
-		<key>IGI.storyboardc/qh9-hy-YKM-view-fjB-om-nXd.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/qh9-hy-YKM-view-fjB-om-nXd.nib</key>
 		<data>
 		5UD+2sLziF4kJW369fFpOhvE0Yo=
 		</data>
-		<key>IGI.storyboardc/qh9-hy-YKM-view-fjB-om-nXd.nib/runtime.nib</key>
+		<key>IGI.storyboardc/rci-9H-2Ci-view-4gn-cD-CII.nib</key>
 		<data>
-		6O58po8iekm1lS7bdBxBZTrX6ww=
-		</data>
-		<key>IGI.storyboardc/rci-9H-2Ci-view-4gn-cD-CII.nib/objects-14.0+.nib</key>
-		<data>
-		GcSgYDE6CP6ki3zQsdvxTI2gMz4=
-		</data>
-		<key>IGI.storyboardc/rci-9H-2Ci-view-4gn-cD-CII.nib/runtime.nib</key>
-		<data>
-		GcSgYDE6CP6ki3zQsdvxTI2gMz4=
+		bYZmrk7mi1mccqUsL9trgnwVovY=
 		</data>
 		<key>IGIActionsVC.nib</key>
 		<data>
-		2/w6WIzxj29vReMnQiX+3QHZziw=
+		ZJyP3iu/qSeLrB9ZI7+IX7SS5J0=
 		</data>
 		<key>IGIAdView.nib</key>
 		<data>
@@ -318,59 +230,55 @@
 		</data>
 		<key>IGIAuctionItemDetailsVC.nib</key>
 		<data>
-		eceahSsMr3TyhXH3ys7Y9MrJDzg=
+		EWTDbApBfIkij7GOZCWpv4hzfSk=
 		</data>
 		<key>IGIBidItemDetailsVC.nib</key>
 		<data>
-		AMJOq5C8Sq2zYJin4QCEP+0g7P8=
+		H6P730mBWpw/dbhKcM3cvXa3PlQ=
 		</data>
 		<key>IGIBidItemPriceSetterCell.nib</key>
 		<data>
-		3zwPkdYogPMLvRjF0LT02yuyxKM=
+		zUBZ3ZHjkT2AUpp6B53E1pOFcY8=
 		</data>
 		<key>IGIBrowserVC.nib</key>
 		<data>
-		5C56NsXQJsEdZUiNTdfcGfK0Esw=
+		O8hDihaRM6KjwhRDWGsOSRoR+SQ=
 		</data>
 		<key>IGIBuyItemDetailsVC.nib</key>
 		<data>
-		7OMUTRzw2N+AgczHRmd60J24Eos=
+		cT/eebIojQjXywdT9ItTuQUkeCI=
 		</data>
 		<key>IGIBuyItemQuantityCell.nib</key>
 		<data>
-		NZODyzgWueqjsVurxrMPQc0Voow=
+		TPSUedKyl95qUf7IkFWSijqN208=
 		</data>
 		<key>IGIChooseSizeVC.nib</key>
 		<data>
-		dL7HJ2lJGM2kQ3GJ0rsHkQChNSA=
+		qnPheO0an7OTWjrtKZBSxng0U3M=
 		</data>
-		<key>IGIDatePickerCell.nib/objects-14.0+.nib</key>
+		<key>IGIDatePickerCell.nib</key>
 		<data>
-		ZqcZurMKFPintOM2WRl/UXSU4mE=
-		</data>
-		<key>IGIDatePickerCell.nib/runtime.nib</key>
-		<data>
-		yIwcIriy6RurPMW0stE4lI3yZ4g=
+		V3PX/YjPTj2IHr1JxwwcgkBzN7A=
 		</data>
 		<key>IGIDigitalPortfolioCell.nib</key>
 		<data>
-		CZPZinOUIn/iW1ZrvuJhxtRD9dk=
+		Wu4Tfm8EBmI448M6qiO/GSFbFcA=
 		</data>
 		<key>IGIDigitalPortfolioVC.nib</key>
 		<data>
-		Tr5E3LYSCxyUxngyQSmQrQ6V6I0=
+		hDxy17zJHWgnGzXwC8OPC2vZMf8=
 		</data>
 		<key>IGIDiscountItemDetailVC.nib</key>
 		<data>
-		nwauVIDVP1BX8U0q15XXRYy+kFw=
+		LYX71KcSpyLghTxkHWHpjH0iH/A=
 		</data>
 		<key>IGIDrawerChildVC.nib</key>
 		<data>
-		Ows7NgBIKMNNJRiXCU6YSyID/4c=
+		+mtl4zNcqxh4aiXEqRDAsdqlUhY=
 		</data>
 		<key>IGIDrawerVC.nib</key>
 		<data>
-		rDBgzpE4unpq6h+hLU6irChPCtA=
+		1+SSHX/ZBNVL3NiFYBrRYCSRJA4=
 		</data>
 		<key>IGIEventExploreVCCell.nib</key>
 		<data>
@@ -386,7 +294,7 @@
 		</data>
 		<key>IGIItemDescriptionCell.nib</key>
 		<data>
-		o7wQxmjBahqTnYxZvDaLIw2ds/U=
+		MvBhBAh0GmJsyphr9JObKPTCh/I=
 		</data>
 		<key>IGIItemDetailHeader.nib</key>
 		<data>
@@ -402,7 +310,7 @@
 		</data>
 		<key>IGIItemOfferVC.nib</key>
 		<data>
-		wzOWjx+WIRaWqvY41ale8koTfI0=
+		RBrPF6FEkkolR/KD/fnlJ2N9pPI=
 		</data>
 		<key>IGIItemVideoCell.nib</key>
 		<data>
@@ -410,27 +318,23 @@
 		</data>
 		<key>IGIItemsExploreVC.nib</key>
 		<data>
-		a17IrY8jboB4Pq+ohWATFw9VNUU=
+		1pVeFlOYfN7J9bNoxO8fD1xfx5I=
 		</data>
 		<key>IGILeaderboardCell.nib</key>
 		<data>
-		Sj0zrTN2/9wPFG/C93zJCkBZF8Q=
+		A4Nc+RIlJ86woJKFh38Kd1bOhEw=
 		</data>
 		<key>IGILeaderboardVC.nib</key>
 		<data>
-		IFn2p21p8eRCkyCpJfD6x2hVzT8=
+		cUqnwiSqaa5J2OKdyQoKX31f//k=
 		</data>
 		<key>IGIMarketplaceVC.nib</key>
 		<data>
-		dPGvlmPa95ly5BMiEiwczoXuCUw=
+		L6ZSKP1TVuz2sDBDMrhGi3QNp+s=
 		</data>
 		<key>IGIMiniTileView.nib</key>
 		<data>
 		7a+QUrMtRf3M/RCOq2RfaAfJOw4=
-		</data>
-		<key>IGIMissionsVC.nib</key>
-		<data>
-		dOIoV6jb+S6w30+QP0ElQYksMlA=
 		</data>
 		<key>IGIOffersVC.nib</key>
 		<data>
@@ -438,19 +342,19 @@
 		</data>
 		<key>IGIPhotoViewerVC.nib</key>
 		<data>
-		3TSfpaqkDlWAK1NW8gL0LtSG0Nw=
+		31tf/xCoNCXPQ41XPK64I2csvg4=
 		</data>
 		<key>IGIRaffleItemDetailVC.nib</key>
 		<data>
-		ZErvSn65BbjlIMgy1QuQecop6zg=
+		DB1XOLznsolTVEY6uORVi1iZaOk=
 		</data>
 		<key>IGIRafflePackageCell.nib</key>
 		<data>
-		kNJnbFYzOPFdua2fs0KQUvn5C/Q=
+		ZCuYywiTAbmh+E9t/fLmdYZAuVs=
 		</data>
 		<key>IGIRaffleQuantityCell.nib</key>
 		<data>
-		hzAM7vlHnGal9eQ3O0V55t647dg=
+		qJac7zLVNlQ5SB6HOm67ZYG441U=
 		</data>
 		<key>IGIRecentTransactionCell.nib</key>
 		<data>
@@ -458,55 +362,55 @@
 		</data>
 		<key>IGIRecentTranscationsVC.nib</key>
 		<data>
-		Tr5E3LYSCxyUxngyQSmQrQ6V6I0=
+		hDxy17zJHWgnGzXwC8OPC2vZMf8=
 		</data>
 		<key>IGIReclaimVC.nib</key>
 		<data>
-		VNpkJogEAv1RLKIlLnufm3Lk060=
+		W/q7/rGjhHkALlZDgViyoiPkSiY=
 		</data>
 		<key>IGIRedeemPointsVC.nib</key>
 		<data>
-		e3HwgI67h80xWkzO7pnNzZrlTiw=
+		KOCHfSBOAbvwdaCtryC9XG1N134=
 		</data>
 		<key>IGIRequestItemCell.nib</key>
 		<data>
-		6LF7K3p4E1HrFHIW6BzYOkkh8po=
+		UU0LVJ/8TuYyzkpxj6udhA8g85g=
 		</data>
 		<key>IGIShippingInfoCell.nib</key>
 		<data>
-		sz1aAu0PD6zXzkWd/DSd46I/W+8=
+		Tu3iYf1noJoY1Ivfz8PVB4dEabo=
 		</data>
 		<key>IGIShippingInfoVC.nib</key>
 		<data>
-		XWslMqJHrYGqWJOYWa6geJ0Nums=
+		b+z0aYlAP/o8cE7P0w+wOB8fZ2c=
 		</data>
 		<key>IGISignUpVC.nib</key>
 		<data>
-		X2oP1v4eeHccDsaoSSfkb3QGpEk=
+		Vjs8F/URUJTcwywhKli2FbUGXIY=
 		</data>
 		<key>IGISizeCell.nib</key>
 		<data>
-		xq1NOoPWVHqtiGnAIVkxXVyAI4k=
+		/6/FxWZNcQlUN5f0NV48x7mZy3o=
 		</data>
 		<key>IGITextFieldCell.nib</key>
 		<data>
-		tfp9VkvjXYu1b38GJzkS9teV3Cw=
+		W/PCJCtw2Ou167TSHV2sKhl+j9k=
 		</data>
 		<key>IGITransactionCell.nib</key>
 		<data>
-		uz66+yfS0x3nEh45JAzWA9PP0cg=
+		r7NiU3oX01C69K8qN7wedbFVG04=
 		</data>
 		<key>IGITranscationHistoryVC.nib</key>
 		<data>
-		+HxiVKp1M3XQz6sI4B6PL3dtQ9c=
+		pBc2j8GlEc2ifieouHqlwTHs0SA=
 		</data>
 		<key>IGIYourInfoCell.nib</key>
 		<data>
-		yQvluCMcEym+81jDCzfLxu8qzS0=
+		UAZr6rGpocZgcetB0VqXxjjTRVQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NvHSSpdiI5/OVpJTqYoFUmFxZXA=
+		U25wtFmw6fhZ8oym0t1CLmc/UYY=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -514,19 +418,19 @@
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yLNKoB5FPm+ycMjiZ8KffFXJfTk=
+		oZQJuXNQTFGbAUDJ4WQsqoJacrA=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kn3sycHeSkcc041ocx676JVmagA=
+		/HWgcpovhJmmvVP6u35iUlvhwKc=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yLNKoB5FPm+ycMjiZ8KffFXJfTk=
+		oZQJuXNQTFGbAUDJ4WQsqoJacrA=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YNATZz9MYt7iSltprRxrXpe/wkE=
+		iW/YPMMSClY3z7GfgBqgheJZjn8=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -534,19 +438,19 @@
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/D7mqf5+upbF/gOR1SrwJn4KCj0=
+		3PlPVRJfcBBjTcQDRt90RY1VTAo=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		am+G9jEUlT/1JAa30e1ayZFv3nM=
+		5LspYTPAp5zf5pn8RzAVHEX7wn8=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/D7mqf5+upbF/gOR1SrwJn4KCj0=
+		3PlPVRJfcBBjTcQDRt90RY1VTAo=
 		</data>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fNwqpOlR21+mBwj6YbXveRThZ2w=
+		q4WZ+XymRLy7x7M3jAAoY62JT7I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -558,15 +462,15 @@
 		</data>
 		<key>SettingsVCCell.nib</key>
 		<data>
-		IBHU9DAiPDoWq8qp15E8ze536ts=
+		plbP7ng2MeVZsHc4ZtF7SY1DdHY=
 		</data>
 		<key>SettingsVCSectionHeader.nib</key>
 		<data>
-		fC6ZzB46K8NOBjNdA6fqcCzhzHo=
+		f8hLpsDX6QLiFxOKDvZr3h9hlJ8=
 		</data>
 		<key>SettingsVCSwitchCell.nib</key>
 		<data>
-		8+6Sw5Dxz1MfZYVO5Y3yQNV/YQQ=
+		JZ6Lcyj70qx2Biu0j1IK/7T+HYw=
 		</data>
 		<key>arrowDownGrey.png</key>
 		<data>
@@ -940,14 +844,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j/Q80eEItlV6WyyWCbjxyPpZOOqmvkH6bbANoOg91JM=
+			WRiRmkYqjbcZe7cJh9vqYU/5mLyF59ot9SEGBf+Ua4g=
 			</data>
 		</dict>
 		<key>Headers/IGIBaseVC.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aw9AFfwDBoj4j8GJQwZTYNXC1hHPCtgmPp++N0h1Jt8=
+			ATY9W22Kzg94BP7I+hYNOroMtQJghBo9It9bQ6ecxaY=
 			</data>
 		</dict>
 		<key>Headers/IGIBid.h</key>
@@ -968,14 +872,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VTZnqObUyPNjq+vaVrYD6VmenezJ04bKjaJqFxbtSP8=
+			DU1No9Q278qXvrpM1WPUkNkmUSzHNmYh6aVbmWv7Mmc=
+			</data>
+		</dict>
+		<key>Headers/IGIBuyItemDiscount.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OIfJWqs+3jgUP2tsk9q+nZ4ShI8Dx71dk3/Te9EbG9U=
 			</data>
 		</dict>
 		<key>Headers/IGICompany.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5VmjHYMsRKQyycjW+vbJIPMnT20CwUdJbF4nVA9A5J8=
+			xgXaB0C5RBJIk4TAdJqmEXVBiv4z3JRUUXFPyWEa0N8=
 			</data>
 		</dict>
 		<key>Headers/IGIEvent.h</key>
@@ -989,14 +900,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dPdD2fCoh8Ek38VoAHFIm/epvzGqG1NeE+DXacY5u4k=
+			NVzKVQ5kJU8NvWyT0M3cXjd8aJPfQnXm+N9fus8h64k=
 			</data>
 		</dict>
 		<key>Headers/IGIManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/vx3Gdl93aPGptnSNEKH8dEDvm9fGNActyqVHXZ7OSM=
+			30Z34lMOaCNkjSs1gCV/K3AmCJ3vMoNMVA81Cn5aPis=
 			</data>
 		</dict>
 		<key>Headers/IGIPhoto.h</key>
@@ -1031,7 +942,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n2IOZWjjjq+kFo8Xcu2FEoAddEYVctR0KKWmA8OUsOM=
+			5YALBUAbmS1rmICb+0H2Egag97kaXFVgMSzRUNrpzj4=
 			</data>
 		</dict>
 		<key>Headers/IGISVIndefiniteAnimatedView.h</key>
@@ -1087,14 +998,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N+tqIAu5c9VZFa6MSYvqnftGrO37af4xKLBuH/Nnx0U=
+			dQjxcSf+E4zch5Pje4jp8XEAEWVcj5676EzeFDP8exM=
 			</data>
 		</dict>
 		<key>Headers/IGIUtils.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sF9XYd3eb3pfJ1M2dXIapKXEzOIMdjMNXUdDeh+hhTc=
+			7EjaB8oTuXMUiQRJZsbHoqZsKxgBrLHT1GgMOjEMzmY=
 			</data>
 		</dict>
 		<key>Headers/IGIVenue.h</key>
@@ -1108,178 +1019,94 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pdSAAUPpYq2Tknba6/V2uKnb6vbfPpKKC5vvu02uLuo=
+			9ZzOf8urFNvTpkQlgQzqrz12O9XQmUOBLfk/+iayHCU=
 			</data>
 		</dict>
 		<key>Headers/igi_sdk.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PU+6F9XaI7nrQQWOkDEId+6tZFDVkMv559A69ANs0gs=
+			l6wmVRZECUFECqW7ht637T5y/VFrLKxOOZ3ErhhXPz0=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/4Rw-eD-9F7-view-rLC-Ir-v9W.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/4Rw-eD-9F7-view-rLC-Ir-v9W.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			UXykrGDh3jUwAENeNREmyBpbABJ4S84HCaL+WHRXcgI=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/4Rw-eD-9F7-view-rLC-Ir-v9W.nib/runtime.nib</key>
+		<key>IGI.storyboardc/55T-Fy-eeV-view-aXQ-dq-Ifu.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UXykrGDh3jUwAENeNREmyBpbABJ4S84HCaL+WHRXcgI=
+			7hM08yucx6aeF+b4bRPsAjCC4Cf3Zf8DXbMa5lIt02U=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/55T-Fy-eeV-view-aXQ-dq-Ifu.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/BRR-Pz-20d-view-b4S-nJ-X12.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L2WeKwFWpQiuiJL9nuXieBTcFJ2U+ZjgiEwxb+EGi1U=
+			z+CW7QRhXHcKXAf9jYa/6MHm3UVTRytiznjjOefz/M8=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/55T-Fy-eeV-view-aXQ-dq-Ifu.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			L2WeKwFWpQiuiJL9nuXieBTcFJ2U+ZjgiEwxb+EGi1U=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/BRR-Pz-20d-view-b4S-nJ-X12.nib/objects-14.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IXLDAT5mKfvNUbE6bPTxvdMOnajZY7NRFXblXztDjkE=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/BRR-Pz-20d-view-b4S-nJ-X12.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IXLDAT5mKfvNUbE6bPTxvdMOnajZY7NRFXblXztDjkE=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/IGIAlertController.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIAlertController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			wHJfVHtlUjrcSELLvQqtJ0vDqbnWLux382C/SD6D3Ns=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/IGIAlertController.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wHJfVHtlUjrcSELLvQqtJ0vDqbnWLux382C/SD6D3Ns=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/IGIAppInterstitialsVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIAppInterstitialsVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			PG7yTzi/6vQNxf4JrPUXulCNKgjtJnnL2L/0V3AmcmY=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/IGIAppInterstitialsVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PG7yTzi/6vQNxf4JrPUXulCNKgjtJnnL2L/0V3AmcmY=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/IGIAuthenticityResultVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIAuthenticityResultVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			igvbrr5hYSVRYyA6CtH/x9JNJ6LFeYmXneLTtfwtZEc=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/IGIAuthenticityResultVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			igvbrr5hYSVRYyA6CtH/x9JNJ6LFeYmXneLTtfwtZEc=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/IGICurrentActivityVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGICurrentActivityVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			1FdJ1jsW57nud2g2pde02sTTciij3wBCYOLQjy1zla4=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/IGICurrentActivityVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1FdJ1jsW57nud2g2pde02sTTciij3wBCYOLQjy1zla4=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/IGIMysteryComponentVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIMysteryComponentVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			X5C90SCqX7kqcwV8vw8LXKRte2kw5ZWIai19y9f4r0A=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/IGIMysteryComponentVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			X5C90SCqX7kqcwV8vw8LXKRte2kw5ZWIai19y9f4r0A=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/IGIReceiptVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIReceiptVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			BXT6uQg0WhgqhrsvSmL1F7MYLKcf6vZODszHBAI0cSs=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/IGIReceiptVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BXT6uQg0WhgqhrsvSmL1F7MYLKcf6vZODszHBAI0cSs=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/IGIReportIssueVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGIReportIssueVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			cDcUmabAYpTRaaOpJCebOujxXly1qhmA7AHJwtyYJK0=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/IGIReportIssueVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			cDcUmabAYpTRaaOpJCebOujxXly1qhmA7AHJwtyYJK0=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/IGISellerOnboardingVC.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/IGISellerOnboardingVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			Xu121hIcT18QsvW8h1agATxJ3RJ6gAZtbaCY4EXFYgE=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/IGISellerOnboardingVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Xu121hIcT18QsvW8h1agATxJ3RJ6gAZtbaCY4EXFYgE=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/IGIVerifyAuthenticityVC.nib/objects-14.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+9w8PmcAHFArGh0RJeMSM00c4SV1yATwIJol7L1zgag=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/IGIVerifyAuthenticityVC.nib/runtime.nib</key>
+		<key>IGI.storyboardc/IGIVerifyAuthenticityVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1293,165 +1120,88 @@
 			zMbSZv2Td5yvYWsbEQ29WRaKpkqpnSFBrUzKncRzIH0=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/Q10-6p-g0C-view-ALw-dy-rtG.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/Q10-6p-g0C-view-ALw-dy-rtG.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			UXykrGDh3jUwAENeNREmyBpbABJ4S84HCaL+WHRXcgI=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/Q10-6p-g0C-view-ALw-dy-rtG.nib/runtime.nib</key>
+		<key>IGI.storyboardc/UITabBarController-8iv-AW-lpw.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UXykrGDh3jUwAENeNREmyBpbABJ4S84HCaL+WHRXcgI=
+			sAktP/32LU/VyaJSMdesopCZc0UBuf7tfT25JnxQ2i0=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/UITabBarController-8iv-AW-lpw.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oSkA1Pk0epOHNnSVaxvR6FgqX6X/+2/+MzeyK9h6KIY=
+			Hn9cca+e/+dkIYB6DikN91WvfRbKN9NRyutisPZKQYY=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/UITabBarController-8iv-AW-lpw.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oSkA1Pk0epOHNnSVaxvR6FgqX6X/+2/+MzeyK9h6KIY=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			31SxW46FyjA1XCPI+Ln2NfecvlbITs4K56IGTp7i8wU=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			31SxW46FyjA1XCPI+Ln2NfecvlbITs4K56IGTp7i8wU=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/aTa-9z-1Yn-view-8zg-aK-PhI.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/aTa-9z-1Yn-view-8zg-aK-PhI.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			4ZyRSAiTn7D6Paz3YQCo/aabuMacbJLqMWQRnHbSM3w=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/aTa-9z-1Yn-view-8zg-aK-PhI.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mC/fivvTlW0eiB2Z+rp4AQOIHChNYA5bG0zv6vEQdNw=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/hHn-qP-ZAF-view-awJ-qt-b5K.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/hHn-qP-ZAF-view-awJ-qt-b5K.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			BJIm0+sEyqHPe94QqcDxzstFvmqF+m1Zez9J+Y7YGTQ=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/hHn-qP-ZAF-view-awJ-qt-b5K.nib/runtime.nib</key>
+		<key>IGI.storyboardc/hM4-4i-JyV-view-8qe-Ph-kyq.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5K2O7Mfshi/iMF4TMrsmWgP6GMotP9A3RIMVyI2CiGM=
+			fT8Hz4r5lQ37Qsy1lcmgQQGzyPE6n1WSX/KyP5dU6do=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/hM4-4i-JyV-view-8qe-Ph-kyq.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SR6nbHe8aG3uzkc0gSK94Z+EWaO3vZ4CZdeoR4HVrAQ=
+			gjxj6an/dII3X+cfC+JuW4Kmz/DgHbhaUe/AyrXRTuY=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/hM4-4i-JyV-view-8qe-Ph-kyq.nib/runtime.nib</key>
+		<key>IGI.storyboardc/l7u-94-3Lh-view-Yl9-nt-WkQ.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SR6nbHe8aG3uzkc0gSK94Z+EWaO3vZ4CZdeoR4HVrAQ=
+			pLwb7946vI7dShmX8dePWWM+/Cup8CcrNr50VJzTjqc=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/lcb-ai-TXN-view-Jb9-HD-a8t.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kCa7ie7vv5P1mkaVWLrmtK6WTSb6VwoFdGP5y0x0Mz0=
+			n/PUoORYxi02HM/rAyXxvE0YmWdtoQOJsc4bOff+55g=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/hvb-9K-aCu-view-D31-sD-Z9Y.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			298+Nf4pP+8a1u8ARZmsNs3nJIqjnEgzU03AyVfOmsU=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/l7u-94-3Lh-view-Yl9-nt-WkQ.nib/objects-14.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			V3MR7kmapUvb+k4ggZ1nRJd8k4dHuLjORG0nhO2lHxI=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/l7u-94-3Lh-view-Yl9-nt-WkQ.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			V3MR7kmapUvb+k4ggZ1nRJd8k4dHuLjORG0nhO2lHxI=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/lcb-ai-TXN-view-Jb9-HD-a8t.nib/objects-14.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			opYwB5qZ/p4Vilj2xfb01Pr0sf4M6cREJZPWrmA7IgU=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/lcb-ai-TXN-view-Jb9-HD-a8t.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			opYwB5qZ/p4Vilj2xfb01Pr0sf4M6cREJZPWrmA7IgU=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/qh9-hy-YKM-view-fjB-om-nXd.nib/objects-14.0+.nib</key>
+		<key>IGI.storyboardc/qh9-hy-YKM-view-fjB-om-nXd.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			LrVh+Diia+Fy4M08+Du8F8HBnFUS/17ktWmXWPkBIx0=
 			</data>
 		</dict>
-		<key>IGI.storyboardc/qh9-hy-YKM-view-fjB-om-nXd.nib/runtime.nib</key>
+		<key>IGI.storyboardc/rci-9H-2Ci-view-4gn-cD-CII.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dPA0PyfJl/aQ40BIX6cFhLSPUBzVYJkxz6uDPAJwPZc=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/rci-9H-2Ci-view-4gn-cD-CII.nib/objects-14.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eBvVmelMfKw9kihegH3b9oSw+ZSn3rqfaRpLPjBSUoQ=
-			</data>
-		</dict>
-		<key>IGI.storyboardc/rci-9H-2Ci-view-4gn-cD-CII.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eBvVmelMfKw9kihegH3b9oSw+ZSn3rqfaRpLPjBSUoQ=
+			rgJBQx0ModNSnHFts5jB6Q9hpPdSu2NG22fmdpKxSpY=
 			</data>
 		</dict>
 		<key>IGIActionsVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A7WOBezGcNxo9zxzdCtbfLh+MlZ971yQPmS+VT2jlvQ=
+			m0wRqkLCE4rHdLh7wMy9dVw8czmfG7aht0AzjFJi24M=
 			</data>
 		</dict>
 		<key>IGIAdView.nib</key>
@@ -1465,98 +1215,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u/iedYcgsv1k5Yy+e03XLgmrMpt1DPHcw2XcjaP5PnA=
+			484AMZOJRmuTOOpIbE6qBNuqx1OJqr284WfgUiZVYnk=
 			</data>
 		</dict>
 		<key>IGIBidItemDetailsVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t8GmieuW29GNMeGU9Hk3xbOquSJbhv/bmcRst70fAxU=
+			H6UZV3axjo1PYp6NYWKaDNkvWeXLyvvkiffK4fkyS0Y=
 			</data>
 		</dict>
 		<key>IGIBidItemPriceSetterCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JCnO12XDdTwlu7DdRJd2zw9MSCK3VPPkN6YbXGNrhnw=
+			e2pTjuDdMypljLL0TXOk6QO2R3ihirt8Bok4blD1M70=
 			</data>
 		</dict>
 		<key>IGIBrowserVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XYcDfQ5UqNmRf90oBbesRlMCX5aHLr46SQdr6XbsM50=
+			5k1XPZfSA86vA4hiBxSc3Q5sjCbh2F1YtQZY/jCwcUg=
 			</data>
 		</dict>
 		<key>IGIBuyItemDetailsVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RXr72aQNCz1mqV2raa7Huch/esBvaJa0x+rv38yWKIQ=
+			7PXJTL8Gk3Crtfv81cP9xZS2YmVq4VIh7x6WMbL9E34=
 			</data>
 		</dict>
 		<key>IGIBuyItemQuantityCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NwTn+KdwwczyQdFfDve8ANjTrgtu5/ohchIVlZla3kY=
+			FbLC8JEOyKNaG9725ptpzRlGo3LFUS4njwReeayCSt8=
 			</data>
 		</dict>
 		<key>IGIChooseSizeVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YjojKaOhUmnXdZfncB/TN4uu68BluzbjEtoguYMdNi8=
+			YbTo8JX13Rz/H26ETe9Y/nGqadrNEVhvtBpX4VwNFEE=
 			</data>
 		</dict>
-		<key>IGIDatePickerCell.nib/objects-14.0+.nib</key>
+		<key>IGIDatePickerCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0FyIvCMNAe7h8qGRJCW6sZtZw9XN23xguCygbDg0ka0=
-			</data>
-		</dict>
-		<key>IGIDatePickerCell.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NVKJOIwiNc51fu3/wlPhyGgzPP44t9Q0Xx7ygLCtMh0=
+			0u5qKH8StfvIXPf1N8aQGmHrqIQRN3FAkTzSXqDcogE=
 			</data>
 		</dict>
 		<key>IGIDigitalPortfolioCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eHg1Rvcc6L+siuWG30NbB1fDLwH3ZpRrx07QylcmUT8=
+			B1PRnShAzr0tJcfP90guliGzs5EYBV4SAptu4n/JLuA=
 			</data>
 		</dict>
 		<key>IGIDigitalPortfolioVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qE6BV1BoNbSJgO4OZm3BIA/qpUnPh6HYDBXj6Ip49aQ=
+			I87MdD1S3Vd41JmyX/xLlEfavLoRAwAXVijecK36wgc=
 			</data>
 		</dict>
 		<key>IGIDiscountItemDetailVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yrVlpgGuBceHjRaQlCiDCK5Cy+RBckgP5rc0uOsWRlc=
+			o1AyH3Xmnk97V9+oC1L2+bjeqMT2XAlYyaXHdungFmY=
 			</data>
 		</dict>
 		<key>IGIDrawerChildVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o7G3LF50jUJfHJ91X7zkVxSDtCGXb+LuzSolocL9ADI=
+			v6Vu0Nrca7O2AvqAV0+yvYAMUarbz2vJ07BQnqQa5dY=
 			</data>
 		</dict>
 		<key>IGIDrawerVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9Q/l4q4xkMLLLwJ74i8Rr5y3AgxPIdkh/t7dmGPW10=
+			cf92v5hiIfgmJyzwZlUahMzkFh1RZWcGO32GDIFkaQE=
 			</data>
 		</dict>
 		<key>IGIEventExploreVCCell.nib</key>
@@ -1584,7 +1327,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZQNW4jqznFH8vWwHJmsNa23jqrWILM/oVhmn9k+yHYM=
+			1LiIspJeV6v1Zq79RYL+1RN0V6YOanBT6zNRjH3PkxU=
 			</data>
 		</dict>
 		<key>IGIItemDetailHeader.nib</key>
@@ -1612,7 +1355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3OQBS7jc+5eMwvek1A4uvvnD5UsZwRwvfTF8k6N6tZ8=
+			RoBMm0Lwlb1DMQDGX8f/pJTcor8qUprWf1L/NdlZj2Y=
 			</data>
 		</dict>
 		<key>IGIItemVideoCell.nib</key>
@@ -1626,28 +1369,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nHyzwWlf4S3jKh1Wvp90KsuWFA4AcEBoxaKuis5NZRg=
+			DudM9qSLfMpkJDDBR7CuLlZsdVhtXZHto36SQHW5EK0=
 			</data>
 		</dict>
 		<key>IGILeaderboardCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5bmblXcMN5BqGrRO+1+mpdypO2NurLGbjbdOQs8SCfI=
+			NjgF5AtFVascyHdJreMfK3EtWmQOUNGOSRY4UpeGb1Q=
 			</data>
 		</dict>
 		<key>IGILeaderboardVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kPfmWGV+vEG4rUvLdapSd92BUv7Db2OuA8f8UGfGqGE=
+			RJNe9nRFnzymA8nPg2jM6ZihxVuwbeIr04fCe25vonI=
 			</data>
 		</dict>
 		<key>IGIMarketplaceVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gm4m1uDmXTiz80H6pfoDEsa/SmfD4i+0gDt9KYOlUCg=
+			JXolLlQiwdbWNqy6kjDq0ObNrN+UKVUcrfqTGJt8MO4=
 			</data>
 		</dict>
 		<key>IGIMiniTileView.nib</key>
@@ -1655,13 +1398,6 @@
 			<key>hash2</key>
 			<data>
 			dzvCNbMCS4/FFh2MfTawG6unwnLy3bgvU3oKm9HgBWU=
-			</data>
-		</dict>
-		<key>IGIMissionsVC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zZuxHdtmIbRMOnsK0GoQGfUGZKgf3QDsDDi2bK3I9NI=
 			</data>
 		</dict>
 		<key>IGIOffersVC.nib</key>
@@ -1675,28 +1411,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			egl0u2fAfYWdgj7U6cvLWssNU/0e0v8gRAEoximSfTc=
+			1lhedJBoqlKe4/GapyRHEiJBZuzrxyUcxcXZ26HvhaI=
 			</data>
 		</dict>
 		<key>IGIRaffleItemDetailVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P+lvSCK9y2JBfyVrsuC9/B6AMkpHx43bRsw7ypB9Wdk=
+			qYbEQCmbCroKOdccLg/4khwzHZJjrhIOdWK/aHyzZ/g=
 			</data>
 		</dict>
 		<key>IGIRafflePackageCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VkydoN8xlFRxDP6UIaXwHsCEd9u7wBuA41tPiYm5MaI=
+			7tacMCiQia03GvtX51ys+wLeT6BAwIv6rG//o7ZGv8s=
 			</data>
 		</dict>
 		<key>IGIRaffleQuantityCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LDc5gFN15pGwrNsAbg8kZYJPi+Vy38a7fxFvFqHpAz8=
+			+XsmlfSE2lfB62mmq0f7y9RQnyBxbiR+TFASy13b+a4=
 			</data>
 		</dict>
 		<key>IGIRecentTransactionCell.nib</key>
@@ -1710,84 +1446,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qE6BV1BoNbSJgO4OZm3BIA/qpUnPh6HYDBXj6Ip49aQ=
+			I87MdD1S3Vd41JmyX/xLlEfavLoRAwAXVijecK36wgc=
 			</data>
 		</dict>
 		<key>IGIReclaimVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VxZUy6+sNip+4yHF8iNWtzEmz3ZVbv+WkzXALlCIyoA=
+			w8+ZoO+PTWg+Hb1UO1mBaQAU0/IQnr7nAimJK+0JOCk=
 			</data>
 		</dict>
 		<key>IGIRedeemPointsVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d3ZATKUsIBfLOKauxmk5FLEbzFi2XwNFat5lnpxGMCI=
+			HeBY615Jnj6HfZ29y0ZQYVLeiyP6/iYm5+YUjkmyZzg=
 			</data>
 		</dict>
 		<key>IGIRequestItemCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S6D1VRlGxF5x6pV+m7CcOPnFET9Ai5+vtfKKTyZc/xI=
+			TGsLj0e2g6UNpPlCOL6pqoWagF7htk5GB7rAVdAaTNE=
 			</data>
 		</dict>
 		<key>IGIShippingInfoCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UhBtsat6IB8GAjxZd1vlrPvn4yLps+GFVxWTepQOjFA=
+			nlGArTHzWlSpwR5xydN9BCLlye9VQ2AJIbq6TnJZKxQ=
 			</data>
 		</dict>
 		<key>IGIShippingInfoVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q7oNV7+R0A5EE4euge7cUtbWczDTHVvwrHznej8h8R4=
+			zVNd/UePVtn3Sd8VVTVOLA7umbT3uW9PLUKfsuOpbm8=
 			</data>
 		</dict>
 		<key>IGISignUpVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+O0nR+++bZziEAt0S5Igi5I/eC45+xlMx/c29r2RKao=
+			y/XW4K3Om1V/xJMMw4TItaZCeIxBY+ub8Uo8wejOIWY=
 			</data>
 		</dict>
 		<key>IGISizeCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8udNdndPQ3Ox3tGBKij2pUT9ESmJX3Tktz2P6x4tvXs=
+			Q9r+YH2tC/GpmhqjwNS9hDjaUAFppkeJ8Wun1fiOEj8=
 			</data>
 		</dict>
 		<key>IGITextFieldCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			epx2lWs9RgXGWIc8lxq/xtqmFn6ctyCXOKre0zQRIXU=
+			SqGFlEz6W4b3/5oKIoHz95Cy/PO2FXE4+v6YDdVOwWI=
 			</data>
 		</dict>
 		<key>IGITransactionCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZuS2PsO2uxOoxF7MXXMCTRTZefVRW74W43VxMYh44Vo=
+			88BqGnAHnAIC+GOHgnCXdG8yxNeBs3GY88gdrwbmzOA=
 			</data>
 		</dict>
 		<key>IGITranscationHistoryVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lu3IY4A5m1ZDzc28FoP1lfBI2GQ9jJYHDBRQ4iCz09k=
+			ej2E4rOt5GJrBRQlgO/pCtB3UODbTKRQwUsXk0H3X4s=
 			</data>
 		</dict>
 		<key>IGIYourInfoCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n9BA22SWmSR63fcXqZomhEn+2Kv79RtoUDA/nRRdbQA=
+			PCZRqpc+xfGbtt+OFuKF4MYo6RpCXwz0B6W+Yp0hudY=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -1801,28 +1537,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LafgURJVxc1QBAw1DmJafI+mJ70IQ8qi50m39CKLP4Y=
+			5SMVYGqA5icbCopeE6TZCQ1ff3v3ASoD3NqoKoKb3qs=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wnmivTe+eCazL0hO61ZrTQzg9DHcaZwtQah8ZNHp/oU=
+			i35HszT5s8UUZ1xYfiUOcTQyIEADhVQIcV+iJxJuyQg=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LafgURJVxc1QBAw1DmJafI+mJ70IQ8qi50m39CKLP4Y=
+			5SMVYGqA5icbCopeE6TZCQ1ff3v3ASoD3NqoKoKb3qs=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sxshqFCs1n/XHtBlsxv5g5VWob8k2aeg5Ha4FoNSmmA=
+			pZ8l1rc9rEtu87dEtuyfp5KOXlaYEeuDCc+fn6OojVg=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -1836,28 +1572,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ELiNTDk4iTgP9NcDtdoqpwv94ncgCm+n0SJtQwhuidg=
+			rcVxKiFwfNDNKm1YbCm5gN3GBV3z0QKyFcXzrsv5lyM=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			waEGZ1N6bl/fWFOSnr6SjC8cX/Hd4xnFtCF0w2/TtYw=
+			qi4wEYMcuDoxSXYXOyeONMfioEC0jN7pKYibHSub2sU=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ELiNTDk4iTgP9NcDtdoqpwv94ncgCm+n0SJtQwhuidg=
+			rcVxKiFwfNDNKm1YbCm5gN3GBV3z0QKyFcXzrsv5lyM=
 			</data>
 		</dict>
 		<key>Modules/igi_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mTd3noA0Kdri/fEewmFpW2RtZWWw85I5fvXWh6p7AK8=
+			nmEyMQKfWQUi7IPYVx8UqC/acpacMaygV50zdudzuI4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1878,21 +1614,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UYSsRisaNBN9lABsa5oAwSqkKAHGlafNkOjY+/frMMk=
+			H6GXtoTCjqKfK6qNVLVMK5tas7noZ4vivoSvV5OURRM=
 			</data>
 		</dict>
 		<key>SettingsVCSectionHeader.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mvj9nn+MCfJDAggDsV/hmBaWEMbUq+4JuJsyGbdxW98=
+			d+bVc9Xm6H+uNGmvlwcRyeNTF9OBArDWEYSaseVLlYY=
 			</data>
 		</dict>
 		<key>SettingsVCSwitchCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hbxN46dj7aif5XNENhBp2UsYbXywDuTOP4Phj0WS5PE=
+			XcZLiz1dpTb1I9M6ekZLIBJ3Eo/Y7g6HMbvMqCjmO14=
 			</data>
 		</dict>
 		<key>arrowDownGrey.png</key>
