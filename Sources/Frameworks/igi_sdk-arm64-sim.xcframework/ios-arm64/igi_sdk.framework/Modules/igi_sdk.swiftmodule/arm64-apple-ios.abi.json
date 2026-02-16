@@ -1,0 +1,355 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "igi_sdk",
+    "printedName": "igi_sdk",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "igi_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "igi_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "StripePaymentSheet",
+        "printedName": "StripePaymentSheet",
+        "declKind": "Import",
+        "moduleName": "igi_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IGIStripeCustomerSheet",
+        "printedName": "IGIStripeCustomerSheet",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadSelectedPaymentMethod",
+            "printedName": "loadSelectedPaymentMethod()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@igi_sdk@objc(cs)IGIStripeCustomerSheet(im)loadSelectedPaymentMethodWithCompletionHandler:",
+            "mangledName": "$s7igi_sdk22IGIStripeCustomerSheetC25loadSelectedPaymentMethodSSyYaKF",
+            "moduleName": "igi_sdk",
+            "isOpen": true,
+            "objc_name": "loadSelectedPaymentMethodWithCompletionHandler:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSelectedPaymentMethodId",
+            "printedName": "getSelectedPaymentMethodId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@igi_sdk@objc(cs)IGIStripeCustomerSheet(im)getSelectedPaymentMethodIdWithCompletionHandler:",
+            "mangledName": "$s7igi_sdk22IGIStripeCustomerSheetC26getSelectedPaymentMethodIdSSSgyYaKF",
+            "moduleName": "igi_sdk",
+            "isOpen": true,
+            "objc_name": "getSelectedPaymentMethodIdWithCompletionHandler:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "presentCustomerSheet",
+            "printedName": "presentCustomerSheet(hostViewController:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@igi_sdk@objc(cs)IGIStripeCustomerSheet(im)presentCustomerSheetWithHostViewController:completion:",
+            "mangledName": "$s7igi_sdk22IGIStripeCustomerSheetC07presentdE018hostViewController10completionySo06UIViewI0C_ySS_SSSgSo7NSErrorCSgtctF",
+            "moduleName": "igi_sdk",
+            "isOpen": true,
+            "objc_name": "presentCustomerSheetWithHostViewController:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IGIStripeCustomerSheet",
+                "printedName": "igi_sdk.IGIStripeCustomerSheet",
+                "usr": "c:@M@igi_sdk@objc(cs)IGIStripeCustomerSheet"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@igi_sdk@objc(cs)IGIStripeCustomerSheet(im)init",
+            "mangledName": "$s7igi_sdk22IGIStripeCustomerSheetCACycfc",
+            "moduleName": "igi_sdk",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@igi_sdk@objc(cs)IGIStripeCustomerSheet",
+        "mangledName": "$s7igi_sdk22IGIStripeCustomerSheetC",
+        "moduleName": "igi_sdk",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/ios_sdk\/igi_sdk\/igi_sdk\/StripeWrapper\/IGIStripeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 775,
+      "length": 8,
+      "value": "\"secret\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/ios_sdk\/igi_sdk\/igi_sdk\/StripeWrapper\/IGIStripeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 857,
+      "length": 20,
+      "value": "\"stripe_customer_id\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/ios_sdk\/igi_sdk\/igi_sdk\/StripeWrapper\/IGIStripeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1102,
+      "length": 15,
+      "value": "\"StripeAdapter\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/ios_sdk\/igi_sdk\/igi_sdk\/StripeWrapper\/IGIStripeWrapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1125,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/ios_sdk\/igi_sdk\/igi_sdk\/StripeWrapper\/IGIStripeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1166,
+      "length": 32,
+      "value": "\"Invalid ephemeral key response\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/ios_sdk\/igi_sdk\/igi_sdk\/StripeWrapper\/IGIStripeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1773,
+      "length": 15,
+      "value": "\"client_secret\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/ios_sdk\/igi_sdk\/igi_sdk\/StripeWrapper\/IGIStripeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1953,
+      "length": 15,
+      "value": "\"StripeAdapter\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/ios_sdk\/igi_sdk\/igi_sdk\/StripeWrapper\/IGIStripeWrapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1976,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/ios_sdk\/igi_sdk\/igi_sdk\/StripeWrapper\/IGIStripeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 2017,
+      "length": 31,
+      "value": "\"Invalid setup intent response\""
+    }
+  ]
+}
