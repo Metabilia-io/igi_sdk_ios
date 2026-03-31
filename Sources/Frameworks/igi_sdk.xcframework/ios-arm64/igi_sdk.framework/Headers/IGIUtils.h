@@ -35,11 +35,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (nullable NSDictionary *)dictionaryFromJsonString:(nullable NSString *)dataString;
 
+/// Returns the best candidate UIWindowScene for active UI interactions.
++ (nullable UIWindowScene *)activeWindowScene;
+
 /// Returns the key window from the foreground-active UIWindowScene, or the first window if no key window is found. May return nil if no window is available.
 + (nullable UIWindow *)activeKeyWindow;
 
 /// Returns a suitable root view controller from the active window scene, if available.
 + (nullable UIViewController *)activeRootViewController;
+
+/// Returns the top-most visible view controller from the provided root/controller tree.
++ (nullable UIViewController *)topMostViewControllerFrom:(nonnull UIViewController *)vc;
+
+/// Convenience helper returning the top-most visible controller from the active scene window.
++ (nullable UIViewController *)activeTopViewController;
 
 NS_ASSUME_NONNULL_END
 @end
