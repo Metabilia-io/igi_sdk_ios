@@ -7,5 +7,4 @@ framework module igi_sdk {
 
 module igi_sdk.Swift {
   header "igi_sdk-Swift.h"
-  requires objc
 }
