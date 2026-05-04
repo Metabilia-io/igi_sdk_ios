@@ -6,7 +6,7 @@ app as a SwiftUI surface. Distributed as a binary XCFramework via
 Swift Package Manager.
 
 > **Companion guide for Android:** see
-> [`Metabilia-io/igi_sdk_android` → `igi_sdk/README.md`](https://github.com/Metabilia-io/igi_sdk_android/blob/README.md).
+> [`Metabilia-io/igi_sdk_android` → `README.md`](https://github.com/Metabilia-io/igi_sdk_android/blob/main/README.md).
 > Both platforms expose the same public types, use byte-identical
 > analytics-event names and theming-token keys, and ship in lockstep
 > at the same `MAJOR.MINOR.PATCH` version (currently `4.0.0`).
