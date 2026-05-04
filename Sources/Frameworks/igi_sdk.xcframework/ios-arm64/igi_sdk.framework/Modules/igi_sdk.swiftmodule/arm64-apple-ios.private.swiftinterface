@@ -1,18 +1,1361 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
-// swift-module-flags: -target arm64-apple-ios17.6 -enable-objc-interop -enable-library-evolution -swift-version 6 -Onone -enable-experimental-feature DebugDescriptionMacro -module-name igi_sdk
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios17.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name igi_sdk
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+import AVKit
+import Combine
+import CoreLocation
+import DeveloperToolsSupport
 import Foundation
+import SafariServices
+import Security
 import Swift
+import SwiftUI
 import UIKit
+import WebKit
+import _AVKit_SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_exported import igi_sdk
+import _WebKit_SwiftUI
+public let IGIEventSDKIntialized: Swift.String
+@objc @_inheritsConvenienceInitializers @objcMembers final public class IGIAnalyticsEvents : ObjectiveC.NSObject {
+  @objc public static let IGIEventSDKIntialized: Swift.String
+  @objc public static let IGIEventCompanySettingsFetched: Swift.String
+  @objc public static let IGIEventOpen: Swift.String
+  @objc public static let IGIEventExit: Swift.String
+  @objc public static let IGIEventUserSignUpWithEmail: Swift.String
+  @objc public static let IGIEventUserLoginWithEmail: Swift.String
+  @objc public static let IGIEventUserLoginWithGoogle: Swift.String
+  @objc public static let IGIEventUserLoginWithApple: Swift.String
+  @objc public static let IGIEventUserLoginWithTicketmaster: Swift.String
+  @objc public static let IGIEventUserSessionWithEmail: Swift.String
+  @objc public static let IGIEventUserAccountDeleted: Swift.String
+  @objc public static let IGIEventUserDeviceTokenAdded: Swift.String
+  @objc public static let IGIEventUserProfileFetched: Swift.String
+  @objc public static let IGIEventUserProfileUpdated: Swift.String
+  @objc public static let IGIEventUserStripeSellerOnboardingDone: Swift.String
+  @objc public static let IGIEventUserLogOut: Swift.String
+  @objc public static let IGIEventUserPasswordResetRequested: Swift.String
+  @objc public static let IGIEventPushNotificationsEnabled: Swift.String
+  @objc public static let IGIEventPushNotificationsDisabled: Swift.String
+  @objc public static let IGIEventPushNotificationTapped: Swift.String
+  @objc public static let IGIEventOpenedFromPushNotification: Swift.String
+  @objc public static let IGIEventEmailNotificationsEnabled: Swift.String
+  @objc public static let IGIEventEmailNotificationsDisabled: Swift.String
+  @objc public static let IGIEventDeeplinkTapped: Swift.String
+  @objc public static let IGIEventOpenedFromDeeplink: Swift.String
+  @objc public static let IGIEventItemOfferedForSale: Swift.String
+  @objc public static let IGIEventItemTradableClaimed: Swift.String
+  @objc public static let IGIEventItemPurchased: Swift.String
+  @objc public static let IGIEventItemBidPlaced: Swift.String
+  @objc public static let IGIEventGiveawayViewed: Swift.String
+  @objc public static let IGIEventPaymentMethodAdded: Swift.String
+  @objc public static let IGIEventShippingInfoAdded: Swift.String
+  @objc public static let IGIEventItemListOpened: Swift.String
+  @objc public static let IGIEventItemTapped: Swift.String
+  @objc public static let IGIEventItemIssueReported: Swift.String
+  @objc public static let IGIEventMysteryBoxShipped: Swift.String
+  @objc public static let IGIEventMysteryBoxRevealed: Swift.String
+  @objc public static let IGIEventMysteryBoxRedeemedForCredit: Swift.String
+  @objc public static let IGIEventMysteryBoxComponentsViewed: Swift.String
+  @objc public static let IGIEventMiniTileBuyNowSpecialsTapped: Swift.String
+  @objc public static let IGIEventMiniTilePartnerCollectionTapped: Swift.String
+  @objc public static let IGIEventMiniTileFreeGiveawaysTapped: Swift.String
+  @objc public static let IGIEventMiniTileRedeemPointsTapped: Swift.String
+  @objc public static let IGIEventInterstitialAdViewed: Swift.String
+  @objc public static let IGIEventInterstitialAdClosed: Swift.String
+  @objc public static let IGIEventListAdViewed: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+public let IGIEventCompanySettingsFetched: Swift.String
+public let IGIEventOpen: Swift.String
+public let IGIEventExit: Swift.String
+public let IGIEventUserSignUpWithEmail: Swift.String
+public let IGIEventUserLoginWithEmail: Swift.String
+public let IGIEventUserLoginWithGoogle: Swift.String
+public let IGIEventUserLoginWithApple: Swift.String
+public let IGIEventUserLoginWithTicketmaster: Swift.String
+public let IGIEventUserSessionWithEmail: Swift.String
+public let IGIEventUserAccountDeleted: Swift.String
+public let IGIEventUserDeviceTokenAdded: Swift.String
+public let IGIEventUserProfileFetched: Swift.String
+public let IGIEventUserProfileUpdated: Swift.String
+public let IGIEventUserStripeSellerOnboardingDone: Swift.String
+public let IGIEventUserLogOut: Swift.String
+public let IGIEventUserPasswordResetRequested: Swift.String
+public let IGIEventPushNotificationsEnabled: Swift.String
+public let IGIEventPushNotificationsDisabled: Swift.String
+public let IGIEventPushNotificationTapped: Swift.String
+public let IGIEventOpenedFromPushNotification: Swift.String
+public let IGIEventEmailNotificationsEnabled: Swift.String
+public let IGIEventEmailNotificationsDisabled: Swift.String
+public let IGIEventDeeplinkTapped: Swift.String
+public let IGIEventOpenedFromDeeplink: Swift.String
+public let IGIEventItemOfferedForSale: Swift.String
+public let IGIEventItemTradableClaimed: Swift.String
+public let IGIEventItemPurchased: Swift.String
+public let IGIEventItemBidPlaced: Swift.String
+public let IGIEventGiveawayViewed: Swift.String
+public let IGIEventPaymentMethodAdded: Swift.String
+public let IGIEventShippingInfoAdded: Swift.String
+public let IGIEventItemListOpened: Swift.String
+public let IGIEventItemTapped: Swift.String
+public let IGIEventItemIssueReported: Swift.String
+public let IGIEventMysteryBoxShipped: Swift.String
+public let IGIEventMysteryBoxRevealed: Swift.String
+public let IGIEventMysteryBoxRedeemedForCredit: Swift.String
+public let IGIEventMysteryBoxComponentsViewed: Swift.String
+public let IGIEventMiniTileBuyNowSpecialsTapped: Swift.String
+public let IGIEventMiniTilePartnerCollectionTapped: Swift.String
+public let IGIEventMiniTileFreeGiveawaysTapped: Swift.String
+public let IGIEventMiniTileRedeemPointsTapped: Swift.String
+public let IGIEventInterstitialAdViewed: Swift.String
+public let IGIEventInterstitialAdClosed: Swift.String
+public let IGIEventListAdViewed: Swift.String
+@objc public protocol IGIAnalyticsListener {
+  @objc func trackPurchase(transactionId: Swift.String, userId: Swift.String, itemId: Swift.String, itemName: Swift.String, itemCategory: Swift.String, price: Swift.Double, quantity: Swift.Int, total: Swift.Double, currencyCode: Swift.String)
+  @objc func trackBid(transactionId: Swift.String, userId: Swift.String, itemId: Swift.String, itemName: Swift.String, itemCategory: Swift.String, price: Swift.Double, quantity: Swift.Int, total: Swift.Double, currencyCode: Swift.String, bidType: Swift.String)
+  @objc func trackPromotion(transactionId: Swift.String, userId: Swift.String, itemId: Swift.String, itemName: Swift.String, itemCategory: Swift.String, price: Swift.Double, quantity: Swift.Int, total: Swift.Double, currencyCode: Swift.String)
+  @objc func trackAddPayment(userId: Swift.String)
+  @objc func trackAddShipping(userId: Swift.String)
+  @objc func trackItemListSelection(itemId: Swift.String, itemName: Swift.String, itemCategory: Swift.String)
+  @objc func trackItemSelection(itemId: Swift.String, itemName: Swift.String, itemCategory: Swift.String, price: Swift.Double)
+  @objc func trackEvent(_ eventName: Swift.String, attributes: [Swift.String : Any])
+}
+@objc @objcMembers final public class IGIAnalyticsManager : ObjectiveC.NSObject {
+  @objc public init(listener: any igi_sdk.IGIAnalyticsListener)
+  @objc final public func trackPurchase(transactionId: Swift.String, buyItem: igi_sdk.IGIBuyItem)
+  @objc final public func trackBid(transactionId: Swift.String, item: igi_sdk.IGIItem)
+  @objc final public func trackPromotion(transactionId: Swift.String, raffleItem: igi_sdk.IGIRaffleItem)
+  @objc final public func trackAddPayment()
+  @objc final public func trackAddShipping()
+  @objc final public func trackItemListSelection(event: igi_sdk.IGIEvent)
+  @objc final public func trackItemSelection(item: igi_sdk.IGIItem)
+  @objc final public func trackEvent(_ eventName: Swift.String)
+  @objc final public func trackEvent(_ eventName: Swift.String, attributes: [Swift.String : Any])
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class IGIImageCache : @unchecked Swift.Sendable {
+  public static let shared: igi_sdk.IGIImageCache
+  final public func image(for url: Foundation.URL) -> UIKit.UIImage?
+  final public func store(_ image: UIKit.UIImage, for url: Foundation.URL)
+  final public func removeAll()
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct IGIAsyncImage : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public let url: Foundation.URL?
+  @_Concurrency.MainActor @preconcurrency public var contentMode: SwiftUICore.ContentMode
+  @_Concurrency.MainActor @preconcurrency public var placeholder: SwiftUICore.Color
+  @_Concurrency.MainActor @preconcurrency public var crossfadeDuration: Swift.Double
+  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL?, contentMode: SwiftUICore.ContentMode = .fill, placeholder: SwiftUICore.Color = Color(UIColor.systemGray5), crossfadeDuration: Swift.Double = 0.3)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7igi_sdk13IGIAsyncImageV4bodyQrvp", 0) __
+}
+
+@objc @_inheritsConvenienceInitializers @objcMembers final public class IGIDeepLinkHandler : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+  @objc final public func handleDeeplinkURL(_ deeplink: Swift.String) -> Swift.Bool
+}
+public enum IGIKeyChain {
+  public static func passwordForService(_ service: Swift.String, account: Swift.String) -> Swift.String?
+  public static func passwordDataForService(_ service: Swift.String, account: Swift.String) -> Foundation.Data?
+  public static func setPassword(_ password: Swift.String, forService service: Swift.String, account: Swift.String) -> Swift.Bool
+  public static func setPasswordData(_ data: Foundation.Data, forService service: Swift.String, account: Swift.String) -> Swift.Bool
+  public static func deletePasswordForService(_ service: Swift.String, account: Swift.String) -> Swift.Bool
+  public static var accessToken: Swift.String? {
+    get
+    set
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class IGIPushNotificationHandler : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+  @objc public static func shouldHandleRemoteMessage(_ userInfo: [Swift.AnyHashable : Any]?) -> Swift.Bool
+  @objc final public func handleRemoteMessage(_ userInfo: [Swift.AnyHashable : Any]?) -> Swift.Bool
+}
+public enum IGIUtils {
+  public static func sdkVersion() -> Swift.String
+  public static func showAlert(title: Swift.String?, message: Swift.String?, owner: UIKit.UIViewController?)
+  public static func activeWindowScene() -> UIKit.UIWindowScene?
+  public static func activeKeyWindow() -> UIKit.UIWindow?
+  public static func activeRootViewController() -> UIKit.UIViewController?
+  public static func topMostViewController(from viewController: UIKit.UIViewController) -> UIKit.UIViewController
+  public static func activeTopViewController() -> UIKit.UIViewController?
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIAdvertisement : ObjectiveC.NSObject {
+  @objc public var ID: Foundation.NSNumber?
+  @objc public var adType: Swift.String
+  @objc public var order: Foundation.NSNumber?
+  @objc public var eventId: Foundation.NSNumber?
+  @objc public var event: igi_sdk.IGIEvent?
+  @objc public var eventItemId: Foundation.NSNumber?
+  @objc public var eventItem: igi_sdk.IGIItem?
+  public var photo: igi_sdk.IGIPhoto?
+  @objc public var createdAt: Foundation.Date?
+  @objc public var isThirdParty: Swift.Bool
+  @objc public var isInterstitial: Swift.Bool
+  @objc public var title: Swift.String
+  @objc public var url: Swift.String
+  @objc override dynamic public init()
+  @objc public static func advertisementWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIAdvertisement
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public func adTitle() -> Swift.String
+  public func adPhoto() -> igi_sdk.IGIPhoto?
+  @objc deinit
+}
+@objc @objcMembers final public class IGICountry : ObjectiveC.NSObject {
+  @objc final public var code: Swift.String
+  @objc final public var name: Swift.String
+  @objc final public var dialingCode: Swift.String
+  @objc public init(code: Swift.String = "", name: Swift.String = "", dialingCode: Swift.String = "")
+  @objc final public func getFullPhoneNumber(_ partialPhoneNumber: Swift.String) -> Swift.String
+  @objc final public func getStrippedPhoneNumber(_ fullPhoneNumber: Swift.String) -> Swift.String
+  @objc final public func compareByName(_ otherCountry: igi_sdk.IGICountry) -> Foundation.ComparisonResult
+  @objc deinit
+}
+public struct IGIPusherEvent {
+  public let data: Swift.String
+  public init(data: Swift.String)
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class IGIPusherChannel : ObjectiveC.NSObject {
+  @objc final public var name: Swift.String {
+    @objc get
+  }
+  @discardableResult
+  final public func bind(eventName: Swift.String, eventCallback: @escaping (igi_sdk.IGIPusherEvent) -> Swift.Void) -> Swift.String?
+  @objc final public func unbind(eventName: Swift.String, callbackId: Swift.String)
+  @objc final public func unbindAll()
+  @objc deinit
+}
+public enum IGIFlashAuctionType : Swift.Int {
+  case normal
+  case dutch
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum IGIAuctionType : Swift.Int {
+  case normal
+  case sealedBid
+  case volumeReserve
+  case yankee
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum IGIDiscountType : Swift.Int {
+  case percentage
+  case fixedValue
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIItem : ObjectiveC.NSObject {
+  @objc public var ID: Foundation.NSNumber?
+  @objc public var itemId: Foundation.NSNumber?
+  @objc public var isFeatured: Foundation.NSNumber?
+  @objc public var isDigital: Foundation.NSNumber?
+  @objc public var isPackage: Foundation.NSNumber?
+  @objc public var isFreeShipping: Swift.Bool
+  @objc public var isCharityAuction: Swift.Bool
+  @objc public var isPointsPurchaseItem: Swift.Bool
+  @objc public var pointsValue: Foundation.NSNumber?
+  @objc public var contingetnRequirements: Foundation.NSNumber?
+  @objc public var status: Swift.String
+  public var photos: [igi_sdk.IGIPhoto]
+  @objc public var videos: [igi_sdk.IGIVideo]
+  @objc public var title: Swift.String
+  @objc public var itemDescription: Swift.String
+  @objc public var itemType: Swift.String
+  @objc public var order: Foundation.NSNumber?
+  @objc public var itemOptions: [Any]
+  @objc public var skuPrefix: Swift.String
+  @objc public var skuId: Swift.String
+  @objc public var sponsor: igi_sdk.IGISponsor?
+  @objc public var isExperience: Foundation.NSNumber?
+  @objc public var closesAt: Foundation.Date?
+  @objc public var pickupAllowed: Swift.Bool
+  @objc public var isTradablePhysicalItem: Swift.Bool
+  @objc public var hasPhotoMatching: Swift.Bool
+  public var photoMatchingImage: igi_sdk.IGIPhoto?
+  @objc public var category: Swift.String
+  @objc public var player: Swift.String
+  @objc public var hasBonus: Swift.Bool
+  @objc public var bonusPoints: Swift.Int
+  @objc public var isMysteryBox: Swift.Bool
+  @objc public var isInstantMysteryBox: Swift.Bool
+  @objc public var creditValue: Foundation.NSNumber?
+  @objc public var digitalItemId: Swift.String
+  @objc public var digitalItemTitle: Swift.String
+  @objc public var digitalCurrentPrice: Swift.Double
+  @objc public var masterDigitalQuantity: Swift.Int
+  @objc public var digitalAssetIndex: Swift.Int
+  @objc public var actualAsseturl: Swift.String
+  @objc public var previewAssetUrl: Swift.String
+  @objc public var thumbnailUrl: Swift.String
+  @objc public var nftUrl: Swift.String
+  @objc public var isMembership: Swift.Bool
+  @objc public var isCertified: Swift.Bool
+  @objc public var certifier: Swift.String
+  @objc public var certificateNumber: Swift.String
+  public var authenticityCertificate: igi_sdk.IGIPhoto?
+  @objc public var certifyLater: Swift.Bool
+  @objc public var certifyLaterQuantity: Foundation.NSNumber?
+  @objc public var certificateRanges: Swift.String
+  @objc override dynamic public init()
+  @objc public static func itemWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIItem
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public func updateFromDictionary(_ dictionary: [Swift.String : Any])
+  @objc public func itemTitleAndDescription() -> Swift.String
+  @objc public func shouldHidePickupOptions() -> Swift.Bool
+  @objc public func isTradable() -> Swift.Bool
+  @objc public func itemInformationTitle() -> Swift.String
+  @objc public func priceTitleString() -> Swift.String
+  @objc public func priceString() -> Swift.String
+  @objc public func timeLeft() -> Swift.Double
+  @objc public func timeLeftTitleString() -> Swift.String
+  @objc public func timeLeftAsString() -> Swift.String
+  @objc public func shouldStartTimer() -> Swift.Bool
+  @objc public func isPublished() -> Swift.Bool
+  @objc public func isOpen() -> Swift.Bool
+  @objc public func isClosed() -> Swift.Bool
+  @objc public func isPaymentFailed() -> Swift.Bool
+  @objc public func compareByOrder(_ otherItem: igi_sdk.IGIItem) -> Foundation.ComparisonResult
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIAuction : ObjectiveC.NSObject {
+  @objc public var createdAt: Foundation.Date?
+  @objc public var nextAuctionAt: Foundation.Date?
+  @objc public var price: Swift.Double
+  @objc public var round: Swift.Int
+  @objc public var status: Swift.String
+  @objc public var winner: igi_sdk.IGIUser?
+  @objc public var recommendedItem: igi_sdk.IGIRecommendedItem?
+  @objc public var isCurrentUserLoser: Swift.Bool
+  @objc override dynamic public init()
+  @objc public static func auctionWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIAuction
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public func isOpen() -> Swift.Bool
+  @objc public func isWon() -> Swift.Bool
+  @objc public func isClosed() -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIAuctionItem : igi_sdk.IGIItem {
+  public var auctionType: igi_sdk.IGIFlashAuctionType
+  @objc public var channelName: Swift.String
+  @objc public var pusherChannel: igi_sdk.IGIPusherChannel?
+  @objc public var auctionBinding: Swift.String?
+  @objc public var startingPrice: Swift.Double
+  @objc public var reservePrice: Swift.Double
+  @objc public var currentAuction: igi_sdk.IGIAuction?
+  @objc public var lastAuctionInfo: [Swift.String : Any]?
+  @objc override dynamic public init()
+  @objc public static func auctionItemWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIAuctionItem
+  @objc public static func auctionItemWithDictionary(_ dictionary: [Swift.String : Any], isRequestItem: Swift.Bool) -> igi_sdk.IGIAuctionItem
+  @objc convenience public init(dictionary: [Swift.String : Any], isRequestItem: Swift.Bool)
+  @objc public func updateWithDictionary(_ dictionary: [Swift.String : Any])
+  @objc public func initializePusher()
+  @objc override public func priceTitleString() -> Swift.String
+  @objc override public func priceString() -> Swift.String
+  @objc override public func timeLeft() -> Swift.Double
+  @objc override public func timeLeftTitleString() -> Swift.String
+  @objc override public func timeLeftAsString() -> Swift.String
+  @objc public func hasJoined() -> Swift.Bool
+  @objc public func joinRound()
+  @objc public func type() -> Swift.String
+  @objc override public func shouldStartTimer() -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIBid : ObjectiveC.NSObject {
+  @objc public var createdAt: Foundation.Date?
+  @objc public var currentBidNumber: Swift.Int
+  @objc public var ID: Swift.String
+  @objc public var itemID: Swift.String
+  @objc public var price: Swift.Double
+  @objc public var status: Swift.String
+  @objc public var user: igi_sdk.IGIUser?
+  @objc public var lastHighest: igi_sdk.IGIUser?
+  @objc public var recommendedItem: igi_sdk.IGIRecommendedItem?
+  @objc public var isCurrentUserLoser: Swift.Bool
+  @objc public var winnderIds: [Swift.String]
+  @objc override dynamic public init()
+  @objc public static func bidWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIBid
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public func isCurrent() -> Swift.Bool
+  @objc public func isWon() -> Swift.Bool
+  @objc public func compareByPrice(_ bid: igi_sdk.IGIBid) -> Foundation.ComparisonResult
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIBidItem : igi_sdk.IGIItem {
+  @objc public var startAt: Foundation.Date?
+  @objc public var updatedAt: Foundation.Date?
+  public var auctionType: igi_sdk.IGIAuctionType
+  @objc public var startingPrice: Swift.Double
+  @objc public var reservePrice: Swift.Double
+  @objc public var bidDenomination: Swift.Double
+  @objc public var fixedIncrement: Swift.Bool
+  @objc public var allowBuyNow: Swift.Bool
+  @objc public var maxBidEnabled: Swift.Bool
+  @objc public var buyNowPrice: Swift.Double
+  @objc public var userBidValue: Swift.Double
+  @objc public var maxBidUserId: Swift.String
+  @objc public var maxBidValue: Swift.Double
+  @objc public var currentBid: igi_sdk.IGIBid?
+  @objc public var channelName: Swift.String
+  @objc public var pusherChannel: igi_sdk.IGIPusherChannel?
+  @objc public var bidBinding: Swift.String?
+  @objc public var lastBidInfo: [Swift.String : Any]?
+  @objc override dynamic public init()
+  @objc public static func bidItemWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIBidItem
+  @objc public static func bidItemWithDictionary(_ dictionary: [Swift.String : Any], isRequestItem: Swift.Bool) -> igi_sdk.IGIBidItem
+  @objc convenience public init(dictionary: [Swift.String : Any], isRequestItem: Swift.Bool)
+  @objc public func initializePusher()
+  @objc public func loadMaxBidInfo(_ dictionary: [Swift.String : Any])
+  @objc public func currentBidAmount() -> Swift.Double
+  @objc public func nextBidAmount() -> Swift.Double
+  @objc public func bidIncrement() -> Swift.Double
+  @objc public func previousBidAmount() -> Swift.Double
+  @objc public func totalBidsCount() -> Swift.Int
+  @objc override public func priceTitleString() -> Swift.String
+  @objc override public func priceString() -> Swift.String
+  @objc override public func timeLeft() -> Swift.Double
+  @objc override public func timeLeftTitleString() -> Swift.String
+  @objc override public func timeLeftAsString() -> Swift.String
+  @objc public func isEndingSoon() -> Swift.Bool
+  @objc public func isCurrentUserHighestBidder() -> Swift.Bool
+  @objc public func isCurrentUserMaxBidder() -> Swift.Bool
+  @objc public func type() -> Swift.String
+  @objc override public func shouldStartTimer() -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIRaffleItem : igi_sdk.IGIItem {
+  @objc public var startAt: Foundation.Date?
+  @objc public var updatedAt: Foundation.Date?
+  @objc public var price: Swift.Double
+  @objc public var channelName: Swift.String
+  @objc public var winnerUserId: Swift.String
+  @objc public var joinedrafflesCount: Foundation.NSNumber?
+  @objc public var quantity: Foundation.NSNumber?
+  @objc public var packageOptions: [Any]
+  @objc public var selectedOffer: [Swift.String : Any]?
+  @objc public var referralCodeMandatory: Swift.Bool
+  @objc public var shippingAndCCDisabled: Swift.Bool
+  @objc public var winners: [Any]?
+  @objc public var pusherChannel: igi_sdk.IGIPusherChannel?
+  @objc public var bidBinding: Swift.String?
+  @objc override dynamic public init()
+  @objc public static func raffleItemWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIRaffleItem
+  @objc public static func raffleItemWithDictionary(_ dictionary: [Swift.String : Any], isRequestItem: Swift.Bool) -> igi_sdk.IGIRaffleItem
+  @objc convenience public init(dictionary: [Swift.String : Any], isRequestItem: Swift.Bool)
+  @objc public func initializePusher()
+  @objc override public func priceTitleString() -> Swift.String
+  @objc override public func priceString() -> Swift.String
+  @objc override public func timeLeft() -> Swift.Double
+  @objc override public func timeLeftTitleString() -> Swift.String
+  @objc override public func timeLeftAsString() -> Swift.String
+  @objc public func isEndingSoon() -> Swift.Bool
+  @objc public func hasOffers() -> Swift.Bool
+  @objc override public func shouldStartTimer() -> Swift.Bool
+  @objc public func isSold() -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIBuyItemDiscount : ObjectiveC.NSObject {
+  @objc public var ID: Foundation.NSNumber?
+  @objc public var quantity: Swift.Int
+  @objc public var discountPercentage: Swift.Int
+  @objc override dynamic public init()
+  @objc public static func buyItemDiscountWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIBuyItemDiscount
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public static func buyItemDiscountWithQuantity(_ quantity: Swift.Int, percentage: Swift.Int) -> igi_sdk.IGIBuyItemDiscount
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIBuyItem : igi_sdk.IGIItem {
+  @objc public var quantity: Swift.Int
+  @objc public var price: Swift.Double
+  @objc public var channelName: Swift.String
+  @objc public var bulkDiscounts: [igi_sdk.IGIBuyItemDiscount]
+  @objc public var pusherChannel: igi_sdk.IGIPusherChannel?
+  @objc public var itemUpdateBinding: Swift.String?
+  @objc public var buyQuantity: Swift.Int
+  @objc override dynamic public init()
+  @objc public static func buyItemWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIBuyItem
+  @objc public static func buyItemWithDictionary(_ dictionary: [Swift.String : Any], isRequestItem: Swift.Bool) -> igi_sdk.IGIBuyItem
+  @objc convenience public init(dictionary: [Swift.String : Any], isRequestItem: Swift.Bool)
+  @objc public func calculateQunatity() -> Swift.Int
+  @objc public func initializePusher()
+  @objc override public func priceTitleString() -> Swift.String
+  @objc override public func priceString() -> Swift.String
+  @objc override public func timeLeft() -> Swift.Double
+  @objc override public func timeLeftTitleString() -> Swift.String
+  @objc override public func timeLeftAsString() -> Swift.String
+  @objc override public func shouldStartTimer() -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIDiscountItem : igi_sdk.IGIItem {
+  @objc public var startAt: Foundation.Date?
+  public var discountType: igi_sdk.IGIDiscountType
+  @objc public var discountValue: Swift.Double
+  @objc public var channelName: Swift.String
+  @objc override dynamic public init()
+  @objc public static func discountItemWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIDiscountItem
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc override public func priceTitleString() -> Swift.String
+  @objc override public func priceString() -> Swift.String
+  @objc override public func timeLeft() -> Swift.Double
+  @objc override public func timeLeftTitleString() -> Swift.String
+  @objc override public func timeLeftAsString() -> Swift.String
+  @objc override public func isOpen() -> Swift.Bool
+  @objc override public func isPublished() -> Swift.Bool
+  @objc override public func isClosed() -> Swift.Bool
+  @objc override public func shouldStartTimer() -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIGiftItem : igi_sdk.IGIItem {
+  @objc public static func giftItemWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIGiftItem
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIRequestItem : ObjectiveC.NSObject {
+  @objc public var ID: Foundation.NSNumber?
+  @objc public var qrUrlString: Swift.String
+  @objc public var createdAt: Foundation.Date?
+  @objc public var eventItem: igi_sdk.IGIItem?
+  @objc public var user: igi_sdk.IGIUser?
+  @objc public var pickupFromVenue: Swift.Bool
+  @objc public var pickupLocation: [Swift.String : Any]?
+  @objc public var status: Swift.String
+  @objc public var trackingNumber: Swift.String
+  @objc public var trackingUrl: Swift.String
+  @objc public var totalPaymentAmount: [Swift.String : Any]?
+  @objc public var shipTo: [Swift.String : Any]?
+  @objc public var selectedSizeOption: [Swift.String : Any]?
+  @objc public var currentPrice: Swift.Double
+  @objc public var claimed: Swift.Bool
+  @objc public var resold: Swift.Bool
+  @objc public var transferred: Swift.Bool
+  @objc public var gifted: Swift.Bool
+  @objc public var offered: Swift.Bool
+  @objc public var mysteryRevealed: Swift.Bool
+  @objc override dynamic public init()
+  @objc public static func requestItemWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIRequestItem
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public func isPending() -> Swift.Bool
+  @objc public func isPaymentFailed() -> Swift.Bool
+  @objc public func isMysteryPending() -> Swift.Bool
+  @objc public func isRedeemedForCredit() -> Swift.Bool
+  @objc public func totalAmountPaid() -> Swift.Double
+  @objc public func itemPrice() -> Swift.Double
+  @objc public func creditAmount() -> Swift.Double
+  @objc public func discount() -> Swift.Double
+  @objc public func creatorRoyalty() -> Swift.Double
+  @objc public func shipmentCost() -> Swift.Double
+  @objc public func taxAmount() -> Swift.Double
+  @objc public func shipmentTaxAmount() -> Swift.Double
+  @objc public func ccProcessingFee() -> Swift.Double
+  @objc public func marketplaceFee() -> Swift.Double
+  @objc public func chargedAmount() -> Swift.Double
+  @objc public func shipmentAddressString() -> Swift.String?
+  @objc public func shipmentStatus() -> Swift.String?
+  @objc public func selectedSizeOptionTitle() -> Swift.String?
+  @objc public func isAvailable() -> Swift.Bool
+  @objc public func label() -> Swift.String
+  @objc public func compareByCreatedAt(_ otherItem: igi_sdk.IGIRequestItem) -> Foundation.ComparisonResult
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGILoyaltyConfig : ObjectiveC.NSObject {
+  @objc public var memberNft: Swift.Int
+  @objc public var nonMemberNft: Swift.Int
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc override dynamic public init()
+  @objc deinit
+}
+public let kItemTypeBuyOnly: Swift.String
+public let kItemTypeBidOnly: Swift.String
+public let kItemTypeAuction: Swift.String
+public let kItemTypeRaffle: Swift.String
+public let kItemTypeDiscount: Swift.String
+public let kItemTypeGift: Swift.String
+public let kItemTypeBuyOnlyInt: Swift.String
+public let kItemTypeBidOnlyInt: Swift.String
+public let kItemTypeAuctionInt: Swift.String
+public let kItemTypeRaffleInt: Swift.String
+public let kItemTypeDiscountInt: Swift.String
+public let kItemTypeGiftInt: Swift.String
+public let kAuctionTypeNormal: Swift.String
+public let kAuctionTypeSealedBid: Swift.String
+public let kAuctionTypeVolumeReserve: Swift.String
+public let kAuctionTypeYankee: Swift.String
+public let kFlashAuctionTypeNormal: Swift.String
+public let kFlashAuctionTypeDutch: Swift.String
+public struct IGIOfferTypeInfo {
+  public let title: Swift.String
+  public let message: Swift.String
+  public let color: SwiftUICore.Color
+  public static let buyOnlyColor: SwiftUICore.Color
+  public static let bidOnlyColor: SwiftUICore.Color
+  public static let auctionColor: SwiftUICore.Color
+  public static let raffleColor: SwiftUICore.Color
+  public static let discountColor: SwiftUICore.Color
+  public static let giftColor: SwiftUICore.Color
+}
+public func getOfferTypeInfo(for item: igi_sdk.IGIItem) -> igi_sdk.IGIOfferTypeInfo
+public let IGI_SDK_DEV_MODE: Swift.String
+public let IGI_SDK_SANDBOX_MODE: Swift.String
+public let IGI_SDK_PRODUCTION_MODE: Swift.String
+public let IGI_SDK_VERSION: Swift.String
+public let IGI_DEV_BASE_URL: Swift.String
+public let IGI_STAGING_BASE_URL: Swift.String
+public let IGI_PRODUCTION_BASE_URL: Swift.String
+public let IGI_DEV_PUSHER_APP_KEY: Swift.String
+public let IGI_STAGING_PUSHER_APP_KEY: Swift.String
+public let IGI_PRODUCTION_PUSHER_APP_KEY: Swift.String
+public let kEndingSoonTime: Swift.Double
+public let kItemUpdated: Foundation.Notification.Name
+public enum IGIContext {
+  public static var currentUser: igi_sdk.IGIUser?
+  public static var sdkMode: Swift.String
+  public static var apiKey: Swift.String
+  public static var subDomain: Swift.String
+  public static var hereAPIKey: Swift.String
+  public static var physicalAddress: Swift.String
+  public static var currentUserId: Swift.String {
+    get
+  }
+  public static func isCurrentUser(_ user: igi_sdk.IGIUser?) -> Swift.Bool
+  public static var host: Swift.String {
+    get
+  }
+  public static var baseURL: Swift.String {
+    get
+  }
+}
+public func isEmpty(_ value: Any?) -> Swift.Bool
+public func valueForKeyPath(_ keyPath: Swift.String, in dictionary: [Swift.String : Any]) -> Any?
+public func stringValue(_ value: Any?) -> Swift.String
+public func boolValue(_ value: Any?) -> Swift.Bool
+public func doubleValue(_ value: Any?) -> Swift.Double
+public func formatCurrency(_ value: Swift.Double) -> Swift.String
+public func intValue(_ value: Any?) -> Swift.Int
+public func dateFromTimeInterval(_ value: Any?) -> Foundation.Date?
+public func dictionaryFromJsonString(_ value: Any?) -> [Swift.String : Any]?
+extension Foundation.Date {
+  public func humanIntervalSinceNow() -> Swift.String
+  public func humanIntervalSinceNowShort() -> Swift.String
+  public func humanIntervalRemaining() -> Swift.String
+}
+public struct IGIPhoto : Swift.Codable, Swift.Hashable {
+  public var thumbUrl: Swift.String
+  public var mediumUrl: Swift.String
+  public var largeUrl: Swift.String
+  public init(thumbUrl: Swift.String = "", mediumUrl: Swift.String = "", largeUrl: Swift.String = "")
+  public static func == (a: igi_sdk.IGIPhoto, b: igi_sdk.IGIPhoto) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension igi_sdk.IGIPhoto {
+  public init(dictionary: [Swift.String : Any])
+}
+@objc @objcMembers public class IGIAddress : ObjectiveC.NSObject {
+  @objc public var address_line1: Swift.String
+  @objc public var address_line2: Swift.String
+  @objc public var city: Swift.String
+  @objc public var country: Swift.String
+  @objc public var state: Swift.String
+  @objc public var zip: Swift.String
+  @objc public init(addressLine1: Swift.String = "", addressLine2: Swift.String = "", city: Swift.String = "", country: Swift.String = "", state: Swift.String = "", zip: Swift.String = "")
+  @objc public static func addressFromDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIAddress
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public func shortString() -> Swift.String
+  @objc public func longString() -> Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIUser : ObjectiveC.NSObject {
+  @objc public var ID: Swift.String
+  @objc public var username: Swift.String
+  @objc public var accessToken: Swift.String
+  @objc public var firstName: Swift.String
+  @objc public var lastName: Swift.String
+  @objc public var email: Swift.String
+  @objc public var pushNotificationEnabled: Swift.Bool
+  @objc public var emailNotificationEnabled: Swift.Bool
+  @objc public var stripeConnectOnboarded: Swift.Bool
+  @objc public var shippingAddress: igi_sdk.IGIAddress?
+  @objc public var phoneNumber: Swift.String
+  @objc public var paymentMethodSourceId: Swift.String
+  public var userPhoto: igi_sdk.IGIPhoto?
+  @objc public var favoriteSports: [Any]
+  @objc public var favoriteTeams: [Any]
+  @objc public var loyaltyPoints: [Swift.String : Any]?
+  @objc override dynamic public init()
+  @objc public static func userWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIUser
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public func totalLoyaltyPoints() -> Swift.Int
+  @objc public func partialEmail() -> Swift.String
+  @objc deinit
+}
+@objc @objcMembers public class IGIVideo : ObjectiveC.NSObject {
+  @objc public var thumbUrl: Swift.String
+  @objc public var videoUrl: Swift.String
+  @objc public init(thumbUrl: Swift.String = "", videoUrl: Swift.String = "")
+  @objc public static func videoWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIVideo
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIVenue : ObjectiveC.NSObject {
+  @objc public var ID: Foundation.NSNumber?
+  @objc public var name: Swift.String
+  @objc public var venueDescription: Swift.String
+  public var photo: igi_sdk.IGIPhoto?
+  @objc public var venueAddress: igi_sdk.IGIAddress?
+  @objc public var latitude: Swift.Double
+  @objc public var longitude: Swift.Double
+  @objc public var venueLocation: _LocationEssentials.CLLocation?
+  @objc override dynamic public init()
+  @objc public static func venueWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIVenue
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIEvent : ObjectiveC.NSObject {
+  @objc public var eventDescription: Swift.String
+  @objc public var endAt: Foundation.Date?
+  @objc public var startAt: Foundation.Date?
+  @objc public var ID: Swift.String
+  @objc public var status: Swift.Bool
+  @objc public var tagLine: Swift.String
+  @objc public var title: Swift.String
+  public var photo: igi_sdk.IGIPhoto?
+  @objc public var order: Foundation.NSNumber?
+  @objc public var channelName: Swift.String
+  @objc public var venue: igi_sdk.IGIVenue?
+  @objc public var dateString: Swift.String?
+  @objc public var isPromotion: Swift.Bool
+  @objc public var deepLinkURL: Swift.String
+  @objc public var isPasswordProtected: Swift.Bool
+  @objc public var onSitePassword: Swift.String
+  @objc public var remotePassowrd: Swift.String
+  @objc public var stripeLocationId: Swift.String
+  @objc override dynamic public init()
+  @objc public static func eventWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIEvent
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public func compareByOrder(_ otherEvent: igi_sdk.IGIEvent) -> Foundation.ComparisonResult
+  @objc public func isEventLive() -> Swift.Bool
+  @objc public func isFinished() -> Swift.Bool
+  @objc public func getDateStringForFutureEvent() -> Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGISponsor : ObjectiveC.NSObject {
+  @objc public var name: Swift.String
+  @objc public var url: Swift.String
+  public var photo: igi_sdk.IGIPhoto?
+  @objc override dynamic public init()
+  @objc public static func sponsorWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGISponsor
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIRecommendedItem : ObjectiveC.NSObject {
+  @objc public var ID: Foundation.NSNumber?
+  @objc public var title: Swift.String
+  @objc public var price: Swift.Double
+  @objc public var photo: Swift.String
+  @objc override dynamic public init()
+  @objc public static func recommendedItemWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIRecommendedItem
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGICompany : ObjectiveC.NSObject {
+  @objc public var name: Swift.String
+  public var logo: igi_sdk.IGIPhoto
+  @objc public var subDomain: Swift.String
+  @objc public var apiKey: Swift.String
+  @objc override dynamic public init()
+  @objc public static func companyWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGICompany
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIPagination : ObjectiveC.NSObject {
+  @objc public var currentPage: Foundation.NSNumber?
+  @objc public var previousPage: Foundation.NSNumber?
+  @objc public var nextPage: Foundation.NSNumber?
+  @objc public var totalPages: Foundation.NSNumber?
+  @objc public var totalCount: Foundation.NSNumber?
+  @objc override dynamic public init()
+  @objc public static func paginationFromDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIPagination
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGILeaderboardUser : ObjectiveC.NSObject {
+  @objc public var username: Swift.String
+  @objc public var position: Swift.String
+  @objc public var points: Foundation.NSNumber?
+  @objc public var last30DaysPoints: Foundation.NSNumber?
+  @objc override dynamic public init()
+  @objc public static func leaderboardUserWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGILeaderboardUser
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public func compareByPosition(_ otherItem: igi_sdk.IGILeaderboardUser) -> Foundation.ComparisonResult
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIShipment : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public static func shipmentWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIShipment
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIWishListItem : ObjectiveC.NSObject {
+  @objc public var price: Swift.String
+  @objc public var itemName: Swift.String
+  @objc public var status: Swift.String
+  @objc override dynamic public init()
+  @objc public static func wishListItemWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIWishListItem
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGITransaction : ObjectiveC.NSObject {
+  @objc public var id: Swift.Int
+  @objc public var transactionId: Swift.String
+  @objc public var companyName: Swift.String
+  @objc public var companyId: Swift.Int
+  @objc public var eventId: Swift.Int
+  @objc public var eventItemId: Swift.Int
+  @objc public var itemId: Swift.Int
+  @objc public var assetId: Swift.Int
+  @objc public var assetName: Swift.String
+  @objc public var assetDescription: Swift.String
+  @objc public var assetPreviewUrl: Swift.String
+  @objc public var assetUrl: Swift.String
+  @objc public var assetThumbnail: Swift.String
+  @objc public var assetNftToken: Swift.String
+  @objc public var partnerName: Swift.String
+  @objc public var skuPrefix: Swift.String
+  @objc public var skuId: Swift.String
+  @objc public var quantity: Swift.Int
+  @objc public var assetIndex: Swift.Int
+  @objc public var startingPrice: Swift.Double
+  @objc public var currentPrice: Swift.Double
+  @objc public var ownerId: Swift.String
+  @objc public var ownerEmail: Swift.String
+  @objc public var ownerUsername: Swift.String
+  @objc public var sellerId: Swift.String
+  @objc public var sellerUsername: Swift.String
+  @objc public var sellerEmail: Swift.String
+  @objc public var transactionDate: Foundation.Date?
+  @objc public var transactionType: Swift.String
+  @objc public var transactionDateString: Swift.String?
+  @objc public var creatorName: Swift.String
+  @objc public var creatorRoyalty: Swift.String
+  @objc public var royaltyAmount: Swift.String
+  @objc public var editionName: Swift.String
+  @objc public var seriesNumber: Swift.String
+  @objc public var packNumber: Swift.String
+  @objc public var packComponents: Swift.String
+  @objc public var assetPlayer: Swift.String
+  @objc public var assetTeam: Swift.String
+  @objc public var assetYear: Swift.String
+  @objc public var itemSkuId: Swift.Int
+  @objc public var status: Swift.Bool
+  @objc public var createdAt: Swift.String
+  @objc public var updatedAt: Swift.String
+  @objc public var errorMessage: Swift.String
+  @objc override dynamic public init()
+  @objc public static func transactionWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGITransaction
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public func getTransactionDateString() -> Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class IGIMysteryComponent : ObjectiveC.NSObject {
+  @objc public var ID: Foundation.NSNumber?
+  @objc public var title: Swift.String
+  public var photos: [igi_sdk.IGIPhoto]
+  @objc public var goldenTicket: igi_sdk.IGIMysteryComponent?
+  @objc override dynamic public init()
+  @objc public static func mysteryComponentWithDictionary(_ dictionary: [Swift.String : Any]) -> igi_sdk.IGIMysteryComponent
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class IGIPusherManager : ObjectiveC.NSObject {
+  public static let shared: igi_sdk.IGIPusherManager
+  final public func subscribe(to channel: Swift.String) -> igi_sdk.IGIPusherChannel?
+  final public func unsubscribe(from channel: igi_sdk.IGIPusherChannel?)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class IGIStripeCustomerSheet : ObjectiveC.NSObject {
-  @objc public func loadSelectedPaymentMethod() async throws -> Swift.String
-  @objc public func getSelectedPaymentMethodId() async throws -> Swift.String?
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  @objc nonisolated(nonsending) public func loadSelectedPaymentMethod() async throws -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  @objc nonisolated(nonsending) public func getSelectedPaymentMethodId() async throws -> Swift.String?
+  #endif
   @objc public func presentCustomerSheet(hostViewController: UIKit.UIViewController, completion: @escaping (Swift.String, Swift.String?, Foundation.NSError?) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
+@_Concurrency.MainActor @preconcurrency public struct IGIAuthView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var onSuccess: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var initialMode: igi_sdk.IGIAuthView.InitialAuthMode
+  public enum InitialAuthMode {
+    case login, signUp
+    public static func == (a: igi_sdk.IGIAuthView.InitialAuthMode, b: igi_sdk.IGIAuthView.InitialAuthMode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor @preconcurrency public init(initialMode: igi_sdk.IGIAuthView.InitialAuthMode = .login, onSuccess: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7igi_sdk11IGIAuthViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct IGICurrentActivityView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7igi_sdk22IGICurrentActivityViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct IGIEventExploreView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7igi_sdk19IGIEventExploreViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct IGIHistoryView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7igi_sdk14IGIHistoryViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct IGIItemDetailView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(item: igi_sdk.IGIItem)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7igi_sdk17IGIItemDetailViewV4bodyQrvp", 0) __
+}
+public enum IGIItemsExploreListType {
+  case event(igi_sdk.IGIEvent)
+  case buyNow
+  case partner
+  case marketplace
+  case digitalCollectibles
+}
+@_Concurrency.MainActor @preconcurrency public struct IGIItemsExploreView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(event: igi_sdk.IGIEvent, hideBackButton: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public init(listType: igi_sdk.IGIItemsExploreListType)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7igi_sdk19IGIItemsExploreViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct IGIMainTabView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7igi_sdk14IGIMainTabViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct IGIMoreView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7igi_sdk11IGIMoreViewV4bodyQrvp", 0) __
+}
+
+
+@_Concurrency.MainActor @preconcurrency public struct IGISettingsView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7igi_sdk15IGISettingsViewV4bodyQrvp", 0) __
+}
+public enum IGISVProgressHUDMaskType : Swift.Int {
+  case none
+  case clear
+  case black
+  case gradient
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class IGISVProgressHUDState : Foundation.ObservableObject {
+  public enum Style {
+    case indeterminate
+    case progress(Swift.Double)
+    case image(UIKit.UIImage?)
+  }
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class IGISVProgressHUD : ObjectiveC.NSObject {
+  public static func sharedState() -> igi_sdk.IGISVProgressHUDState
+  @objc public static func setBackgroundColor(_ color: UIKit.UIColor)
+  @objc public static func setForegroundColor(_ color: UIKit.UIColor)
+  @objc public static func setFont(_ font: UIKit.UIFont)
+  @objc public static func setInfoImage(_ image: UIKit.UIImage)
+  @objc public static func setSuccessImage(_ image: UIKit.UIImage)
+  @objc public static func setErrorImage(_ image: UIKit.UIImage)
+  public static func setDefaultMaskType(_ maskType: igi_sdk.IGISVProgressHUDMaskType)
+  @objc public static func setOffsetFromCenter(_ offset: UIKit.UIOffset)
+  @objc public static func resetOffsetFromCenter()
+  @objc public static func show()
+  public static func showWithMaskType(_ maskType: igi_sdk.IGISVProgressHUDMaskType)
+  @objc public static func showWithStatus(_ status: Swift.String)
+  public static func showWithStatus(_ status: Swift.String, maskType: igi_sdk.IGISVProgressHUDMaskType)
+  @objc public static func showProgress(_ progress: Swift.Float)
+  public static func showProgress(_ progress: Swift.Float, maskType: igi_sdk.IGISVProgressHUDMaskType)
+  @objc public static func showProgress(_ progress: Swift.Float, status: Swift.String)
+  public static func showProgress(_ progress: Swift.Float, status: Swift.String, maskType: igi_sdk.IGISVProgressHUDMaskType)
+  @objc public static func setStatus(_ status: Swift.String)
+  @objc public static func showInfoWithStatus(_ status: Swift.String)
+  public static func showInfoWithStatus(_ status: Swift.String, maskType: igi_sdk.IGISVProgressHUDMaskType)
+  @objc public static func showSuccessWithStatus(_ status: Swift.String)
+  public static func showSuccessWithStatus(_ status: Swift.String, maskType: igi_sdk.IGISVProgressHUDMaskType)
+  @objc public static func showErrorWithStatus(_ status: Swift.String)
+  public static func showErrorWithStatus(_ status: Swift.String, maskType: igi_sdk.IGISVProgressHUDMaskType)
+  @objc public static func showImage(_ image: UIKit.UIImage?, status: Swift.String)
+  public static func showImage(_ image: UIKit.UIImage?, status: Swift.String, maskType: igi_sdk.IGISVProgressHUDMaskType)
+  @objc public static func popActivity()
+  @objc public static func dismiss()
+  @objc public static func isVisible() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct IGISVProgressHUDOverlay : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7igi_sdk23IGISVProgressHUDOverlayV4bodyQrvp", 0) __
+}
+
+
+public typealias IGIHTTPCompletionHandler = (_ responseObject: [Swift.String : Any]?, _ error: (any Swift.Error)?) -> Swift.Void
+public enum IGIHttpRequestFactory {
+  public static func getRequest(url: Swift.String, parameters: [Swift.String : Any]?, completionHandler: @escaping igi_sdk.IGIHTTPCompletionHandler) -> Foundation.URLSessionDataTask?
+  public static func postRequest(url: Swift.String, parameters: [Swift.String : Any], completionHandler: @escaping igi_sdk.IGIHTTPCompletionHandler) -> Foundation.URLSessionDataTask?
+  public static func deleteRequest(url: Swift.String, parameters: [Swift.String : Any], completionHandler: @escaping igi_sdk.IGIHTTPCompletionHandler) -> Foundation.URLSessionDataTask?
+}
+public typealias WebServicesManagerCallback = (_ raw: Swift.String?, _ parsed: Any?, _ error: (any Swift.Error)?) -> Swift.Void
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class WebServicesManager : ObjectiveC.NSObject {
+  @objc public static let shared: igi_sdk.WebServicesManager
+  @objc final public func getCompanySettingsWithCallback(_ callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getLoyaltyConfigWithCallback(_ callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func redeemNftPointsWithAccessToken(_ accessToken: Swift.String, requestId: Foundation.NSNumber, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func signUpWithFirstName(_ fName: Swift.String, lastName lName: Swift.String, password: Swift.String, email: Swift.String, birthday: Foundation.NSNumber?, referralCode: Swift.String?, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func loginWithEmail(_ email: Swift.String, password: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func loginWithFirebaseToken(_ token: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func loginWithTicketMasterAccountId(_ accountId: Swift.String, customerId: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func deleteAccountWithAccessToken(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func initializeWithFirstName(_ firstname: Swift.String?, lastName lastname: Swift.String?, email: Swift.String, dob: Foundation.Date?, phoneNumber: Swift.String?, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func updateDeviceToken(_ deviceToken: Swift.String, accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getUserProfileForAccessToken(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getLeaderboardWithCallback(_ callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getUserCreditBalanceForAccessToken(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getUserLoyaltyPointsForAccessToken(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func updateUserProfileWithAccessToken(_ accessToken: Swift.String, photoURL photoUrl: Swift.String?, firsname firstname: Swift.String?, lastname: Swift.String?, dob: Foundation.Date?, phoneNumber: Swift.String?, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func updateUserShippingAddressWithAccessToken(_ accessToken: Swift.String, address: igi_sdk.IGIAddress, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getStripeSellerStatus(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func stripeSellerOnboarding(_ accessToken: Swift.String, firstName: Swift.String, lastName: Swift.String, streetAddress: Swift.String, city: Swift.String, state: Swift.String, postalCode: Swift.String, country: Swift.String, dateOfBirth: Swift.String, phoneNumber: Swift.String, ssn: Swift.String, routingNumber: Swift.String, accountNumber: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getAllEventsWithCallback(_ callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getAllEventsWithOnSite(_ onSite: Swift.Bool, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getEventFiltersForEventId(_ eventId: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getItemsForEventId(_ eventId: Swift.String, accessToken: Swift.String, pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getItemsForEventId(_ eventId: Swift.String, accessToken: Swift.String, itemType typeId: Swift.String?, auctionType: Swift.String?, category: Swift.String?, player: Swift.String?, team: Swift.String?, sorting: Swift.String?, onSite: Swift.String?, pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func globalSearchItems(searchText: Swift.String, seeMore: Swift.Bool, pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getPartnerItemsForOrigin(_ origin: Swift.String?, itemType typeId: Swift.String?, auctionType: Swift.String?, sorting: Swift.String?, pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getItemForId(_ itemId: Foundation.NSNumber, itemType typeId: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getMysteryItemComponents(_ itemId: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getPointsBasedItemsWithpageNumber(_ pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getLiveGiveawaysWithPageNumber(_ pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getWonGiveawaysWithPageNumber(_ pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func joinAuctionForAccessToken(_ accessToken: Swift.String, eventItemId itemId: Foundation.NSNumber, pickupFromVenue: Swift.Bool, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func leaveAuctionForAccessToken(_ accessToken: Swift.String, eventItemId itemId: Foundation.NSNumber, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func bidOnItemForAccessToken(_ accessToken: Swift.String, bidAmount: Swift.String, eventItemId itemId: Foundation.NSNumber, pickupFromVenue: Swift.Bool, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getBidsForAccessToken(_ accessToken: Swift.String, eventItemId itemId: Foundation.NSNumber, limit: Swift.String?, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func reservePriceBidOnItemForAccessToken(_ accessToken: Swift.String, eventItemId itemId: Foundation.NSNumber, pickupFromVenue: Swift.Bool, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func buyNowBidItemForAccessToken(_ accessToken: Swift.String, eventItemId itemId: Foundation.NSNumber, pickupFromVenue: Swift.Bool, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func maxBidForAccessToken(_ accessToken: Swift.String, eventItemId itemId: Foundation.NSNumber, maxBidAmount: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func raffleOnItemForAccessToken(_ accessToken: Swift.String, quantity: Foundation.NSNumber, eventItemId itemId: Foundation.NSNumber, offerId: Foundation.NSNumber?, referralCode: Swift.String?, pickupFromVenue: Swift.Bool, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func buyItemForAccessToken(_ accessToken: Swift.String, itemID: Foundation.NSNumber, sizeOption: Swift.String?, pickupFromVenue: Swift.Bool, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func claimDiscountForAccessToken(_ accessToken: Swift.String, itemID: Foundation.NSNumber, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func addToMyWishList(_ accessToken: Swift.String, event_item_id: Foundation.NSNumber, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func deleteItemFromMyWishList(_ accessToken: Swift.String, event_item_id: Foundation.NSNumber, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getCityAndState(_ postalCode: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getMyItemForAccessToken(_ accessToken: Swift.String, filter: Swift.String?, pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getAllWishListItemForAccessToken(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getAllMyItemsForAccessToken(_ accessToken: Swift.String, pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getMyWishListItemsForAccessToken(_ accessToken: Swift.String, pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getMyBidItemsForAccessToken(_ accessToken: Swift.String, pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getMyRaffleItemsForAccessToken(_ accessToken: Swift.String, pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getMyAuctionItemsForAccessToken(_ accessToken: Swift.String, pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getMyBuyItemsForAccessToken(_ accessToken: Swift.String, pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getAllMyBidsForAccessToken(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getMySalesForAccessToken(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func redeemRequestItemWithAccessToken(_ accessToken: Swift.String, requestItemID rItemID: Foundation.NSNumber, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func requestPasswordResetForEmail(_ email: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func createStripeEphemeralKeyWithAccessToken(_ accessToken: Swift.String, apiVersion: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func createStripeSetupIntentWithAccessToken(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func addStripeCardWithAccessToken(_ accessToken: Swift.String, stripeToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func setDefaultStripeCardWithAccessToken(_ accessToken: Swift.String, stripeToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func stripeEmbeddedSellerOnboardingURLWithAccessToken(_ accessToken: Swift.String, returnUrl: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func reclaimEventItemWithAccessToken(_ accessToken: Swift.String, eventItemId: Swift.String, stripeToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func updateWatchCountForAccessToken(_ accessToken: Swift.String, itemId eventItemId: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func enableNotificationsAccessToken(_ accessToken: Swift.String, pushNotifications: Swift.Bool, emailNotifications: Swift.Bool, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getMarketplaceItemsWithPageNumber(_ pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getDigitalCollectiblesWithPageNumber(_ pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getRecentTransactionsWithCallback(_ callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getTransactionHistoryWithItemId(_ itemId: Swift.String?, digitalItemId: Swift.String?, skuId: Swift.String?, limit: Swift.Int64, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func offerItemForTradeWithAccessToken(_ accessToken: Swift.String, eventItemdId eventItemId: Swift.String, itemType: Swift.String, skuId: Swift.String, offeredPrice: Swift.String, startAt: Foundation.Date?, closesAt: Foundation.Date, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getMyDigitalItemsWithAccessToken(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func isOwnerOfDigitalAssetWithAccessToken(_ accessToken: Swift.String, skuId: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getQuestItemsWithCallback(_ callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func claimUtilityWithAccessToken(_ accessToken: Swift.String, eventItemdId eventItemId: Swift.String, skuId: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getAccountHistoryWithAccessToken(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getUserOffersWithAccessToken(_ accessToken: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func reportIssueWithAccessToken(_ accessToken: Swift.String, source: Swift.String, sourceId: Foundation.NSNumber, issueType: Swift.String, description: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func shipMysteryBoxWithAccessToken(_ accessToken: Swift.String, requestId: Foundation.NSNumber, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func revealMysteryBoxWithAccessToken(_ accessToken: Swift.String, requestId: Foundation.NSNumber, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func buyBackMysteryBoxWithAccessToken(_ accessToken: Swift.String, requestId: Foundation.NSNumber, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getAdsWithAccessToken(_ accessToken: Swift.String?, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func getAddressSuggestionsForText(_ text: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc final public func verifyAuthenticity(_ code: Swift.String, callback: igi_sdk.WebServicesManagerCallback?)
+  @objc deinit
+}
+public enum IGIPrivacyStatus : Swift.Int {
+  case optOut
+  case optIn
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias IGIManagerCallback = (_ obj: Any?, _ error: (any Swift.Error)?) -> Swift.Void
+public let IGI_KEY_PRIMARY_COLOR: Swift.String
+public let IGI_KEY_SECONDARY_COLOR: Swift.String
+public let IGI_KEY_TEXT_COLOR: Swift.String
+public let IGI_KEY_TEXT_FONT: Swift.String
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class IGIManager : ObjectiveC.NSObject {
+  @objc final public class func shared() -> igi_sdk.IGIManager
+  @objc(sharedManager) final public class func sharedManager() -> igi_sdk.IGIManager
+  @objc public static let IGI_SDK_DEV_MODE: Swift.String
+  @objc public static let IGI_SDK_SANDBOX_MODE: Swift.String
+  @objc public static let IGI_SDK_PRODUCTION_MODE: Swift.String
+  @objc public static let IGI_KEY_PRIMARY_COLOR: Swift.String
+  @objc public static let IGI_KEY_SECONDARY_COLOR: Swift.String
+  @objc public static let IGI_KEY_TEXT_COLOR: Swift.String
+  @objc public static let IGI_KEY_TEXT_FONT: Swift.String
+  @objc final public var apiKey: Swift.String {
+    get
+  }
+  @objc final public var currentUser: igi_sdk.IGIUser? {
+    @objc get
+  }
+  @objc final public var sdkMode: Swift.String {
+    get
+  }
+  @objc final public var subDomain: Swift.String {
+    get
+  }
+  @objc final public var companyName: Swift.String {
+    get
+  }
+  @objc final public var hereAPIKey: Swift.String {
+    get
+  }
+  @objc final public var themeDictionary: [Swift.String : Any]
+  @objc final public var ads: [igi_sdk.IGIAdvertisement]
+  @objc final public var stripeCustomerSheet: igi_sdk.IGIStripeCustomerSheet? {
+    @objc get
+    @objc set
+  }
+  @objc final public var isWhiteLabel: Swift.Bool
+  @objc final public var showMissions: Swift.Bool
+  @objc final public var showLatestPurchases: Swift.Bool
+  @objc final public var showLeaderboard: Swift.Bool
+  @objc final public var showMarketPlace: Swift.Bool
+  @objc final public var showMyPortfolio: Swift.Bool
+  @objc final public var showNotificationsSwitch: Swift.Bool
+  @objc final public var showAds: Swift.Bool
+  @objc final public var loyaltyConfig: igi_sdk.IGILoyaltyConfig?
+  @objc deinit
+  @objc final public class func defaultPrimaryColor() -> UIKit.UIColor
+  @objc final public class func defaultSecondaryColor() -> UIKit.UIColor
+  @objc final public func primaryColor() -> UIKit.UIColor
+  @objc final public func secondaryColor() -> UIKit.UIColor
+  @objc final public func textColor() -> UIKit.UIColor
+  @objc final public func textFont() -> UIKit.UIFont
+  @objc final public class func navigationControllerForRootVC(_ vc: UIKit.UIViewController) -> UIKit.UINavigationController
+  @objc final public func isInitialzied() -> Swift.Bool
+  @objc final public func canLogin() -> Swift.Bool
+  @objc final public func setAnalyticsDelegate(_ delegate: any igi_sdk.IGIAnalyticsListener)
+  @objc final public func setDeviceToken(_ deviceToken: Swift.String?)
+  @objc final public var currentUserId: Swift.String {
+    @objc get
+  }
+  @objc final public func signUp(firstName: Swift.String, lastName: Swift.String, password: Swift.String, email: Swift.String, birthday: Foundation.NSNumber?, referralCode: Swift.String?, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func login(email: Swift.String, password: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func login(firebaseToken: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func login(ticketMasterAccountId: Swift.String, customerId: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func deleteAccount(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func initialize(apiKey: Swift.String, sdkMode: Swift.String, subDomain: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func startUserSession(firstName: Swift.String?, lastName: Swift.String?, email: Swift.String, dob: Foundation.Date?, phoneNumber: Swift.String?, callback: igi_sdk.IGIManagerCallback?)
+  final public func getPrivacyStatus() -> igi_sdk.IGIPrivacyStatus
+  final public func setPrivacyStatus(_ privacyStatus: igi_sdk.IGIPrivacyStatus)
+  @objc final public func getCompanySettings(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getUserProfile(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getUserCreditBalance(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getUserLoyaltyPoints(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getLeaderboard(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public class func shouldHandleRemodeMessage(_ userInfo: [Swift.AnyHashable : Any]?) -> Swift.Bool
+  @objc final public func handleRemoteMessage(_ userInfo: [Swift.AnyHashable : Any]?) -> Swift.Bool
+  @objc final public func handleDeeplinkURL(_ deeplink: Swift.String) -> Swift.Bool
+  @objc final public func updateUserProfile(photoURL: Swift.String?, firstname: Swift.String?, lastname: Swift.String?, dob: Foundation.Date?, phoneNumber: Swift.String?, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getStripeSellerStatus(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func stripeSellerOnboarding(firstName: Swift.String, lastName: Swift.String, streetAddress: Swift.String, city: Swift.String, state: Swift.String, postalCode: Swift.String, country: Swift.String, dateOfBirth: Swift.String, phoneNumber: Swift.String, ssn: Swift.String, routingNumber: Swift.String, accountNumber: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getAllEvents(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getBids(forEventItemId itemId: Foundation.NSNumber, limit: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getEventFilters(forEventId eventId: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getPointsBasedItems(pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getLiveGiveaways(pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getWonGiveaways(pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func eventsScreen() -> UIKit.UINavigationController?
+  @objc final public class func applyNavigationBarTheme()
+  @objc final public func mainStoryboard() -> UIKit.UINavigationController?
+  final public func mainView() -> igi_sdk.IGIMainTabView
+  @objc final public func logOut()
+  @objc final public func requestPasswordReset(email: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getDevicePhysicalAddress() -> Swift.String
+  @objc final public func host() -> Swift.String
+  @objc final public func baseURL() -> Swift.String
+  @objc final public func addStripeCard(withAccessToken accessToken: Swift.String, stripeToken: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func setDefaultStripeCard(withAccessToken accessToken: Swift.String, stripeToken: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func enablePushNotifications(enabled: Swift.Bool, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func enableEmailNotifications(enabled: Swift.Bool, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getMarketplaceItems(pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getDigitalCollectibles(pageNumber pageNo: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getRecentTransactions(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getTransactionHistory(itemId: Swift.String?, digitalItemId: Swift.String?, skuId: Swift.String?, limit: Swift.Int64, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func offerItemForTrade(eventItemId: Swift.String, itemType: Swift.String, skuId: Swift.String, offeredPrice: Swift.String, startAt: Foundation.Date?, closesAt: Foundation.Date, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getMyDigitalItems(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func isOwnerOfDigitalAsset(skuId: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func quantumLedgerExplorerUrl(transactionId: Swift.String) -> Foundation.URL?
+  @objc final public func getQuestItems(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func claimUtility(eventItemId: Swift.String, skuId: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getAccountHistory(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getUserOffers(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func reportIssue(source: Swift.String, sourceId: Foundation.NSNumber, issueType: Swift.String, description: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func shipMysteryBox(requestId: Foundation.NSNumber, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func revealMysteryBox(requestId: Foundation.NSNumber, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func buyBackMysteryBox(requestId: Foundation.NSNumber, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getLoyaltyConfig(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func redeemNftPoints(requestId: Foundation.NSNumber, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getAds(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getInterstitialAdvertisement() -> igi_sdk.IGIAdvertisement?
+  @objc final public func getNonInterstitialAdvertisements() -> [igi_sdk.IGIAdvertisement]?
+  @objc final public func getAdvertisement() -> igi_sdk.IGIAdvertisement?
+  @objc final public func verifyAuthenticity(code: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func createEphemeralKey(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func createStripeSetupIntent(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func stripeEmbeddedSellerOnboardingURL(returnUrl: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func trackPurchase(transactionId: Swift.String, buyItem: igi_sdk.IGIBuyItem)
+  @objc final public func trackBid(transactionId: Swift.String, item: igi_sdk.IGIItem)
+  @objc final public func trackPromotion(transactionId: Swift.String, raffleItem: igi_sdk.IGIRaffleItem)
+  @objc final public func trackAddPayment()
+  @objc final public func trackAddShipping()
+  @objc final public func trackItemListSelection(event: igi_sdk.IGIEvent)
+  @objc final public func trackItemSelection(item: igi_sdk.IGIItem)
+  @objc final public func trackOfferForSale(item: igi_sdk.IGIItem, offerPrice: Swift.Double)
+  @objc final public func trackTradableClaimed(item: igi_sdk.IGIItem)
+  @objc final public func trackIssueReported(requestId: Swift.String)
+  @objc final public func trackShipMysteryBox(requestId: Swift.String, itemId: Swift.String)
+  @objc final public func trackRevealMysteryBox(requestId: Swift.String, itemId: Swift.String)
+  @objc final public func trackRedeemMysteryBoxForCredit(requestId: Swift.String, itemId: Swift.String)
+  @objc final public func trackViewMysteryBoxComponents(itemId: Swift.String)
+  @objc final public func trackAdEvent(eventName: Swift.String, ad: igi_sdk.IGIAdvertisement)
+  @objc final public func trackEvent(_ eventName: Swift.String)
+  @objc final public func getItems(for event: igi_sdk.IGIEvent, itemType: Swift.String?, auctionType: Swift.String?, category: Swift.String?, player: Swift.String?, team: Swift.String?, sorting: Swift.String?, onSite: Swift.String?, pageNumber: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getPartnerItems(origin: Swift.String?, itemType: Swift.String?, auctionType: Swift.String?, sorting: Swift.String?, pageNumber: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func globalSearchItems(searchText: Swift.String, seeMore: Swift.Bool, pageNumber: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func updateUserShipmentAddress(_ address: igi_sdk.IGIAddress, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func joinAuction(eventItemId: Foundation.NSNumber, pickupFromVenue: Swift.Bool, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func leaveAuction(eventItemId: Foundation.NSNumber, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func bidOnItem(bidAmount: Swift.String, eventItemId: Foundation.NSNumber, pickupFromVenue: Swift.Bool, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func reservePriceBid(eventItemId: Foundation.NSNumber, pickupFromVenue: Swift.Bool, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func buyNowBidItem(eventItemId: Foundation.NSNumber, pickupFromVenue: Swift.Bool, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func maxBid(eventItemId: Foundation.NSNumber, maxBidAmount: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func raffleOnItem(quantity: Foundation.NSNumber, eventItemId: Foundation.NSNumber, offerId: Foundation.NSNumber?, referralCode: Swift.String?, pickupFromVenue: Swift.Bool, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func addItemToWishList(accessToken: Swift.String, eventItemId: Foundation.NSNumber, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func deleteItemFromWishList(accessToken: Swift.String, eventItemId: Foundation.NSNumber, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func buyItem(itemId: Foundation.NSNumber, sizeOption: Swift.String?, pickupFromVenue: Swift.Bool, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func claimDiscount(itemId: Foundation.NSNumber, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getItem(forId itemId: Foundation.NSNumber, itemType: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getMysteryItemComponent(itemId: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getAllMyItems(pageNumber: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getMyWishListItems(pageNumber: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getMyItem(filter: Swift.String, pageNumber: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getMyBidItems(pageNumber: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getMyRaffleItems(pageNumber: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getMySales(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getMyAuctionItems(pageNumber: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getMyBuyItems(pageNumber: Swift.Int, perPage: Swift.Int, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getAllMyBids(callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func redeemRequestItem(id: Foundation.NSNumber, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func reclaimEventItem(eventItemId: Swift.String, stripeToken: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func updateWatchCount(itemId: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getCityAndState(postalCode: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func getAddressSuggestions(text: Swift.String, callback: igi_sdk.IGIManagerCallback?)
+  @objc final public func currentUserShippingAddress() -> igi_sdk.IGIAddress?
+  @objc final public func userIsCurrentUser(_ user: igi_sdk.IGIUser) -> Swift.Bool
+}
+extension igi_sdk.IGIAsyncImage : Swift.Sendable {}
+extension igi_sdk.IGIFlashAuctionType : Swift.Equatable {}
+extension igi_sdk.IGIFlashAuctionType : Swift.Hashable {}
+extension igi_sdk.IGIFlashAuctionType : Swift.RawRepresentable {}
+extension igi_sdk.IGIAuctionType : Swift.Equatable {}
+extension igi_sdk.IGIAuctionType : Swift.Hashable {}
+extension igi_sdk.IGIAuctionType : Swift.RawRepresentable {}
+extension igi_sdk.IGIDiscountType : Swift.Equatable {}
+extension igi_sdk.IGIDiscountType : Swift.Hashable {}
+extension igi_sdk.IGIDiscountType : Swift.RawRepresentable {}
+extension igi_sdk.IGIAuthView : Swift.Sendable {}
+extension igi_sdk.IGIAuthView.InitialAuthMode : Swift.Equatable {}
+extension igi_sdk.IGIAuthView.InitialAuthMode : Swift.Hashable {}
+extension igi_sdk.IGICurrentActivityView : Swift.Sendable {}
+extension igi_sdk.IGIEventExploreView : Swift.Sendable {}
+extension igi_sdk.IGIHistoryView : Swift.Sendable {}
+extension igi_sdk.IGIItemDetailView : Swift.Sendable {}
+extension igi_sdk.IGIItemsExploreView : Swift.Sendable {}
+extension igi_sdk.IGIMainTabView : Swift.Sendable {}
+extension igi_sdk.IGIMoreView : Swift.Sendable {}
+extension igi_sdk.IGISettingsView : Swift.Sendable {}
+extension igi_sdk.IGISVProgressHUDMaskType : Swift.Equatable {}
+extension igi_sdk.IGISVProgressHUDMaskType : Swift.Hashable {}
+extension igi_sdk.IGISVProgressHUDMaskType : Swift.RawRepresentable {}
+extension igi_sdk.IGISVProgressHUDOverlay : Swift.Sendable {}
+extension igi_sdk.IGIPrivacyStatus : Swift.Equatable {}
+extension igi_sdk.IGIPrivacyStatus : Swift.Hashable {}
+extension igi_sdk.IGIPrivacyStatus : Swift.RawRepresentable {}
