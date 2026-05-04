@@ -5,12 +5,6 @@ auctions, wishlist, mystery boxes, account history) into a host iOS
 app as a SwiftUI surface. Distributed as a binary XCFramework via
 Swift Package Manager.
 
-> **Companion guide for Android:** see
-> [`Metabilia-io/igi_sdk_android` → `README.md`](https://github.com/Metabilia-io/igi_sdk_android/blob/main/README.md).
-> Both platforms expose the same public types, use byte-identical
-> analytics-event names and theming-token keys, and ship in lockstep
-> at the same `MAJOR.MINOR.PATCH` version (currently `4.0.0`).
-
 ## Requirements
 
 | | |
@@ -64,7 +58,6 @@ slug — both come from Metabilia ops. Pick the matching environment:
 | Environment | `sdkMode` constant |
 |---|---|
 | Development | `IGIManager.IGI_SDK_DEV_MODE` |
-| Sandbox / Staging | `IGIManager.IGI_SDK_SANDBOX_MODE` |
 | Production | `IGIManager.IGI_SDK_PRODUCTION_MODE` |
 
 ```swift
@@ -101,8 +94,10 @@ class MyAppDelegate: NSObject, UIApplicationDelegate {
 }
 ```
 
-Render the SDK's UI as any other SwiftUI view — typically `IGIMainTabView`
-inside the host's content view:
+## Hosting the SDK UI
+
+Render the SDK's UI as any other SwiftUI view — typically
+`IGIMainTabView` inside the host's content view:
 
 ```swift
 import SwiftUI
@@ -114,6 +109,15 @@ struct ContentView: View {
     }
 }
 ```
+
+`IGIMainTabView` is a `TabView` with five tabs (events / wishlist /
+mystery boxes / account / etc.), each wrapping its own
+`NavigationStack`. Wrap it in your own `NavigationStack` only if
+you want to push the SDK's surface onto an existing navigation
+stack — most hosts use it as the root of a `WindowGroup` directly.
+
+UIKit hosts can render the same view via
+`UIHostingController(rootView: IGIMainTabView())`.
 
 ## Push notifications
 
@@ -186,9 +190,12 @@ class MyAppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDe
         completionHandler([.sound, .banner, .badge])
     }
 
-    // Tap-to-route — easy to forget. Without this, taps cold-start
-    // the host app to its launch screen instead of the right
-    // item-detail / receipt screen.
+    // Tap-routing — fires for both warm taps (app already running)
+    // and cold-start taps (app was killed). iOS waits until the
+    // window is ready before dispatching on cold-start, so this
+    // single handler covers all tap cases. Without it, taps land on
+    // your launch screen instead of the right item-detail / receipt
+    // screen.
     func userNotificationCenter(
         _ center: UNUserNotificationCenter,
         didReceive response: UNNotificationResponse,
@@ -223,6 +230,13 @@ class MyAppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDe
 The push payloads the SDK recognises are `type` / `event_item_id` /
 `item_type` keyed; anything outside that vocabulary falls through to
 your own handlers (the `handleRemoteMessage` returns `false`).
+
+### Required Xcode capability
+
+Add the **Push Notifications** capability under your target's
+**Signing & Capabilities** tab. This writes the `aps-environment`
+entitlement to your `.entitlements` file. Without it, the
+AppDelegate wiring above silently fails to deliver pushes.
 
 ## Analytics
 
@@ -267,51 +281,6 @@ IGIManager.shared().themeDictionary = [
 All SDK SwiftUI views read from this dictionary; you don't need to
 subclass or override anything else.
 
-## Deep links / Universal Links
-
-Deep-link handling is host-owned (Branch SDK in our reference
-host). The SDK does not register URL schemes or universal-link
-handlers. The single SDK touchpoint is forwarding the resolved
-`event_item_id` payload:
-
-```swift
-// After Branch (or your URL handler) resolves the deep link:
-_ = IGIManager.shared().handleDeeplinkURL(deeplink)
-```
-
-For pushes, `handleRemoteMessage` (see "Push notifications" above)
-covers the same routing.
-
-## Required `Info.plist` keys
-
-Add these to your host app's `Info.plist` for the SDK's runtime
-permission requests to read cleanly:
-
-```xml
-<key>NSCameraUsageDescription</key>
-<string>Allow camera access to scan items and capture photos for shipment.</string>
-
-<key>NSPhotoLibraryUsageDescription</key>
-<string>Allow photo library access to attach images to your shipments.</string>
-```
-
-Plus the **Push Notifications** capability in your target's
-"Signing & Capabilities" tab (this also writes the
-`aps-environment` entitlement).
-
-## Versioning
-
-`MAJOR.MINOR.PATCH` semver, with a build-number suffix
-(`+yyMMddNN`) baked into the framework. Tags on this repo follow
-`vX.Y.Z`. `4.0.0` is the first release of the SwiftUI-canonical
-SDK; prior `3.x` releases shipped the now-removed Objective-C
-implementation and are not source-compatible with `4.x`.
-
-iOS and Android ship in lockstep — the Android counterpart
-(`io.metabilia:igi_sdk` on Maven Central) is tagged at the same
-`MAJOR.MINOR.PATCH` for every release, including `4.0.0`. Partners
-shipping both platforms should pin both at the same version.
-
 ## Migrating from 3.x to 4.0.0
 
 The 4.0.0 release replaces the Objective-C SDK that 3.x clients
@@ -332,7 +301,7 @@ project uses an API not listed here, the most likely answer is
 - [ ] Switch `sdkMode:` argument from a string literal to the typed `IGIManager.IGI_SDK_*_MODE` constant.
 - [ ] `IGIManager.shared().startUserSession(forFirstName:…)` → `IGIManager.shared().startUserSession(firstName:…)`.
 - [ ] `IGIAnalyticsListener` conformers: drop the `with*` prefix from every `track…` method's first argument label.
-- [ ] On Apple Silicon Macs only — add `EXCLUDED_ARCHS[sdk=iphonesimulator*] = x86_64` to your target's build settings (the 4.0.0 XCFramework drops the x86_64 simulator slice).
+- [ ] Add `EXCLUDED_ARCHS[sdk=iphonesimulator*] = x86_64` to your target's build settings if your simulator build includes `x86_64` (Intel Macs, or legacy Xcode templates that still ship `x86_64` in `VALID_ARCHS`). The 4.0.0 XCFramework ships arm64 simulator slices only.
 - [ ] Bump deployment target if needed: 4.0.0 requires **iOS 17.0+** (3.x supported iOS 16+).
 
 ### Source-level changes
@@ -356,12 +325,7 @@ imports can land here as needed.
 #### 2. Swift module import
 
 `import igi_sdk` is unchanged — 4.0.0 keeps the same module name
-that 3.x clients shipped against. Earlier 4.0.x prereleases
-temporarily exposed the module as `igi_sdk_swift` while the
-legacy Obj-C target still owned the `igi_sdk` name; the `4.0.0`
-release reclaims it. If your prerelease build had `import
-igi_sdk_swift`, swap it back to `import igi_sdk` as part of the
-4.0.0 upgrade.
+that 3.x clients shipped against. No edit required.
 
 #### 3. `IGIManager.initialize`
 
@@ -372,9 +336,9 @@ uses native parameter naming.
 ```diff
   IGIManager.shared().initialize(
 -     withApiKey: "<API_KEY>",
--     sdkMode: "IGI_SDK_DEV_MODE",
+-     sdkMode: "IGI_SDK_PRODUCTION_MODE",
 +     apiKey: "<API_KEY>",
-+     sdkMode: IGIManager.IGI_SDK_DEV_MODE,
++     sdkMode: IGIManager.IGI_SDK_PRODUCTION_MODE,
       subDomain: "<SUBDOMAIN>",
       callback: { _, error in
           if let error { print(error.localizedDescription) }
@@ -383,12 +347,10 @@ uses native parameter naming.
 ```
 
 The `sdkMode` change is technically optional — the underlying
-constant value is still the string `"IGI_SDK_DEV_MODE"`, so a 3.x
-literal still passes the validity check. Switching to the typed
-constant is recommended because it catches typos at compile time
-and surfaces the new `IGI_SDK_SANDBOX_MODE` value (added in 4.0,
-matching the Android Kotlin SDK's three-environment model so both
-platforms ship the same env matrix).
+constant value is still the string `"IGI_SDK_PRODUCTION_MODE"`, so
+a 3.x literal still passes the validity check. Switching to the
+typed constant is recommended because it catches typos at compile
+time.
 
 #### 4. `IGIManager.startUserSession`
 
@@ -496,43 +458,13 @@ slice back.
 app is on iOS 16 or earlier, bump it (`General` tab → `Minimum
 Deployments`) before adding the 4.0.0 dependency.
 
-### Behavior changes (no code changes needed)
-
-These changes are entirely inside the SDK; no client code edit is
-required, but worth knowing if you have network proxies, charles
-captures, or analytics dashboards that read the wire format.
-
-| What changed | 3.x | 4.0.0 |
-|---|---|---|
-| Auth-token attachment | `?access_token=…` query parameter | `Authorization: <token>` header (no `Bearer ` prefix) |
-| Token storage | `UserDefaults` plaintext (`kIGIUserSessionKey`) | iOS Keychain (`IGIKeyChain.accessToken`) — one-shot migration on first 4.x launch reads the legacy key, copies into Keychain, deletes plaintext |
-| Identity headers | `igi_sdk_version` (underscores) | `igi-sdk-version` (hyphens) — switched because nginx strips underscore-named headers by default |
-| Realtime | Pusher | Pusher (unchanged — same channel/event names) |
-| UI implementation | UIKit storyboards | SwiftUI; `eventsScreen()` returns a `UINavigationController` wrapping the SwiftUI surface so the legacy presentation pattern keeps working |
-
-### APIs that haven't changed
-
-If you use only these from your 3.x integration, the migration is
-literally just the import-statement swap — call sites stay
-byte-identical:
-
-- `IGIManager.shared()` — singleton accessor
-- `IGIManager.shared().setAnalyticsDelegate(_:)`
-- `IGIManager.shared().setDeviceToken(_:)`
-- `IGIManager.shared().handleRemoteMessage(_:) -> Bool`
-- `IGIManager.shouldHandleRemodeMessage(_:) -> Bool` (typo preserved)
-- `IGIManager.shared().handleDeeplinkURL(_:) -> Bool`
-- `IGIManager.shared().eventsScreen() -> UINavigationController?`
-- `IGISVProgressHUD.show()` / `.dismiss()`
-- `IGIManager.IGI_KEY_PRIMARY_COLOR` / `IGI_KEY_SECONDARY_COLOR` /
-  `IGI_KEY_TEXT_COLOR` / `IGI_KEY_TEXT_FONT` (theme dictionary
-  keys)
-
 ### Validation reference
 
-A complete worked migration from a real 3.x integration is in the
-sample app under `/IGISampleApp_ios/` (in the parent workspace).
-Five files modified — `AppDelegate.swift`, `ViewController.swift`,
+A complete worked migration from a real 3.x integration is in
+[`IGISampleApp_ios/`](./IGISampleApp_ios/) — sample app shipped
+alongside the SDK in this repo, consuming `igi_sdk` via SwiftPM
+remote URL pinned at `4.0.0` (the same way partner hosts integrate).
+Files modified — `AppDelegate.swift`, `ViewController.swift`,
 `AnalyticsManager.swift`, `IGISampleApp-Bridging-Header.h`, plus
 the `EXCLUDED_ARCHS` line in `project.pbxproj` — cover every
 change in this guide.

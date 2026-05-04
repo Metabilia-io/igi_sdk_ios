@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>947576119175-3m7pd6m15bms9r4bbu608k9gotbvmh3r.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.947576119175-3m7pd6m15bms9r4bbu608k9gotbvmh3r</string>
+	<key>API_KEY</key>
+	<string>AIzaSyATckEHZQqThI-WJaTSv4a8Lx_-XlWmcoc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>947576119175</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.igotitinc.demo</string>
+	<key>PROJECT_ID</key>
+	<string>gotit-demo</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gotit-demo.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:947576119175:ios:9e5fc5ddfba5cad48bbd22</string>
+	<key>DATABASE_URL</key>
+	<string>https://gotit-demo.firebaseio.com</string>
+</dict>
+</plist>
