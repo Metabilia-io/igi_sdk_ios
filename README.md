@@ -308,10 +308,9 @@ SDK; prior `3.x` releases shipped the now-removed Objective-C
 implementation and are not source-compatible with `4.x`.
 
 iOS and Android ship in lockstep — the Android counterpart
-(`com.github.Metabilia-io:igi_sdk` on GitHub Packages) is tagged
-at the same `MAJOR.MINOR.PATCH` for every release, including
-`4.0.0`. Partners shipping both platforms should pin both at the
-same version.
+(`io.metabilia:igi_sdk` on Maven Central) is tagged at the same
+`MAJOR.MINOR.PATCH` for every release, including `4.0.0`. Partners
+shipping both platforms should pin both at the same version.
 
 ## Migrating from 3.x to 4.0.0
 
