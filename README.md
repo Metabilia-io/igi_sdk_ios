@@ -19,7 +19,7 @@ Macs that run the simulator under Rosetta are not supported targets;
 M-series Macs are.
 
 The SDK source itself is compiled in **Swift 5 language mode** with
-the Swift 6.2.3 toolchain — see [Coyote alignment notes](#whats-new-in-410-coyote-alignment) below for what that
+the Swift 6.2.3 toolchain — see [What's new in 4.1.0](#whats-new-in-410) below for what that
 means for partners on Swift 6 language mode.
 
 ## Install (Swift Package Manager)
@@ -285,9 +285,9 @@ IGIManager.shared().themeDictionary = [
 All SDK SwiftUI views read from this dictionary; you don't need to
 subclass or override anything else.
 
-## What's new in 4.1.0 (Coyote alignment)
+## What's new in 4.1.0
 
-`4.1.0` aligns the SDK toolchain to the **FanReach Coyote release floor**:
+`4.1.0` is a toolchain-alignment release:
 
 - Built with **Xcode 26.2 / Swift 6.2.3 toolchain** (the producing compiler version recorded in the framework's `.swiftinterface`).
 - `IPHONEOS_DEPLOYMENT_TARGET = 17.0` reconciled uniformly across all build configs (previously a mix of 13.0 / 17.6).
@@ -312,7 +312,7 @@ If the warnings are noisy or you have `-warnings-as-errors`, the one-line workar
 
 This tells the Swift 6 compiler "I'm using a legacy module; soften strict-concurrency diagnostics on imports from it." Standard Swift 6 escape hatch designed exactly for this case.
 
-A future SDK release (planned post-Coyote, likely `4.2.0` or `5.0.0`) will adopt Swift 6 language mode end-to-end, at which point `@preconcurrency import igi_sdk` can be removed.
+A future SDK release (likely `4.2.0` or `5.0.0`) will adopt Swift 6 language mode end-to-end, at which point `@preconcurrency import igi_sdk` can be removed.
 
 ## Migrating from 3.x to 4.x
 
@@ -327,7 +327,7 @@ project uses an API not listed here, the most likely answer is
 
 ### Quick checklist
 
-- [ ] Update SPM dependency from `from: "3.x.x"` to `from: "4.1.0"` (and bump the package's `kind = exactVersion` if pinned). `4.1.0` is the current Coyote-aligned release; jump straight to it without going through `4.0.x`.
+- [ ] Update SPM dependency from `from: "3.x.x"` to `from: "4.1.0"` (and bump the package's `kind = exactVersion` if pinned). `4.1.0` is the current release; jump straight to it without going through `4.0.x`.
 - [ ] Drop `#import <igi_sdk/igi_sdk.h>` from your bridging header.
 - [ ] `import igi_sdk` stays as-is — 4.x keeps the same module name as 3.x.
 - [ ] `IGIManager.shared().initialize(withApiKey:…)` → `IGIManager.shared().initialize(apiKey:…)`.
@@ -336,7 +336,7 @@ project uses an API not listed here, the most likely answer is
 - [ ] `IGIAnalyticsListener` conformers: drop the `with*` prefix from every `track…` method's first argument label.
 - [ ] Add `EXCLUDED_ARCHS[sdk=iphonesimulator*] = x86_64` to your target's build settings if your simulator build includes `x86_64` (Intel Macs, or legacy Xcode templates that still ship `x86_64` in `VALID_ARCHS`). The 4.x XCFramework ships arm64 simulator slices only.
 - [ ] Bump deployment target if needed: 4.x requires **iOS 17.0+** (3.x supported iOS 16+).
-- [ ] If your app targets Swift 6 language mode, see [Coyote compatibility notes](#compatibility-note-for-partners-on-swift-6-language-mode) above — `@preconcurrency import igi_sdk` silences Sendable warnings emitted from our types.
+- [ ] If your app targets Swift 6 language mode, see [Compatibility note for partners on Swift 6 language mode](#compatibility-note-for-partners-on-swift-6-language-mode) above — `@preconcurrency import igi_sdk` silences Sendable warnings emitted from our types.
 
 ### Source-level changes
 
