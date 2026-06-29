@@ -124,7 +124,12 @@ Dependencies/
 ### SwiftPackageManager ###
 Packages
 xcuserdata
-*.xcodeproj
+# `*.xcodeproj` (bare) USED to live here from the toptal.com template,
+# but it shadowed the Xcode-section negations below (`!*.xcodeproj/project.pbxproj`
+# etc.) — git can't un-ignore files under an excluded parent dir, so
+# the project.pbxproj wasn't being tracked even though the negation
+# was present. Removed so the Xcode section's `*.xcodeproj/*` +
+# negations take effect.
 
 
 ### SwiftPM ###
