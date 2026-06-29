@@ -10,13 +10,17 @@ Swift Package Manager.
 | | |
 |---|---|
 | Minimum iOS deployment target | **17.0** |
-| Xcode | 15+ (Swift 5.9 toolchain) |
+| Xcode | **26.2+** (Swift 6.2.3 toolchain) |
 | Swift Package Manager | 5.9+ |
 | Architecture support | `arm64` device + `arm64` simulator (Apple Silicon Macs) |
 
 The XCFramework does **not** ship an `x86_64` simulator slice. Intel
 Macs that run the simulator under Rosetta are not supported targets;
 M-series Macs are.
+
+The SDK source itself is compiled in **Swift 5 language mode** with
+the Swift 6.2.3 toolchain — see [Coyote alignment notes](#whats-new-in-410-coyote-alignment) below for what that
+means for partners on Swift 6 language mode.
 
 ## Install (Swift Package Manager)
 
@@ -26,14 +30,14 @@ In Xcode: **File → Add Package Dependencies…**, paste:
 https://github.com/Metabilia-io/igi_sdk_ios.git
 ```
 
-Select **Up to Next Major Version** from `4.0.0`, then add the
+Select **Up to Next Major Version** from `4.1.0`, then add the
 `igi_sdk` library to your app target.
 
 Or in `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Metabilia-io/igi_sdk_ios.git", from: "4.0.0"),
+    .package(url: "https://github.com/Metabilia-io/igi_sdk_ios.git", from: "4.1.0"),
 ],
 targets: [
     .target(
@@ -281,35 +285,65 @@ IGIManager.shared().themeDictionary = [
 All SDK SwiftUI views read from this dictionary; you don't need to
 subclass or override anything else.
 
-## Migrating from 3.x to 4.0.0
+## What's new in 4.1.0 (Coyote alignment)
 
-The 4.0.0 release replaces the Objective-C SDK that 3.x clients
+`4.1.0` aligns the SDK toolchain to the **FanReach Coyote release floor**:
+
+- Built with **Xcode 26.2 / Swift 6.2.3 toolchain** (the producing compiler version recorded in the framework's `.swiftinterface`).
+- `IPHONEOS_DEPLOYMENT_TARGET = 17.0` reconciled uniformly across all build configs (previously a mix of 13.0 / 17.6).
+- `IGI_SDK_VERSION = "4.1.0+26062801"` injected as the new SDK identity header on every backend request.
+
+**No public API changes** — `4.0.0` integrations continue to compile against `4.1.0` unchanged. The bump is toolchain-only; jump straight to `from: "4.1.0"` without a migration step.
+
+### Compatibility note for partners on Swift 6 language mode
+
+The SDK source itself stays in **Swift 5 language mode** (`SWIFT_VERSION = 5.0`) in `4.1.0`. The published XCFramework's `.swiftinterface` declares Swift 6.2.3 as the producing compiler — which is what consumer build verifies — so partner apps in **Swift 6 language mode** link cleanly and run with identical behavior.
+
+What you may see while compiling your Swift 6 app against this SDK:
+
+- **Sendable-related warnings (not errors)** if your code passes our types (`IGIItem`, `IGIUser`, `IGIBuyItem`, etc.) across actor boundaries — e.g. capturing them in `@MainActor`-isolated closures from a background `Task`.
+- **No runtime impact** — the warnings are advisory; your build succeeds.
+
+If the warnings are noisy or you have `-warnings-as-errors`, the one-line workaround is:
+
+```swift
+@preconcurrency import igi_sdk
+```
+
+This tells the Swift 6 compiler "I'm using a legacy module; soften strict-concurrency diagnostics on imports from it." Standard Swift 6 escape hatch designed exactly for this case.
+
+A future SDK release (planned post-Coyote, likely `4.2.0` or `5.0.0`) will adopt Swift 6 language mode end-to-end, at which point `@preconcurrency import igi_sdk` can be removed.
+
+## Migrating from 3.x to 4.x
+
+The 4.x release line replaces the Objective-C SDK that 3.x clients
 shipped against with a SwiftUI-native rewrite. **The public API
 shape is intentionally close to 3.x** so that most call sites
 need only a one-line change; the diff below covers everything you
 should expect to touch in a typical 3.x integration. Each item
-links back to the source-of-change in 4.0.0's surface, so if your
+links back to the source-of-change in the 4.x surface, so if your
 project uses an API not listed here, the most likely answer is
 "no change."
 
 ### Quick checklist
 
-- [ ] Update SPM dependency from `from: "3.x.x"` to `from: "4.0.0"` (and bump the package's `kind = exactVersion` if pinned).
+- [ ] Update SPM dependency from `from: "3.x.x"` to `from: "4.1.0"` (and bump the package's `kind = exactVersion` if pinned). `4.1.0` is the current Coyote-aligned release; jump straight to it without going through `4.0.x`.
 - [ ] Drop `#import <igi_sdk/igi_sdk.h>` from your bridging header.
-- [ ] `import igi_sdk` stays as-is — 4.0.0 keeps the same module name as 3.x.
+- [ ] `import igi_sdk` stays as-is — 4.x keeps the same module name as 3.x.
 - [ ] `IGIManager.shared().initialize(withApiKey:…)` → `IGIManager.shared().initialize(apiKey:…)`.
 - [ ] Switch `sdkMode:` argument from a string literal to the typed `IGIManager.IGI_SDK_*_MODE` constant.
 - [ ] `IGIManager.shared().startUserSession(forFirstName:…)` → `IGIManager.shared().startUserSession(firstName:…)`.
 - [ ] `IGIAnalyticsListener` conformers: drop the `with*` prefix from every `track…` method's first argument label.
-- [ ] Add `EXCLUDED_ARCHS[sdk=iphonesimulator*] = x86_64` to your target's build settings if your simulator build includes `x86_64` (Intel Macs, or legacy Xcode templates that still ship `x86_64` in `VALID_ARCHS`). The 4.0.0 XCFramework ships arm64 simulator slices only.
-- [ ] Bump deployment target if needed: 4.0.0 requires **iOS 17.0+** (3.x supported iOS 16+).
+- [ ] Add `EXCLUDED_ARCHS[sdk=iphonesimulator*] = x86_64` to your target's build settings if your simulator build includes `x86_64` (Intel Macs, or legacy Xcode templates that still ship `x86_64` in `VALID_ARCHS`). The 4.x XCFramework ships arm64 simulator slices only.
+- [ ] Bump deployment target if needed: 4.x requires **iOS 17.0+** (3.x supported iOS 16+).
+- [ ] If your app targets Swift 6 language mode, see [Coyote compatibility notes](#compatibility-note-for-partners-on-swift-6-language-mode) above — `@preconcurrency import igi_sdk` silences Sendable warnings emitted from our types.
 
 ### Source-level changes
 
 #### 1. Bridging header
 
 The 3.x integration exposed the Obj-C SDK to Swift via a bridging
-header import. The 4.0.0 SDK is a pure Swift module — no bridging
+header import. The 4.x SDK is a pure Swift module — no bridging
 needed.
 
 ```diff
@@ -324,7 +358,7 @@ imports can land here as needed.
 
 #### 2. Swift module import
 
-`import igi_sdk` is unchanged — 4.0.0 keeps the same module name
+`import igi_sdk` is unchanged — 4.x keeps the same module name
 that 3.x clients shipped against. No edit required.
 
 #### 3. `IGIManager.initialize`
@@ -419,7 +453,7 @@ visible to Swift clients.
 
 #### Apple Silicon-only simulator
 
-The 4.0.0 XCFramework ships **only** `arm64` device + `arm64`
+The 4.x XCFramework ships **only** `arm64` device + `arm64`
 simulator slices. If your sample apps or test targets are built
 on an Apple Silicon Mac (most modern setups), this is invisible
 — you build arm64 simulator slices anyway. If you build on an
@@ -456,14 +490,14 @@ slice back.
 
 `Package.swift` declares `platforms: [.iOS(.v17)]`. If your host
 app is on iOS 16 or earlier, bump it (`General` tab → `Minimum
-Deployments`) before adding the 4.0.0 dependency.
+Deployments`) before adding the 4.x dependency.
 
 ### Validation reference
 
 A complete worked migration from a real 3.x integration is in
 [`IGISampleApp_ios/`](./IGISampleApp_ios/) — sample app shipped
 alongside the SDK in this repo, consuming `igi_sdk` via SwiftPM
-remote URL pinned at `4.0.0` (the same way partner hosts integrate).
+remote URL pinned at `4.1.0` (the same way partner hosts integrate).
 Files modified — `AppDelegate.swift`, `ViewController.swift`,
 `AnalyticsManager.swift`, `IGISampleApp-Bridging-Header.h`, plus
 the `EXCLUDED_ARCHS` line in `project.pbxproj` — cover every
