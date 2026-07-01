@@ -7238,6 +7238,28 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dismissPresentedSDK",
+            "printedName": "dismissPresentedSDK()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7igi_sdk8IGIUtilsO19dismissPresentedSDKyyFZ",
+            "mangledName": "$s7igi_sdk8IGIUtilsO19dismissPresentedSDKyyFZ",
+            "moduleName": "igi_sdk",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
@@ -75316,7 +75338,7 @@
       "kind": "StringLiteral",
       "offset": 7127,
       "length": 16,
-      "value": "\"4.1.0+26062801\""
+      "value": "\"4.1.1+26070101\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/Models\/ModelSupport.swift",
@@ -75691,45 +75713,52 @@
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIEventExploreView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 237,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIEventExploreView.swift",
       "kind": "Array",
-      "offset": 7859,
+      "offset": 8374,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIEventExploreView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8414,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIEventExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 7951,
+      "offset": 8460,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIEventExploreView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7992,
+      "offset": 8501,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIEventExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 8038,
+      "offset": 8547,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIEventExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 8083,
+      "offset": 8592,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIEventExploreView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8939,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIGiveawaysView.swift",
@@ -75965,308 +75994,308 @@
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 53589,
+      "offset": 53773,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 58046,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "Array",
-      "offset": 68041,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 72558,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 78537,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 81486,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 85984,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 91866,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "StringLiteral",
-      "offset": 91907,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 91948,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 91991,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92033,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 92078,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 92127,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92253,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92304,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92351,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 92393,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "StringLiteral",
-      "offset": 92440,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "StringLiteral",
-      "offset": 92486,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 92530,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "StringLiteral",
-      "offset": 92575,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 92609,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "StringLiteral",
-      "offset": 92647,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "StringLiteral",
-      "offset": 92684,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 92785,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 92834,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 92888,
+      "offset": 58230,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "Array",
-      "offset": 92956,
+      "offset": 68225,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 93005,
+      "offset": 72742,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 93464,
+      "offset": 78721,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 81670,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 86168,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92050,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 92091,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92132,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92175,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92217,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 92262,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 92311,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92437,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92488,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92535,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 92577,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 92624,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 92670,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 92714,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 92759,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 92793,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 92831,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "StringLiteral",
+      "offset": 92868,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 92969,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 93018,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 93072,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "Array",
+      "offset": 93140,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 93189,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 93648,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94042,
+      "offset": 94226,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94083,
+      "offset": 94267,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94128,
+      "offset": 94312,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94169,
+      "offset": 94353,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "StringLiteral",
-      "offset": 94223,
+      "offset": 94407,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94274,
+      "offset": 94458,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "IntegerLiteral",
-      "offset": 94317,
+      "offset": 94501,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94359,
+      "offset": 94543,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94480,
+      "offset": 94664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "StringLiteral",
-      "offset": 94565,
+      "offset": 94749,
       "length": 22,
       "value": "\"igi_wishlisted_items\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "StringLiteral",
-      "offset": 97115,
+      "offset": 97299,
       "length": 20,
       "value": "\"Thanks for buying!\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "StringLiteral",
-      "offset": 97169,
+      "offset": 97353,
       "length": 52,
       "value": "\"You can view your items in Account History section\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemDetailView.swift",
       "kind": "BooleanLiteral",
-      "offset": 98126,
+      "offset": 98310,
       "length": 4,
       "value": "true"
     },
@@ -76280,205 +76309,219 @@
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8063,
+      "offset": 9315,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 8104,
+      "offset": 9356,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 8144,
+      "offset": 9396,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "Array",
-      "offset": 22349,
+      "offset": 23912,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22672,
+      "offset": 24235,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22714,
+      "offset": 24277,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22758,
+      "offset": 24321,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22796,
+      "offset": 24359,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 22834,
+      "offset": 24397,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 22871,
+      "offset": 24434,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "Array",
-      "offset": 22928,
+      "offset": 24491,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "Array",
-      "offset": 22984,
+      "offset": 24547,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "Array",
-      "offset": 23037,
+      "offset": 24600,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "Array",
-      "offset": 23088,
+      "offset": 24651,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "BooleanLiteral",
-      "offset": 23278,
+      "offset": 24841,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23313,
+      "offset": 24876,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23341,
+      "offset": 24904,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "Array",
-      "offset": 23433,
+      "offset": 24996,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 24870,
+      "offset": 26433,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "Array",
-      "offset": 38747,
+      "offset": 40310,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "Array",
-      "offset": 38778,
+      "offset": 40341,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "Array",
-      "offset": 38807,
+      "offset": 40370,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 39308,
+      "offset": 40871,
       "length": 19,
       "value": "\"Ending soon first\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 39329,
+      "offset": 40892,
       "length": 10,
       "value": "\"Time Asc\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 39351,
+      "offset": 40914,
       "length": 20,
       "value": "\"Lowest price first\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 39373,
+      "offset": 40936,
       "length": 11,
       "value": "\"Price Asc\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 39396,
+      "offset": 40959,
       "length": 21,
       "value": "\"Highest price first\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "StringLiteral",
-      "offset": 39419,
+      "offset": 40982,
       "length": 12,
       "value": "\"Price Desc\""
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIItemsExploreView.swift",
       "kind": "Array",
-      "offset": 41874,
+      "offset": 43437,
       "length": 172,
       "value": "[\"Purchases\", \"Traditional Auctions\", \"Sealed Bid\", \"Volume Reserve\", \"Yankee Auctions\", \"Flash Auctions\", \"Dutch Auctions\", \"Giveaways\", \"Discounts\"]"
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIMainTabView.swift",
+      "kind": "StringLiteral",
+      "offset": 2944,
+      "length": 31,
+      "value": "\"UIDesignRequiresCompatibility\""
+    },
+    {
+      "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIMainTabView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2989,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Volumes\/Work\/Jameel\/IGI\/claude\/ios_sdk\/igi_sdk\/igi_sdk\/UI\/IGIMoreView.swift",

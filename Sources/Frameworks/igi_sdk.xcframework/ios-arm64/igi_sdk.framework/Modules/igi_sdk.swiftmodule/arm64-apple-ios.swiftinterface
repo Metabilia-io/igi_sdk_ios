@@ -186,6 +186,7 @@ public enum IGIUtils {
   public static func activeRootViewController() -> UIKit.UIViewController?
   public static func topMostViewController(from viewController: UIKit.UIViewController) -> UIKit.UIViewController
   public static func activeTopViewController() -> UIKit.UIViewController?
+  public static func dismissPresentedSDK()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class IGIAdvertisement : ObjectiveC.NSObject {
   @objc public var ID: Foundation.NSNumber?

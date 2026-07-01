@@ -30,14 +30,14 @@ In Xcode: **File → Add Package Dependencies…**, paste:
 https://github.com/Metabilia-io/igi_sdk_ios.git
 ```
 
-Select **Up to Next Major Version** from `4.1.0`, then add the
+Select **Up to Next Major Version** from `4.1.1`, then add the
 `igi_sdk` library to your app target.
 
 Or in `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Metabilia-io/igi_sdk_ios.git", from: "4.1.0"),
+    .package(url: "https://github.com/Metabilia-io/igi_sdk_ios.git", from: "4.1.1"),
 ],
 targets: [
     .target(
@@ -284,6 +284,39 @@ IGIManager.shared().themeDictionary = [
 
 All SDK SwiftUI views read from this dictionary; you don't need to
 subclass or override anything else.
+
+## What's new in 4.1.1
+
+`4.1.1` is a small UX + partner-integration patch. No public API changes; drop-in replacement for `4.1.0`.
+
+```diff
+- .package(url: "https://github.com/Metabilia-io/igi_sdk_ios.git", from: "4.1.0"),
++ .package(url: "https://github.com/Metabilia-io/igi_sdk_ios.git", from: "4.1.1"),
+```
+
+### Collections shortcut for single-event partners
+
+Partner integrations that expose a single event through the SDK (e.g. a team app with one live drop) previously either flickered through the Collections screen on cold launch or let the user tap the Collections tab to reach an empty-ish list. `4.1.1` treats a single-event fetch as the tab-root content directly:
+
+- **Loading:** centered `ProgressView` while the initial `/events` fetch is in flight.
+- **1 event returned:** the tab's root content IS the items list for that event. No push, no back button, no way to reach a Collections screen at all — tapping the Collections tab keeps the user on the items list.
+- **> 1 event returned:** the existing Collections screen renders as before (event grid + mini tiles + Exit + search).
+
+The single-event `IGIItemsExploreView` picks up a conditional Exit toolbar button (leading) so users still have an escape hatch out of the SDK. Gated on the same `!isWhiteLabel` check that the Collections screen uses.
+
+Behavior mirrors what the legacy Objective-C SDK did for single-event partners — no partner-side change needed to opt in.
+
+### Legacy-design mode: nav-bar toolbar items now themed for contrast
+
+Partners that opt out of iOS 26's Liquid Glass by setting `UIDesignRequiresCompatibility = YES` in their host Info.plist (the pre-iOS-26 rendering path — many production apps use this while they migrate to the new design language) previously saw the SDK's Exit / search / back-chevron toolbar items render in system blue. On brand-colored nav bars (e.g. Texans navy) that was low-contrast and hard to read.
+
+`4.1.1` detects the flag at runtime and tints the nav-bar toolbar items to match the theme's `textColor` when legacy mode is active. Modern Liquid Glass mode is unchanged — Apple's default rendering with the translucent capsule material stays as designed.
+
+No configuration or code change on the partner side. If your host app is in Liquid Glass mode, you see no difference. If it's in legacy design mode with a branded nav bar, toolbar items now contrast properly.
+
+### Card badge icons render in black
+
+The verified-shield, tradable-arrows, digital-asset-link, and photo-match camera badges on offer cards + item detail no longer inherit the theme's `primaryColor`. They render in black on any theme so partners with dark primaries don't see badge icons blend into the card background. The type-color labels on cards (PURCHASE / MAX BID / FLASH AUCTION / GIVEAWAY / YANKEE AUCTION / etc.) stay in their semantic colors — those are meaningful, not theme-derived.
 
 ## What's new in 4.1.0
 
