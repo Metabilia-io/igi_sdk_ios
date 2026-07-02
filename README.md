@@ -109,7 +109,9 @@ import igi_sdk
 
 struct ContentView: View {
     var body: some View {
-        IGIMainTabView()
+        IGIManager.shared().mainView()
+            .ignoresSafeArea()
+            .transition(.opacity)
     }
 }
 ```
